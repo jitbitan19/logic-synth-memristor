@@ -7,7 +7,7 @@
 using namespace std;
 
 #define THRMX 8
-#define THRMN 3
+#define THRMN 1
 #define MAXN 1000
 #define FW 4
 
@@ -16,8 +16,22 @@ struct Node
     int id, path, sub, indeg;
     Node *left;
     Node *right;
-    Node(int v, int path = 0, Node *leftNode = nullptr, Node *rightNode = nullptr)
-        : id{v}, path{path}, sub{1}, indeg{0}, left{leftNode}, right{rightNode} {}
+    Node(
+        int v, int path = 0,
+        Node *l_node = nullptr, Node *r_node = nullptr)
+        : id{v}, path{path}, sub{1}, indeg{0},
+          left{l_node}, right{r_node}
+    {
+    }
+};
+
+struct Node
+{
+    int id, path, sub, indeg;
+    Node *left;
+    Node *right;
+    Node(int v, Node *leftNode = nullptr, Node *rightNode = nullptr)
+        : id{v}, sub{1}, indeg{0}, left{leftNode}, right{rightNode} {}
 };
 
 class SparseTable
@@ -65,6 +79,7 @@ Node *search_val(Node *root, int value)
 void get_sublen(Node *root, int max_nodes)
 {
     vector<bool> vis(max_nodes);
+    vector<bool> did(max_nodes);
     function<void(Node *)> foo = [&](Node *root)
     {
         if (!root)
@@ -174,6 +189,16 @@ void point_nodes(Node *root, int max_nodes)
     };
     dfs(root);
     int n_traverse = order.size();
+
+    for (auto &itr : order)
+        cout << setw(2) << itr << ' ';
+    cout << '\n';
+    for (auto &itr : sub)
+        cout << setw(2) << itr << ' ';
+    cout << '\n';
+    for (auto &itr : indeg)
+        cout << setw(2) << itr << ' ';
+    cout << '\n';
 
     SparseTable table(indeg);
     vector<int> opt_nodes;
