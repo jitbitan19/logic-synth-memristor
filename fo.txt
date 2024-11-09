@@ -1,52 +1,49 @@
 _______ Dependency List _______
-   6: 
-   7:    6
-   8: 
-   9:    8
-  10:    9,    7
-  11: 
-  12: 
-  13:   12
-  14: 
-  15:   14
-  16:   15,   13
-  17:   16,   11
-  18:   16
-  19:   18
-  20:   19,   17
-  21:   20
-  22:   21,   10
-  23:   10
-  24:   20,   23
-  25:   24,   22
+  6: 
+  7:   6
+  8: 
+  9:   8
+ 10:   9,   7
+ 11: 
+ 12: 
+ 13:  12
+ 14: 
+ 15:  14
+ 16:  15,  13
+ 17:  16,  11
+ 18:  16
+ 19:  18
+ 20:  19,  17
+ 21:  20
+ 22:  21,  10
+ 23:  10
+ 24:  20,  23
+ 25:  24,  22
 
 Base Node: 25
 
 __________ Node Details __________
-id:   25, sub:   45, indeg:   0
-id:   24, sub:   22, indeg:   1
-id:   22, sub:   22, indeg:   1
-id:   20, sub:   15, indeg:   2
-id:   23, sub:    6, indeg:   1
-id:   21, sub:   16, indeg:   1
-id:   10, sub:    5, indeg:   2
-id:   19, sub:    7, indeg:   1
-id:   17, sub:    7, indeg:   1
-id:    9, sub:    2, indeg:   1
-id:    7, sub:    2, indeg:   1
-id:   18, sub:    6, indeg:   1
-id:   16, sub:    5, indeg:   2
-id:   11, sub:    1, indeg:   1
-id:    8, sub:    1, indeg:   1
-id:    6, sub:    1, indeg:   1
-id:   15, sub:    2, indeg:   1
-id:   13, sub:    2, indeg:   1
-id:   14, sub:    1, indeg:   1
-id:   12, sub:    1, indeg:   1
+id:  25, sub:  45, indeg:  0
+id:  24, sub:  22, indeg:  1
+id:  22, sub:  22, indeg:  1
+id:  20, sub:  15, indeg:  2
+id:  23, sub:   6, indeg:  1
+id:  21, sub:  16, indeg:  1
+id:  10, sub:   5, indeg:  2
+id:  19, sub:   7, indeg:  1
+id:  17, sub:   7, indeg:  1
+id:   9, sub:   2, indeg:  1
+id:   7, sub:   2, indeg:  1
+id:  18, sub:   6, indeg:  1
+id:  16, sub:   5, indeg:  2
+id:  11, sub:   1, indeg:  1
+id:   8, sub:   1, indeg:  1
+id:   6, sub:   1, indeg:  1
+id:  15, sub:   2, indeg:  1
+id:  13, sub:   2, indeg:  1
+id:  14, sub:   1, indeg:  1
+id:  12, sub:   1, indeg:  1
 
-25 24 20 19 18 16 15 14 13 12 17 11 23 10  9  8  7  6 22 21 
-45 22 15  7  6  5  2  1  2  1  7  1  6  5  2  1  2  1 22 16 
- 0  1  2  1  1  2  1  1  1  1  1  1  1  2  1  1  1  1  1  1 
 
 ________ Optimisable Nodes ________
 16 11 10 

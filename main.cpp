@@ -9,21 +9,7 @@ using namespace std;
 #define THRMX 8
 #define THRMN 1
 #define MAXN 1000
-#define FW 4
-
-struct Node
-{
-    int id, path, sub, indeg;
-    Node *left;
-    Node *right;
-    Node(
-        int v, int path = 0,
-        Node *l_node = nullptr, Node *r_node = nullptr)
-        : id{v}, path{path}, sub{1}, indeg{0},
-          left{l_node}, right{r_node}
-    {
-    }
-};
+#define FW 3
 
 struct Node
 {
@@ -190,16 +176,6 @@ void point_nodes(Node *root, int max_nodes)
     dfs(root);
     int n_traverse = order.size();
 
-    for (auto &itr : order)
-        cout << setw(2) << itr << ' ';
-    cout << '\n';
-    for (auto &itr : sub)
-        cout << setw(2) << itr << ' ';
-    cout << '\n';
-    for (auto &itr : indeg)
-        cout << setw(2) << itr << ' ';
-    cout << '\n';
-
     SparseTable table(indeg);
     vector<int> opt_nodes;
     for (int i = 0; i < n_traverse; i++)
@@ -208,6 +184,8 @@ void point_nodes(Node *root, int max_nodes)
             continue;
 
         int sublen = sub[i] - 1;
+        if (i + sublen > n_traverse)
+            continue;
         int max_indeg = table.get(i + 1, i + sublen);
         if (max_indeg != 1)
             continue;
