@@ -13,46 +13,62 @@
      n15, n3, x1, x235, etc.
 ***********************************************************************/
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <strings.h>
-#include <ctype.h>
+#include <stdio.h>   //Provides functions for input/output operations
+#include <stdlib.h>  //Provides functions for memory allocation, process control, etc.
+#include <strings.h> //Provides string handling functions, although this is typically for older BSD systems
+#include <ctype.h>   //Provides functions for character manipulation
+#include <time.h>    // Include time.h for seeding the random number generator
 
-#define MAXGATES 5000
+#define MAXGATES 5000 // MACRO definitions
 #define MAXFANIN 5
 #define MAXLEVEL 500
 #define MAXPI 100
 
+#define MAX_GATES_LEVEL 5000 // Maximum number of gates in a level
+#define MAX_LEVELS 500       // Maximum scheduling levels
+
 typedef struct
-{
-  int fanin;           // 1 for NOT
-  int input[MAXFANIN]; // maximum 5 inputs
-  int out;             // output line
-  int asap_level;
-  int alap_level;
-  int mobility;
-  int list_level;
+{                             // Table gate structuure
+  int fanin;                  // Number of inputs (1 for NOT gates, can be up to MAXFANIN for other gates).
+  int input[MAXFANIN];        // An array to hold the input lines (up to 5).
+  int out;                    // The output line for the gate.
+  int asap_level;             // ASAP (As Soon As Possible) schedule level for the gate.
+  int alap_level;             // ALAP (As Late As Possible) schedule level for the gate.
+  int mobility;               // Difference between alap_level and asap_level (not directly used in the given code, but relevant for scheduling).
+  int list_level;             // List-based scheduling level.
+  int output_gates[MAXGATES]; // Stores indices of gates that use this gate's output
+  int output_count;           // Number of gates in output_gates array
 } table_gate;
 
-table_gate gates[MAXGATES], tgate;
-
-int primary_inputs[MAXPI];
-int nPI = 0;
+// Global Variables
+table_gate gates[MAXGATES], tgate; // gates[MAXGATES]: Array to hold all the gates in the circuit. tgate: Temporary variable used to store gate data while parsing.
+int primary_inputs[MAXPI];         // Array to store primary input identifiers.
+int nPI = 0;                       // Number of primary inputs.
 
 int ng = 0; // number of gates;
 
 int tempvar = 1; // temporary lines start as -1, -2, etc.
 
-FILE *netlist;
+FILE *netlist; // A file pointer that will point to the netlist file being read.
+
+// Global array to store the assigned binary values for primary inputs
+int primary_input_values[MAXPI];
+// Global array to store the values for the gates throughout the process
+int gate_values[MAXGATES];
 
 /*************** MAIN FUNCTION ********************/
 int main(int argc, char *argv[])
 {
+
+  const char *file_name = "BENCH/Bench/xor5_d.txt";
+  netlist = fopen(file_name, "r");
+
+  FILE *output_file = freopen("f24.txt", "w", stdout);
+
   int i;
-
-  netlist = fopen(argv[1], "r");
-
   parse_gates();
+  find_gate_outputs();
+  print_gate_outputs();
 
   for (i = 0; i < ng; i++)
   {
@@ -65,30 +81,234 @@ int main(int argc, char *argv[])
   compute_alap_level();
   compute_list_level();
 
+  int maxLevel = 0;
+  int o;
+
+  // Determine maximum level from the already computed ASAP levels.
+  for (o = 0; o < ng; o++)
+  {
+    if (gates[o].asap_level > maxLevel)
+      maxLevel = gates[o].asap_level;
+  }
+
+  find_primary_inputs();
+  assign_random_binary_values();
+
+  // initialize the gate_values array to -1
+  for (int i = 0; i < MAXGATES; i++)
+  {
+    gate_values[i] = -1;
+  }
+  printf("\n\n");
+  // For each level, perform the two-stage crossbar mapping.
+  for (int level = 1; level <= maxLevel; level++)
+  {
+    map_level_to_crossbar(level);
+  }
+
   printf("\n************ BENCHMARK: %s *************", argv[1]);
   print_gates();
 
   print_stat();
 
   fclose(netlist);
+  fclose(output_file);
+}
+
+void assign_random_binary_values()
+{
+  srand(time(NULL)); // Seed the random number generator with the current time
+
+  printf("Assigning random binary values to primary inputs:\n");
+  for (int i = 0; i < nPI; i++)
+  {
+    int random_value = rand() % 2;          // Generate a random binary value (0 or 1)
+    primary_input_values[i] = random_value; // Store the value in the array
+    printf("Primary input %d assigned value: %d\n", primary_inputs[i] - 5000, random_value);
+  }
+}
+
+void find_primary_inputs()
+{
+  int k;
+  // will find the primary inputs for a given netlist , they would have number greater than 5000
+  for (k = 0; k < ng; k++)
+  {
+    // now check the inputs of the gates for any value greater than 5000 and store it
+    for (int j = 0; j < gates[k].fanin; j++)
+    {
+      if (gates[k].input[j] >= 5000)
+      { // however only update it if it is not already present in the primary_inputs array
+        int found = 0;
+        for (int i = 0; i < nPI; i++)
+        {
+          if (primary_inputs[i] == gates[k].input[j])
+          {
+            found = 1;
+            break;
+          }
+        }
+        if (found == 0)
+        {
+          primary_inputs[nPI++] = gates[k].input[j];
+        }
+      }
+    }
+  }
+  printf("\n");
+  printf("no of primary inputs is %d \n", nPI);
+  // print the primary inputs after subtracting 5000 from them
+  for (int i = 0; i < nPI; i++)
+  {
+    printf("%d ", primary_inputs[i] - 5000);
+  }
+  printf("\n");
+}
+
+void map_level_to_crossbar(int level)
+{
+  // collect all the gates belonging to the current level
+  int num_gates = 0; // num_gates: Number of gates in the current level.
+  int gates_in_level[MAX_GATES_LEVEL];
+  for (int i = 0; i < ng; i++)
+  {
+    if (gates[i].asap_level == level)
+    {
+      gates_in_level[num_gates++] = i;
+    }
+  }
+  // we can now proceed to map these gates to the crossbar
+  for (int i = 0; i < num_gates; i++)
+  {
+    int gate_index = gates_in_level[i]; // gate_index: Index of the current gate in the gates array
+    if (gates[gate_index].fanin == 1)
+    {
+      // NOT gate
+      printf("Gate %d: NOT gate\n", gates[gate_index].out);
+      // also want to print for the current gate, which gates inputs it to
+      printf("Gate %d inputs from: ", gates[gate_index].out);
+      for (int j = 0; j < gates[gate_index].fanin; j++)
+      {
+        printf("Gate %d ", gates[gate_index].input[j]);
+      }
+      printf("\n");
+    }
+    else
+    {
+      // NOR gate
+      printf("Gate %d: NOR gate\n", gates[gate_index].out);
+      // also want to print for the current gate, which gates inputs it to
+      printf("Gate %d inputs from: ", gates[gate_index].out);
+      for (int j = 0; j < gates[gate_index].fanin; j++)
+      {
+        printf("Gate %d ", gates[gate_index].input[j]);
+      }
+      printf("\n");
+    }
+  }
+  // We will now print the micro-operation summary for the current level in two stages 1-initialisation 2-evaluation
+  // 1-initialisation: for any gate we will check its inputs (the input memristors) and use its stored value (either primary_input_values or gate_values) and set the output memristor to V0
+  printf("Initialisation stage for level %d:\n", level);
+  for (int i = 0; i < num_gates; i++)
+  {
+    int gate_index = gates_in_level[i];
+    printf("Gate %d: ", gates[gate_index].out);
+    for (int j = 0; j < gates[gate_index].fanin; j++)
+    {
+      int input = gates[gate_index].input[j];
+      int input_value;
+      if (input >= 5000)
+      {
+        // Primary input
+        input_value = primary_input_values[input - 5000];
+      }
+      else
+      {
+        // Gate output
+        input_value = gate_values[input];
+      }
+      printf("Input %d: %d ", input, input_value);
+    }
+    printf("Output %d: V0\n", gates[gate_index].out);
+  }
+  // 2-Evaluation phase , now again for each gate in the level we will perform NOR or NOT operation (based on the current gate) on the input values and storte them in output memristors and print the values
+  printf("Evaluation stage for level %d:\n", level);
+  for (int i = 0; i < num_gates; i++)
+  {
+    int gate_index = gates_in_level[i];
+    printf("Gate %d: ", gates[gate_index].out);
+    int output_value;
+    if (gates[gate_index].fanin == 1)
+    {
+      // NOT gate
+      int input = gates[gate_index].input[0];
+      int input_value;
+      if (input >= 5000)
+      {
+        // Primary input
+        input_value = primary_input_values[input - 5000];
+      }
+      else
+      {
+        // Gate output
+        input_value = gate_values[input];
+      }
+      output_value = !input_value;
+      printf("Input %d: %d Output %d: %d\n", input, input_value, gates[gate_index].out, output_value);
+    }
+    else
+    {
+      // NOR gate
+      int input1 = gates[gate_index].input[0];
+      int input2 = gates[gate_index].input[1];
+      int input1_value, input2_value;
+      if (input1 >= 5000)
+      {
+        // Primary input
+        input1_value = primary_input_values[input1 - 5000];
+      }
+      else
+      {
+        // Gate output
+        input1_value = gate_values[input1];
+      }
+      if (input2 >= 5000)
+      {
+        // Primary input
+        input2_value = primary_input_values[input2 - 5000];
+      }
+      else
+      {
+        // Gate output
+        input2_value = gate_values[input2];
+      }
+      output_value = !(input1_value || input2_value);
+      printf("Input %d: %d Input %d: %d Output %d: %d\n", input1, input1_value, input2, input2_value, gates[gate_index].out, output_value);
+    }
+    gate_values[gates[gate_index].out] = output_value;
+  }
+
+  // Summary of the mapping:
+  printf("------------------------------------------------------------\n");
+  printf("For level %d : %d rows x 3 columns\n\n", level, num_gates);
 }
 
 /***********************************************
   Print the final statistics from the schedule
 ***********************************************/
-void print_stat()
-{
+void print_stat() // The print_stat function calculates and prints various statistics about the scheduling methods.
+{                 // maxl: Tracks the maximum level.
   int i, j, maxl, count, maxgates, gates_level;
   int gate_count[MAXLEVEL];
-  int cross_rows[500];
-  int asap_not, asap_nor, alap_not, alap_nor, list_not, list_nor;
+  int cross_rows[500];                                            // Tracks the rows in a crossbar array for the memristors.
+  int asap_not, asap_nor, alap_not, alap_nor, list_not, list_nor; // Counters for NOT and NOR gates in different schedules
   int asap_memr_serial, alap_memr_serial, list_memr_serial;
-  int time_serial, time_parallel;
+  int time_serial, time_parallel; // Time steps required in serial and parallel execution models.
 
   //************* FOR ASAP SCHEDULE ***********
   maxl = 0;
   asap_not = 0;
-  asap_nor = 0;
+  asap_nor = 0; // This block finds the maximum ASAP level (maxl), and counts how many NOT (asap_not) and NOR (asap_nor) gates are present in the ASAP schedule.
   for (i = 0; i < ng; i++)
   {
     if (gates[i].asap_level > maxl)
@@ -99,19 +319,19 @@ void print_stat()
     else
       asap_nor++;
   }
-
-  for (i = 0; i < maxl; i++)
+  // The array gate_count[] stores how many gates exist at each level.
+  for (i = 0; i < maxl; i++) // It is initialized, and then populated based on the asap_level of each gate.
     gate_count[i] = 0;
 
   for (i = 0; i < ng; i++)
     gate_count[gates[i].asap_level - 1]++;
 
-  maxgates = 0;
+  maxgates = 0; // maxgates: keeps track of the maximum number of gates at any level in the ASAP schedule.
   for (i = 0; i < maxl; i++)
     if (gate_count[i] > maxgates)
       maxgates = gate_count[i];
 
-  printf("\nASAP SCHEDULE:");
+  printf("\nASAP SCHEDULE:"); // The code prints the gate distribution across levels, the number of levels, and the maximum number of gates in a level for the ASAP schedule.
   printf("\n=============");
 
   printf("\nGate distribution across levels:\n  ");
@@ -121,37 +341,36 @@ void print_stat()
   printf("\nNumber of levels: %d, MaxGates: %d", maxl, maxgates);
 
   // ** Now count the number of memristors and crossbar columns **
-  for (i = 0; i < maxgates; i++)
-    cross_rows[i] = 0;
-
-  for (i = 1; i <= maxl; i++)
+  for (i = 0; i < maxgates; i++) // Initialize the cross_rows array to track how many crossbar rows are used for memristors at each level. Each entry in cross_rows represents a "row" in the crossbar where memristors are assigned. Initially, all rows are set to 0, meaning no memristor is assigned yet.
+    cross_rows[i] = 0;           // maxgates: is the maximum number of gates at any level, and each gate can take up a certain number of rows in the crossbar based on the gate's fan-in (input size).
+  for (i = 1; i <= maxl; i++)    // Loop through levels. This block assigns memristors to the cross_rows array based on the fan-in of the gates.
   {
-    gates_level = 0;
-    for (j = 0; j < ng; j++)
+    gates_level = 0;         // gates_level: This is a counter that tracks how many gates you are placing at each level.
+    for (j = 0; j < ng; j++) // Loop through all gates
     {
-      if (gates[j].asap_level == i)
+      if (gates[j].asap_level == i) // If gate is at current level
       {
-        if (gates[i].fanin == 1) // NOT -- map to row "gate_count"
-        {
-          if (cross_rows[gates_level] == 2)
-            cross_rows[gates_level] = 3;
+        if (gates[j].fanin == 1)            // If it's a NOT gate (1 input)
+        {                                   // cross_rows[gates_level]: This array tracks how many rows of the crossbar are being used at each level, based on the type of gates.
+          if (cross_rows[gates_level] == 2) // If row is already used by a NOR gate
+            cross_rows[gates_level] = 3;    // Set as 3, meaning both gate types use this row
           else
-            cross_rows[gates_level] = 1;
+            cross_rows[gates_level] = 1; // Set as 1, meaning only a NOT gate uses this row
           gates_level++;
         }
-        if (gates[i].fanin == 2) // NOR -- map to row "gate_count"
+        if (gates[j].fanin == 2) // If it's a NOR gate (2 inputs)
         {
-          if (cross_rows[gates_level] == 1)
-            cross_rows[gates_level] = 3;
+          if (cross_rows[gates_level] == 1) // If row is already used by a NOT gate
+            cross_rows[gates_level] = 3;    // Set as 3, meaning both gate types use this row
           else
-            cross_rows[gates_level] = 2;
+            cross_rows[gates_level] = 2; // Set as 2, meaning only a NOR gate uses this row
           gates_level++;
         }
       }
     }
   }
 
-  asap_memr_serial = 0;
+  asap_memr_serial = 0; //  Counting Total Memristors (Serial Configuration)
   for (i = 0; i < maxgates; i++)
     if (cross_rows[i] == 1)
       asap_memr_serial += 2;
@@ -164,7 +383,7 @@ void print_stat()
   printf("\nTime steps (serial): %d, Time steps (parallel): %d",
          time_serial, time_parallel);
 
-  printf("\nCrossbar size (serial): %d x %d", maxgates, 3);
+  printf("\nCrossbar size (serial): %d x %d", maxgates, 3); // Crossbar Size in Parallel Configuration
   count = 0;
   for (i = 0; i < maxgates; i++)
     if (cross_rows[i] == 1)
@@ -351,7 +570,7 @@ void print_gates()
 {
   int i, j;
 
-  for (i = 0; i < ng; i++)
+  for (i = 0; i < ng; i++) // The loop runs through all the gates (ng is the number of gates). For each gate, it prints its relevant details.
   {
     printf("\n");
     if (gates[i].fanin == 1)
@@ -442,6 +661,49 @@ void parse_gates()
       printf("** Invalid variables on line: %s\n", line);
       exit;
     }
+  }
+}
+
+void find_gate_outputs()
+{
+  for (int i = 0; i < ng; i++)
+  { // Outer loop: iterate over all gates
+    for (int k = 0; k < ng; k++)
+    { // Middle loop: iterate over all gates to find matching outputs
+      if (k == i)
+        continue; // Skip the current outer loop gate
+
+      for (int j = 0; j < gates[k].fanin; j++)
+      { // Inner loop: iterate over inputs of current gate
+        int current_input = gates[k].input[j];
+
+        if (gates[i].out == current_input)
+        { // Check if output matches current input
+          // Store the index of gate `k` as an output of gate `i`
+          gates[i].output_gates[gates[i].output_count++] = gates[k].out;
+        }
+      }
+    }
+  }
+}
+
+void print_gate_outputs()
+{
+  for (int i = 0; i < ng; i++)
+  {
+    printf("Gate %d outputs to: ", gates[i].out);
+    if (gates[i].output_count > 0)
+    {
+      for (int j = 0; j < gates[i].output_count; j++)
+      {
+        printf("Gate %d ", gates[i].output_gates[j]);
+      }
+    }
+    else
+    {
+      printf("No outputs");
+    }
+    printf("\n");
   }
 }
 
