@@ -1,112 +1,93 @@
-
-*** 23 ***
-*** MAXGATES=20****
-Assigning random binary values to primary inputs:
-Primary input 7 assigned value: 0
-Primary input 4 assigned value: 1
-Primary input 2 assigned value: 1
-Primary input 3 assigned value: 1
-Primary input 0 assigned value: 1
-Primary input 8 assigned value: 0
-Primary input 1 assigned value: 0
-Primary input 6 assigned value: 0
-Primary input 5 assigned value: 1
-
-
-
 Naively Mapped Crossbar Configuration
 =====================================
-
-#Level 1  
-   0 False    7     /5007               True
-   0 False    4     /5004               True
-   0 False    8     /5008    1    /5001 True
-   0 False    8     /5008    4    /5004 True
-   0 False    7     /5007    6    /5006 True
-   0 False    8     /5008    7    /5007 True
-   0 False    5     /5005    2    /5002 True
-   0 False    7     /5007    2    /5002 True
-   0 False    5     /5005    1    /5001 True
-   0 False    7     /5007    5    /5005 True
-   0 False    0     /5000               True
-   0 False    3     /5003               True
-   0 False    2     /5002               True
-   0 False    2     /5002    1    /5001 True
-   0 False    5     /5005               True
-   0 False    6     /5006               True
-   0 False    7     /5007    4    /5004 True
-   0 False    1     /5001               True
-   0 False    8     /5008               True
-   0 False    4     /5004    1    /5001 True
-   0 False    5     /5005    4    /5004 True
-   0 False    8     /5008    6    /5006 True
-
-#Level 2  
-   0 False    3     /5003   19     0x19 True
+# Level:  1 ________________________________
+   0 False    7        /h               True
+   0 False    4        /e               True
+   0 False    8        /i    1       /b True
+   0 False    8        /i    4       /e True
+   0 False    7        /h    6       /g True
+   0 False    8        /i    7       /h True
+   0 False    5        /f    2       /c True
+   0 False    7        /h    2       /c True
+   0 False    5        /f    1       /b True
+   0 False    7        /h    5       /f True
+   0 False    0        /a               True
+   0 False    3        /d               True
+   0 False    2        /c               True
+   0 False    2        /c    1       /b True
+   0 False    5        /f               True
+   0 False    6        /g               True
+   0 False    7        /h    4       /e True
+   0 False    1        /b               True
+   0 False    8        /i               True
+   0 False    4        /e    1       /b True
+   0 False    5        /f    4       /e True
+   0 False    8        /i    6       /g True
+# Level:  2 ________________________________
+   0 False    3        /d   19     0x19 True
    0 False   11      0x11               True
    0 False   28      0x28               True
-   0 False    7     /5007   21     0x21 True
-   0 False    8     /5008   23     0x23 True
+   0 False    7        /h   21     0x21 True
+   0 False    8        /i   23     0x23 True
    0 False   23      0x23   26     0x26 True
    0 False   27      0x27    9      0x9 True
-   0 False   20      0x20    0    /5000 True
-   0 False    8     /5008   21     0x21 True
-   0 False   27      0x27    2    /5002 True
-   0 False    8     /5008   24     0x24 True
-   0 False   27      0x27    6    /5006 True
+   0 False   20      0x20    0       /a True
+   0 False    8        /i   21     0x21 True
+   0 False   27      0x27    2       /c True
+   0 False    8        /i   24     0x24 True
+   0 False   27      0x27    6       /g True
    0 False   10      0x10   20     0x20 True
-   0 False   10      0x10    2    /5002 True
+   0 False   10      0x10    2       /c True
    0 False   13      0x13               True
-   0 False    8     /5008    9      0x9 True
+   0 False    8        /i    9      0x9 True
    0 False   22      0x22               True
-   0 False    7     /5007   24     0x24 True
+   0 False    7        /h   24     0x24 True
    0 False   25      0x25               True
-   0 False   24      0x24    2    /5002 True
-   0 False   27      0x27    4    /5004 True
-   0 False    4     /5004   20     0x20 True
+   0 False   24      0x24    2       /c True
+   0 False   27      0x27    4       /e True
+   0 False    4        /e   20     0x20 True
    0 False   16      0x16               True
    0 False   17      0x17               True
-   0 False    7     /5007   23     0x23 True
-   0 False   27      0x27    3    /5003 True
-   0 False    9       0x9    2    /5002 True
+   0 False    7        /h   23     0x23 True
+   0 False   27      0x27    3       /d True
+   0 False    9       0x9    2       /c True
    0 False   15      0x15               True
    0 False   27      0x27   10     0x10 True
-   0 False    8     /5008   10     0x10 True
+   0 False    8        /i   10     0x10 True
    0 False    9       0x9   23     0x23 True
-   0 False   23      0x23    0    /5000 True
-   0 False    3     /5003   26     0x26 True
-   0 False    5     /5005   19     0x19 True
-   0 False    7     /5007   20     0x20 True
+   0 False   23      0x23    0       /a True
+   0 False    3        /d   26     0x26 True
+   0 False    5        /f   19     0x19 True
+   0 False    7        /h   20     0x20 True
    0 False   14      0x14               True
    0 False   10      0x10   21     0x21 True
-   0 False    2     /5002   26     0x26 True
+   0 False    2        /c   26     0x26 True
    0 False   11      0x11   10     0x10 True
-   0 False    6     /5006   21     0x21 True
-   0 False   10      0x10    1    /5001 True
+   0 False    6        /g   21     0x21 True
+   0 False   10      0x10    1       /b True
    0 False   24      0x24   21     0x21 True
-   0 False    9       0x9    1    /5001 True
-   0 False    4     /5004   21     0x21 True
-   0 False    9       0x9    5    /5005 True
-   0 False   25      0x25    8    /5008 True
+   0 False    9       0x9    1       /b True
+   0 False    4        /e   21     0x21 True
+   0 False    9       0x9    5       /f True
+   0 False   25      0x25    8       /i True
    0 False   27      0x27   23     0x23 True
-   0 False   20      0x20    1    /5001 True
+   0 False   20      0x20    1       /b True
    0 False    9       0x9   20     0x20 True
-   0 False   20      0x20    2    /5002 True
-   0 False    8     /5008   20     0x20 True
-   0 False   23      0x23    4    /5004 True
+   0 False   20      0x20    2       /c True
+   0 False    8        /i   20     0x20 True
+   0 False   23      0x23    4       /e True
    0 False   27      0x27   26     0x26 True
    0 False   25      0x25   26     0x26 True
-   0 False   27      0x27    7    /5007 True
-   0 False    9       0x9    6    /5006 True
-   0 False   24      0x24    4    /5004 True
+   0 False   27      0x27    7       /h True
+   0 False    9       0x9    6       /g True
+   0 False   24      0x24    4       /e True
    0 False    9       0x9   10     0x10 True
-   0 False   24      0x24    1    /5001 True
-   0 False    6     /5006   10     0x10 True
+   0 False   24      0x24    1       /b True
+   0 False    6        /g   10     0x10 True
    0 False   30      0x30               True
    0 False   29      0x29               True
-   0 False    5     /5005   26     0x26 True
-
-#Level 3  
+   0 False    5        /f   26     0x26 True
+# Level:  3 ________________________________
    0 False   93      0x93               True
    0 False   83      0x83   11     0x11 True
    0 False   89      0x89   23     0x23 True
@@ -132,15 +113,15 @@ Naively Mapped Crossbar Configuration
    0 False   71      0x71               True
    0 False   68      0x68               True
    0 False   69      0x69               True
-   0 False   66      0x66    5    /5005 True
-   0 False   60      0x60    6    /5006 True
+   0 False   66      0x66    5       /f True
+   0 False   60      0x60    6       /g True
    0 False   51      0x51   40     0x40 True
    0 False   67      0x67               True
    0 False   61      0x61               True
    0 False   60      0x60    9      0x9 True
    0 False   63      0x63   78     0x78 True
    0 False   58      0x58   46     0x46 True
-   0 False   40      0x40    6    /5006 True
+   0 False   40      0x40    6       /g True
    0 False   55      0x55               True
    0 False   59      0x59               True
    0 False   73      0x73   80     0x80 True
@@ -152,7 +133,7 @@ Naively Mapped Crossbar Configuration
    0 False   38      0x38               True
    0 False   46      0x46               True
    0 False   37      0x37               True
-   0 False   45      0x45    4    /5004 True
+   0 False   45      0x45    4       /e True
    0 False   39      0x39   40     0x40 True
    0 False   37      0x37   25     0x25 True
    0 False   31      0x31               True
@@ -162,7 +143,7 @@ Naively Mapped Crossbar Configuration
    0 False   35      0x35   51     0x51 True
    0 False   16      0x16   39     0x39 True
    0 False   36      0x36               True
-   0 False   70      0x70    1    /5001 True
+   0 False   70      0x70    1       /b True
    0 False   44      0x44               True
    0 False   48      0x48               True
    0 False   43      0x43               True
@@ -173,34 +154,33 @@ Naively Mapped Crossbar Configuration
    0 False   52      0x52               True
    0 False   56      0x56               True
    0 False   80      0x80   32     0x32 True
-   0 False   41      0x41    4    /5004 True
+   0 False   41      0x41    4       /e True
    0 False   85      0x85   46     0x46 True
    0 False   25      0x25   88     0x88 True
    0 False   91      0x91   10     0x10 True
    0 False   86      0x86               True
-
-#Level 4  
-   0 False  103     0x103    1    /5001 True
+# Level:  4 ________________________________
+   0 False  103     0x103    1       /b True
    0 False  162     0x162               True
    0 False  118     0x118   68     0x68 True
    0 False  159     0x159               True
    0 False  100     0x100   91     0x91 True
    0 False  160     0x160               True
    0 False  115     0x115  138    0x138 True
-   0 False  162     0x162    6    /5006 True
-   0 False  114     0x114    7    /5007 True
+   0 False  162     0x162    6       /g True
+   0 False  114     0x114    7       /h True
    0 False   79      0x79   98     0x98 True
    0 False  107     0x107               True
-   0 False  164     0x164    4    /5004 True
+   0 False  164     0x164    4       /e True
    0 False  109     0x109  111    0x111 True
    0 False  133     0x133               True
    0 False  156     0x156   88     0x88 True
-   0 False  124     0x124    1    /5001 True
-   0 False  137     0x137    2    /5002 True
+   0 False  124     0x124    1       /b True
+   0 False  137     0x137    2       /c True
    0 False  120     0x120               True
    0 False   54      0x54  138    0x138 True
    0 False  121     0x121               True
-   0 False  114     0x114    0    /5000 True
+   0 False  114     0x114    0       /a True
    0 False   98      0x98               True
    0 False  136     0x136  103    0x103 True
    0 False  124     0x124               True
@@ -208,33 +188,33 @@ Naively Mapped Crossbar Configuration
    0 False   96      0x96  133    0x133 True
    0 False  106     0x106   10     0x10 True
    0 False  152     0x152  164    0x164 True
-   0 False  108     0x108    1    /5001 True
+   0 False  108     0x108    1       /b True
    0 False  155     0x155   30     0x30 True
-   0 False  122     0x122    1    /5001 True
+   0 False  122     0x122    1       /b True
    0 False  141     0x141               True
-   0 False  123     0x123    6    /5006 True
+   0 False  123     0x123    6       /g True
    0 False  128     0x128  127    0x127 True
-   0 False  151     0x151    8    /5008 True
-   0 False  164     0x164    5    /5005 True
+   0 False  151     0x151    8       /i True
+   0 False  164     0x164    5       /f True
    0 False   45      0x45  122    0x122 True
-   0 False  110     0x110    6    /5006 True
+   0 False  110     0x110    6       /g True
    0 False   92      0x92  138    0x138 True
-   0 False  138     0x138    6    /5006 True
+   0 False  138     0x138    6       /g True
    0 False   86      0x86  150    0x150 True
    0 False  129     0x129   23     0x23 True
    0 False   94      0x94   88     0x88 True
    0 False  153     0x153  109    0x109 True
    0 False  105     0x105  114    0x114 True
-   0 False  153     0x153    6    /5006 True
+   0 False  153     0x153    6       /g True
    0 False   58      0x58  111    0x111 True
    0 False  113     0x113               True
    0 False  144     0x144   32     0x32 True
    0 False  101     0x101               True
    0 False  140     0x140   24     0x24 True
    0 False  106     0x106   26     0x26 True
-   0 False  137     0x137    6    /5006 True
+   0 False  137     0x137    6       /g True
    0 False  148     0x148  161    0x161 True
-   0 False  131     0x131    7    /5007 True
+   0 False  131     0x131    7       /h True
    0 False  151     0x151  150    0x150 True
    0 False   73      0x73   99     0x99 True
    0 False  134     0x134   57     0x57 True
@@ -247,8 +227,7 @@ Naively Mapped Crossbar Configuration
    0 False  140     0x140               True
    0 False  102     0x102  111    0x111 True
    0 False  112     0x112               True
-
-#Level 5  
+# Level:  5 ________________________________
    0 False  222     0x222               True
    0 False   41      0x41  229    0x229 True
    0 False  227     0x227               True
@@ -281,7 +260,7 @@ Naively Mapped Crossbar Configuration
    0 False  197     0x197   14     0x14 True
    0 False  189     0x189  192    0x192 True
    0 False  187     0x187               True
-   0 False  229     0x229    4    /5004 True
+   0 False  229     0x229    4       /e True
    0 False  184     0x184  188    0x188 True
    0 False  185     0x185               True
    0 False  196     0x196  117    0x117 True
@@ -289,7 +268,7 @@ Naively Mapped Crossbar Configuration
    0 False  155     0x155  186    0x186 True
    0 False  172     0x172               True
    0 False  181     0x181    9      0x9 True
-   0 False  179     0x179    6    /5006 True
+   0 False  179     0x179    6       /g True
    0 False  176     0x176  174    0x174 True
    0 False  178     0x178   20     0x20 True
    0 False  175     0x175  101    0x101 True
@@ -302,8 +281,7 @@ Naively Mapped Crossbar Configuration
    0 False  231     0x231  163    0x163 True
    0 False  167     0x167               True
    0 False  228     0x228               True
-
-#Level 6  
+# Level:  6 ________________________________
    0 False  283     0x283  145    0x145 True
    0 False  282     0x282    9      0x9 True
    0 False  280     0x280   10     0x10 True
@@ -314,8 +292,8 @@ Naively Mapped Crossbar Configuration
    0 False  277     0x277               True
    0 False  276     0x276   23     0x23 True
    0 False  267     0x267  180    0x180 True
-   0 False  273     0x273    8    /5008 True
-   0 False  270     0x270    2    /5002 True
+   0 False  273     0x273    8       /i True
+   0 False  270     0x270    2       /c True
    0 False  116     0x116  271    0x271 True
    0 False  269     0x269               True
    0 False  232     0x232   26     0x26 True
@@ -329,7 +307,7 @@ Naively Mapped Crossbar Configuration
    0 False  245     0x245  249    0x249 True
    0 False  244     0x244  126    0x126 True
    0 False  266     0x266  138    0x138 True
-   0 False  264     0x264    7    /5007 True
+   0 False  264     0x264    7       /h True
    0 False  240     0x240               True
    0 False  241     0x241  149    0x149 True
    0 False  263     0x263   47     0x47 True
@@ -349,11 +327,10 @@ Naively Mapped Crossbar Configuration
    0 False  243     0x243               True
    0 False  251     0x251   77     0x77 True
    0 False  246     0x246   23     0x23 True
-   0 False  257     0x257    2    /5002 True
+   0 False  257     0x257    2       /c True
    0 False  239     0x239               True
-
-#Level 7  
-   0 False  329     0x329    1    /5001 True
+# Level:  7 ________________________________
+   0 False  329     0x329    1       /b True
    0 False  327     0x327  250    0x250 True
    0 False  330     0x330               True
    0 False  219     0x219  325    0x325 True
@@ -379,13 +356,12 @@ Naively Mapped Crossbar Configuration
    0 False  298     0x298  305    0x305 True
    0 False  328     0x328  326    0x326 True
    0 False  304     0x304  223    0x223 True
-
-#Level 8  
+# Level:  8 ________________________________
    0 False  357     0x357   24     0x24 True
    0 False  157     0x157  339    0x339 True
    0 False  285     0x285  350    0x350 True
    0 False  242     0x242  346    0x346 True
-   0 False  337     0x337    4    /5004 True
+   0 False  337     0x337    4       /e True
    0 False  132     0x132  347    0x347 True
    0 False  334     0x334  279    0x279 True
    0 False  335     0x335   21     0x21 True
@@ -394,9 +370,9 @@ Naively Mapped Crossbar Configuration
    0 False  338     0x338               True
    0 False  340     0x340   24     0x24 True
    0 False  344     0x344  293    0x293 True
-   0 False  353     0x353    4    /5004 True
+   0 False  353     0x353    4       /e True
    0 False  307     0x307  333    0x333 True
-   0 False  341     0x341    4    /5004 True
+   0 False  341     0x341    4       /e True
    0 False  336     0x336   10     0x10 True
    0 False  342     0x342               True
    0 False  351     0x351  324    0x324 True
@@ -404,17 +380,16 @@ Naively Mapped Crossbar Configuration
    0 False  349     0x349               True
    0 False  352     0x352               True
    0 False  348     0x348   21     0x21 True
-   0 False  354     0x354    1    /5001 True
+   0 False  354     0x354    1       /b True
    0 False  355     0x355  296    0x296 True
-
-#Level 9  
+# Level:  9 ________________________________
    0 False  382     0x382  125    0x125 True
    0 False  360     0x360               True
    0 False  362     0x362  287    0x287 True
    0 False  379     0x379  322    0x322 True
    0 False  375     0x375  301    0x301 True
    0 False  376     0x376   21     0x21 True
-   0 False  366     0x366    4    /5004 True
+   0 False  366     0x366    4       /e True
    0 False  372     0x372               True
    0 False  343     0x343  374    0x374 True
    0 False  321     0x321  365    0x365 True
@@ -424,97 +399,83 @@ Naively Mapped Crossbar Configuration
    0 False  313     0x313  373    0x373 True
    0 False  275     0x275  371    0x371 True
    0 False  368     0x368  369    0x369 True
-
-#Level 10 
-   0 False  398     0x398    5    /5005 True
+# Level: 10 ________________________________
+   0 False  398     0x398    5       /f True
    0 False  303     0x303  383    0x383 True
    0 False  386     0x386   21     0x21 True
    0 False  396     0x396   24     0x24 True
    0 False  158     0x158  392    0x392 True
-   0 False  397     0x397    2    /5002 True
+   0 False  397     0x397    2       /c True
    0 False  385     0x385   26     0x26 True
    0 False  378     0x378  394    0x394 True
    0 False  393     0x393  358    0x358 True
    0 False  367     0x367  388    0x388 True
-   0 False  391     0x391    3    /5003 True
-   0 False  395     0x395    3    /5003 True
-
-#Level 11 
+   0 False  391     0x391    3       /d True
+   0 False  395     0x395    3       /d True
+# Level: 11 ________________________________
    0 False  387     0x387  410    0x410 True
    0 False  381     0x381  405    0x405 True
    0 False  359     0x359  409    0x409 True
    0 False  400     0x400               True
-   0 False  406     0x406    6    /5006 True
+   0 False  406     0x406    6       /g True
    0 False  361     0x361  402    0x402 True
-   0 False  407     0x407    2    /5002 True
+   0 False  407     0x407    2       /c True
    0 False  377     0x377  399    0x399 True
    0 False  380     0x380  404    0x404 True
    0 False  401     0x401               True
    0 False  408     0x408   26     0x26 True
-
-#Level 12 
+# Level: 12 ________________________________
    0 False  416     0x416               True
    0 False  419     0x419   26     0x26 True
    0 False  420     0x420  389    0x389 True
    0 False  413     0x413  135    0x135 True
-   0 False  412     0x412    3    /5003 True
+   0 False  412     0x412    3       /d True
    0 False  319     0x319  417    0x417 True
-   0 False  411     0x411    1    /5001 True
+   0 False  411     0x411    1       /b True
    0 False  384     0x384  415    0x415 True
    0 False  302     0x302  421    0x421 True
-   0 False  418     0x418    1    /5001 True
-
-#Level 13 
+   0 False  418     0x418    1       /b True
+# Level: 13 ________________________________
    0 False  320     0x320  426    0x426 True
    0 False  430     0x430               True
    0 False  422     0x422  403    0x403 True
    0 False  429     0x429   20     0x20 True
    0 False  427     0x427               True
    0 False  414     0x414  428    0x428 True
-
-#Level 14 
+# Level: 14 ________________________________
    0 False  432     0x432               True
    0 False  434     0x434               True
    0 False  437     0x437               True
    0 False  433     0x433  431    0x431 True
    0 False  436     0x436  424    0x424 True
-
-#Level 15 
+# Level: 15 ________________________________
    0 False  438     0x438  435    0x435 True
-   0 False  442     0x442    3    /5003 True
+   0 False  442     0x442    3       /d True
    0 False  440     0x440  423    0x423 True
    0 False  439     0x439  425    0x425 True
    0 False  441     0x441   20     0x20 True
-
-#Level 16 
+# Level: 16 ________________________________
    0 False  446     0x446               True
    0 False  445     0x445   23     0x23 True
-   0 False  443     0x443    5    /5005 True
+   0 False  443     0x443    5       /f True
    0 False  390     0x390  444    0x444 True
-
-#Level 17 
+# Level: 17 ________________________________
    0 False  451     0x451               True
    0 False  314     0x314  449    0x449 True
-
-#Level 18 
+# Level: 18 ________________________________
    0 False  453     0x453               True
    0 False  452     0x452  447    0x447 True
-
-#Level 19 
+# Level: 19 ________________________________
    0 False  454     0x454  450    0x450 True
-   0 False  455     0x455    0    /5000 True
-
-#Level 20 
+   0 False  455     0x455    0       /a True
+# Level: 20 ________________________________
    0 False  456     0x456   19     0x19 True
    0 False  448     0x448  457    0x457 True
-
-#Level 21 
+# Level: 21 ________________________________
    0 False  459     0x459               True
-
-#Level 22 
+# Level: 22 ________________________________
    0 False  460     0x460  458    0x458 True
-
-#Level 23 
+# Level: 23 ________________________________
    0 False  461     0x461               True
 
 Metrics

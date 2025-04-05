@@ -132,7 +132,7 @@ int main(int argc, char *argv[])
 	for (int i = 0; i < MAXGATES; i++)
 		gate_values[i] = -1;
 
-	printf("\n\n");
+	// printf("\n\n");
 	// For each level, perform the two-stage crossbar mapping.
 	// for (int level = 1; level <= max_asap; level++)
 	// 	map_level_to_crossbar(level);
@@ -173,7 +173,7 @@ void naive_map()
 		crossbar[0][max_jdx].fanin = gates[i].fanin;
 		crossbar[0][max_jdx].value = gates[i].out;
 		crossbar[0][max_jdx].jdx = max_jdx;
-		crossbar[0][max_idx].idx = max_idx;
+		crossbar[0][max_jdx].idx = max_idx;
 		crossbar[0][max_jdx].asap_level = gates[i].asap_level;
 		gates[i].gate_map = &crossbar[0][max_jdx];
 
@@ -191,8 +191,8 @@ void naive_map()
 			crossbar[0][max_jdx].input[1] = gates[inv_map[ip2]].gate_map;
 	}
 
-	printf("\nNaively Mapped Crossbar Configuration");
-	printf("\n=====================================");
+	printf("Naively Mapped Crossbar Configuration\n");
+	printf("=====================================\n");
 	show_crossbar();
 }
 void compact_map()
@@ -202,13 +202,23 @@ void compact_map()
 void init_crossbar()
 {
 	for (int i = 0; i < MAXROW; i++)
+	{
 		for (int j = 0; j < MAXCOL; j++)
+		{
 			crossbar[i][j].value = -1;
+			crossbar[i][j].idx = -1;
+			crossbar[i][j].jdx = -1;
+			crossbar[i][j].asap_level = -1;
+			crossbar[i][j].fanin = 0;
+		}
+	}
+
+	for (int i = 0; i < ng; i++)
+		gates[i].gate_map = NULL;
 }
 
 void show_crossbar()
 {
-	printf("\n");
 	int curr_level = 0;
 	char buffer[20];
 	for (int i = 0; i <= max_idx; i++)
@@ -220,7 +230,7 @@ void show_crossbar()
 			if (crossbar[i][j].asap_level > curr_level)
 			{
 				curr_level = crossbar[i][j].asap_level;
-				printf("\n#Level %-3d\n", curr_level);
+				printf("# Level: %2d ________________________________\n", curr_level);
 			}
 
 			printf("%4d %5s ", 0, "False");
@@ -229,7 +239,7 @@ void show_crossbar()
 
 			printf("%4d ", ip1->jdx);
 			if (ip1->value >= MAXGATES)
-				sprintf(buffer, "/%d", ip1->value);
+				sprintf(buffer, "/%c", 'a'+ip1->value-MAXGATES);
 			else
 				sprintf(buffer, "%dx%d", ip1->idx, ip1->jdx);
 			printf("%9s ", buffer);
@@ -238,7 +248,7 @@ void show_crossbar()
 			{
 				printf("%4d", ip2->jdx);
 				if (ip2->value >= MAXGATES)
-					sprintf(buffer, "/%d", ip2->value);
+					sprintf(buffer, "/%c", 'a'+ip2->value-MAXGATES);
 				else
 					sprintf(buffer, "%dx%d", ip2->idx, ip2->jdx);
 				printf("%9s ", buffer);
@@ -270,12 +280,13 @@ void assign_random_binary_values()
 {
 	srand(time(NULL)); // Seed the random number generator with the current time
 
-	printf("Assigning random binary values to primary inputs:\n");
+	// printf("Assigning random binary values to primary inputs:\n");
 	for (int i = 0; i < num_primary; i++)
 	{
 		int random_value = rand() % 2;			// Generate a random binary value (0 or 1)
 		primary_input_values[i] = random_value; // Store the value in the array
-		printf("Primary input %d assigned value: %d\n", primary_inputs[i] - MAXGATES, random_value);
+
+		// printf("Primary input %d assigned value: %d\n", primary_inputs[i] - MAXGATES, random_value);
 	}
 }
 
@@ -1077,7 +1088,7 @@ void compute_alap_level()
 	for (i = 0; i < ng; i++)
 		if (gates[i].alap_level > maxl)
 			maxl = gates[i].alap_level;
-	printf("\n*** %d ***", maxl);
+	// printf("\n*** %d ***", maxl);
 	for (i = 0; i < ng; i++)
 		gates[i].alap_level = maxl - gates[i].alap_level + 1;
 }
@@ -1153,7 +1164,7 @@ void compute_list_level()
 		if (list_schedule_possible(maxl, maxgates))
 			break;
 	}
-	printf("\n*** MAXGATES=%d****\n", maxgates);
+	// printf("\n*** MAXGATES=%d****\n", maxgates);
 }
 
 /**********************************************************
