@@ -1,49 +1,1010 @@
-_______ Dependency List _______
-  6: 
-  7:   6
-  8: 
-  9:   8
- 10:   9,   7
- 11: 
- 12: 
- 13:  12
- 14: 
- 15:  14
- 16:  15,  13
- 17:  16,  11
- 18:  16
- 19:  18
- 20:  19,  17
- 21:  20
- 22:  21,  10
- 23:  10
- 24:  20,  23
- 25:  24,  22
 
-Base Node: 25
-
-__________ Node Details __________
-id:  25, sub:  45, indeg:  0
-id:  24, sub:  22, indeg:  1
-id:  22, sub:  22, indeg:  1
-id:  20, sub:  15, indeg:  2
-id:  23, sub:   6, indeg:  1
-id:  21, sub:  16, indeg:  1
-id:  10, sub:   5, indeg:  2
-id:  19, sub:   7, indeg:  1
-id:  17, sub:   7, indeg:  1
-id:   9, sub:   2, indeg:  1
-id:   7, sub:   2, indeg:  1
-id:  18, sub:   6, indeg:  1
-id:  16, sub:   5, indeg:  2
-id:  11, sub:   1, indeg:  1
-id:   8, sub:   1, indeg:  1
-id:   6, sub:   1, indeg:  1
-id:  15, sub:   2, indeg:  1
-id:  13, sub:   2, indeg:  1
-id:  14, sub:   1, indeg:  1
-id:  12, sub:   1, indeg:  1
+*** 23 ***
+*** MAXGATES=20****
+Assigning random binary values to primary inputs:
+Primary input 7 assigned value: 0
+Primary input 4 assigned value: 1
+Primary input 2 assigned value: 1
+Primary input 3 assigned value: 1
+Primary input 0 assigned value: 1
+Primary input 8 assigned value: 0
+Primary input 1 assigned value: 0
+Primary input 6 assigned value: 0
+Primary input 5 assigned value: 1
 
 
-________ Optimisable Nodes ________
-16 11 10 
+
+Naively Mapped Crossbar Configuration
+=====================================
+
+#Level 1  
+   0 False    7     /5007               True
+   0 False    4     /5004               True
+   0 False    8     /5008    1    /5001 True
+   0 False    8     /5008    4    /5004 True
+   0 False    7     /5007    6    /5006 True
+   0 False    8     /5008    7    /5007 True
+   0 False    5     /5005    2    /5002 True
+   0 False    7     /5007    2    /5002 True
+   0 False    5     /5005    1    /5001 True
+   0 False    7     /5007    5    /5005 True
+   0 False    0     /5000               True
+   0 False    3     /5003               True
+   0 False    2     /5002               True
+   0 False    2     /5002    1    /5001 True
+   0 False    5     /5005               True
+   0 False    6     /5006               True
+   0 False    7     /5007    4    /5004 True
+   0 False    1     /5001               True
+   0 False    8     /5008               True
+   0 False    4     /5004    1    /5001 True
+   0 False    5     /5005    4    /5004 True
+   0 False    8     /5008    6    /5006 True
+
+#Level 2  
+   0 False    3     /5003   19     0x19 True
+   0 False   11      0x11               True
+   0 False   28      0x28               True
+   0 False    7     /5007   21     0x21 True
+   0 False    8     /5008   23     0x23 True
+   0 False   23      0x23   26     0x26 True
+   0 False   27      0x27    9      0x9 True
+   0 False   20      0x20    0    /5000 True
+   0 False    8     /5008   21     0x21 True
+   0 False   27      0x27    2    /5002 True
+   0 False    8     /5008   24     0x24 True
+   0 False   27      0x27    6    /5006 True
+   0 False   10      0x10   20     0x20 True
+   0 False   10      0x10    2    /5002 True
+   0 False   13      0x13               True
+   0 False    8     /5008    9      0x9 True
+   0 False   22      0x22               True
+   0 False    7     /5007   24     0x24 True
+   0 False   25      0x25               True
+   0 False   24      0x24    2    /5002 True
+   0 False   27      0x27    4    /5004 True
+   0 False    4     /5004   20     0x20 True
+   0 False   16      0x16               True
+   0 False   17      0x17               True
+   0 False    7     /5007   23     0x23 True
+   0 False   27      0x27    3    /5003 True
+   0 False    9       0x9    2    /5002 True
+   0 False   15      0x15               True
+   0 False   27      0x27   10     0x10 True
+   0 False    8     /5008   10     0x10 True
+   0 False    9       0x9   23     0x23 True
+   0 False   23      0x23    0    /5000 True
+   0 False    3     /5003   26     0x26 True
+   0 False    5     /5005   19     0x19 True
+   0 False    7     /5007   20     0x20 True
+   0 False   14      0x14               True
+   0 False   10      0x10   21     0x21 True
+   0 False    2     /5002   26     0x26 True
+   0 False   11      0x11   10     0x10 True
+   0 False    6     /5006   21     0x21 True
+   0 False   10      0x10    1    /5001 True
+   0 False   24      0x24   21     0x21 True
+   0 False    9       0x9    1    /5001 True
+   0 False    4     /5004   21     0x21 True
+   0 False    9       0x9    5    /5005 True
+   0 False   25      0x25    8    /5008 True
+   0 False   27      0x27   23     0x23 True
+   0 False   20      0x20    1    /5001 True
+   0 False    9       0x9   20     0x20 True
+   0 False   20      0x20    2    /5002 True
+   0 False    8     /5008   20     0x20 True
+   0 False   23      0x23    4    /5004 True
+   0 False   27      0x27   26     0x26 True
+   0 False   25      0x25   26     0x26 True
+   0 False   27      0x27    7    /5007 True
+   0 False    9       0x9    6    /5006 True
+   0 False   24      0x24    4    /5004 True
+   0 False    9       0x9   10     0x10 True
+   0 False   24      0x24    1    /5001 True
+   0 False    6     /5006   10     0x10 True
+   0 False   30      0x30               True
+   0 False   29      0x29               True
+   0 False    5     /5005   26     0x26 True
+
+#Level 3  
+   0 False   93      0x93               True
+   0 False   83      0x83   11     0x11 True
+   0 False   89      0x89   23     0x23 True
+   0 False   70      0x70    9      0x9 True
+   0 False   87      0x87   90     0x90 True
+   0 False   40      0x40               True
+   0 False   84      0x84               True
+   0 False   13      0x13   41     0x41 True
+   0 False   82      0x82               True
+   0 False   88      0x88               True
+   0 False   86      0x86   23     0x23 True
+   0 False   37      0x37   21     0x21 True
+   0 False   80      0x80               True
+   0 False   81      0x81   10     0x10 True
+   0 False   75      0x75               True
+   0 False   74      0x74               True
+   0 False   83      0x83   18     0x18 True
+   0 False   42      0x42               True
+   0 False   72      0x72   40     0x40 True
+   0 False   78      0x78   57     0x57 True
+   0 False   90      0x90               True
+   0 False   70      0x70               True
+   0 False   71      0x71               True
+   0 False   68      0x68               True
+   0 False   69      0x69               True
+   0 False   66      0x66    5    /5005 True
+   0 False   60      0x60    6    /5006 True
+   0 False   51      0x51   40     0x40 True
+   0 False   67      0x67               True
+   0 False   61      0x61               True
+   0 False   60      0x60    9      0x9 True
+   0 False   63      0x63   78     0x78 True
+   0 False   58      0x58   46     0x46 True
+   0 False   40      0x40    6    /5006 True
+   0 False   55      0x55               True
+   0 False   59      0x59               True
+   0 False   73      0x73   80     0x80 True
+   0 False   89      0x89   90     0x90 True
+   0 False   47      0x47   49     0x49 True
+   0 False   42      0x42   41     0x41 True
+   0 False   44      0x44   46     0x46 True
+   0 False   64      0x64   62     0x62 True
+   0 False   38      0x38               True
+   0 False   46      0x46               True
+   0 False   37      0x37               True
+   0 False   45      0x45    4    /5004 True
+   0 False   39      0x39   40     0x40 True
+   0 False   37      0x37   25     0x25 True
+   0 False   31      0x31               True
+   0 False   92      0x92   30     0x30 True
+   0 False   34      0x34               True
+   0 False   14      0x14   57     0x57 True
+   0 False   35      0x35   51     0x51 True
+   0 False   16      0x16   39     0x39 True
+   0 False   36      0x36               True
+   0 False   70      0x70    1    /5001 True
+   0 False   44      0x44               True
+   0 False   48      0x48               True
+   0 False   43      0x43               True
+   0 False   85      0x85               True
+   0 False   50      0x50               True
+   0 False   14      0x14   37     0x37 True
+   0 False   53      0x53   59     0x59 True
+   0 False   52      0x52               True
+   0 False   56      0x56               True
+   0 False   80      0x80   32     0x32 True
+   0 False   41      0x41    4    /5004 True
+   0 False   85      0x85   46     0x46 True
+   0 False   25      0x25   88     0x88 True
+   0 False   91      0x91   10     0x10 True
+   0 False   86      0x86               True
+
+#Level 4  
+   0 False  103     0x103    1    /5001 True
+   0 False  162     0x162               True
+   0 False  118     0x118   68     0x68 True
+   0 False  159     0x159               True
+   0 False  100     0x100   91     0x91 True
+   0 False  160     0x160               True
+   0 False  115     0x115  138    0x138 True
+   0 False  162     0x162    6    /5006 True
+   0 False  114     0x114    7    /5007 True
+   0 False   79      0x79   98     0x98 True
+   0 False  107     0x107               True
+   0 False  164     0x164    4    /5004 True
+   0 False  109     0x109  111    0x111 True
+   0 False  133     0x133               True
+   0 False  156     0x156   88     0x88 True
+   0 False  124     0x124    1    /5001 True
+   0 False  137     0x137    2    /5002 True
+   0 False  120     0x120               True
+   0 False   54      0x54  138    0x138 True
+   0 False  121     0x121               True
+   0 False  114     0x114    0    /5000 True
+   0 False   98      0x98               True
+   0 False  136     0x136  103    0x103 True
+   0 False  124     0x124               True
+   0 False  154     0x154   25     0x25 True
+   0 False   96      0x96  133    0x133 True
+   0 False  106     0x106   10     0x10 True
+   0 False  152     0x152  164    0x164 True
+   0 False  108     0x108    1    /5001 True
+   0 False  155     0x155   30     0x30 True
+   0 False  122     0x122    1    /5001 True
+   0 False  141     0x141               True
+   0 False  123     0x123    6    /5006 True
+   0 False  128     0x128  127    0x127 True
+   0 False  151     0x151    8    /5008 True
+   0 False  164     0x164    5    /5005 True
+   0 False   45      0x45  122    0x122 True
+   0 False  110     0x110    6    /5006 True
+   0 False   92      0x92  138    0x138 True
+   0 False  138     0x138    6    /5006 True
+   0 False   86      0x86  150    0x150 True
+   0 False  129     0x129   23     0x23 True
+   0 False   94      0x94   88     0x88 True
+   0 False  153     0x153  109    0x109 True
+   0 False  105     0x105  114    0x114 True
+   0 False  153     0x153    6    /5006 True
+   0 False   58      0x58  111    0x111 True
+   0 False  113     0x113               True
+   0 False  144     0x144   32     0x32 True
+   0 False  101     0x101               True
+   0 False  140     0x140   24     0x24 True
+   0 False  106     0x106   26     0x26 True
+   0 False  137     0x137    6    /5006 True
+   0 False  148     0x148  161    0x161 True
+   0 False  131     0x131    7    /5007 True
+   0 False  151     0x151  150    0x150 True
+   0 False   73      0x73   99     0x99 True
+   0 False  134     0x134   57     0x57 True
+   0 False  146     0x146   26     0x26 True
+   0 False   33      0x33  123    0x123 True
+   0 False  138     0x138   21     0x21 True
+   0 False  108     0x108   10     0x10 True
+   0 False  136     0x136  137    0x137 True
+   0 False  142     0x142  144    0x144 True
+   0 False  140     0x140               True
+   0 False  102     0x102  111    0x111 True
+   0 False  112     0x112               True
+
+#Level 5  
+   0 False  222     0x222               True
+   0 False   41      0x41  229    0x229 True
+   0 False  227     0x227               True
+   0 False  230     0x230  226    0x226 True
+   0 False  224     0x224  220    0x220 True
+   0 False  221     0x221               True
+   0 False  119     0x119  218    0x218 True
+   0 False  225     0x225   20     0x20 True
+   0 False   33      0x33  214    0x214 True
+   0 False  215     0x215    9      0x9 True
+   0 False  216     0x216               True
+   0 False  212     0x212  130    0x130 True
+   0 False  209     0x209               True
+   0 False  211     0x211   39     0x39 True
+   0 False  210     0x210   41     0x41 True
+   0 False  166     0x166   21     0x21 True
+   0 False  190     0x190               True
+   0 False  165     0x165               True
+   0 False  206     0x206  143    0x143 True
+   0 False  205     0x205               True
+   0 False  191     0x191               True
+   0 False  203     0x203  201    0x201 True
+   0 False  207     0x207               True
+   0 False  200     0x200  199    0x199 True
+   0 False  204     0x204               True
+   0 False  196     0x196   24     0x24 True
+   0 False  195     0x195               True
+   0 False  194     0x194   72     0x72 True
+   0 False  193     0x193               True
+   0 False  197     0x197   14     0x14 True
+   0 False  189     0x189  192    0x192 True
+   0 False  187     0x187               True
+   0 False  229     0x229    4    /5004 True
+   0 False  184     0x184  188    0x188 True
+   0 False  185     0x185               True
+   0 False  196     0x196  117    0x117 True
+   0 False  183     0x183   10     0x10 True
+   0 False  155     0x155  186    0x186 True
+   0 False  172     0x172               True
+   0 False  181     0x181    9      0x9 True
+   0 False  179     0x179    6    /5006 True
+   0 False  176     0x176  174    0x174 True
+   0 False  178     0x178   20     0x20 True
+   0 False  175     0x175  101    0x101 True
+   0 False  169     0x169  165    0x165 True
+   0 False  173     0x173   37     0x37 True
+   0 False   76      0x76  172    0x172 True
+   0 False  170     0x170  155    0x155 True
+   0 False  171     0x171   27     0x27 True
+   0 False   17      0x17  166    0x166 True
+   0 False  231     0x231  163    0x163 True
+   0 False  167     0x167               True
+   0 False  228     0x228               True
+
+#Level 6  
+   0 False  283     0x283  145    0x145 True
+   0 False  282     0x282    9      0x9 True
+   0 False  280     0x280   10     0x10 True
+   0 False  268     0x268               True
+   0 False  281     0x281               True
+   0 False  278     0x278   21     0x21 True
+   0 False  274     0x274   13     0x13 True
+   0 False  277     0x277               True
+   0 False  276     0x276   23     0x23 True
+   0 False  267     0x267  180    0x180 True
+   0 False  273     0x273    8    /5008 True
+   0 False  270     0x270    2    /5002 True
+   0 False  116     0x116  271    0x271 True
+   0 False  269     0x269               True
+   0 False  232     0x232   26     0x26 True
+   0 False  261     0x261   26     0x26 True
+   0 False  259     0x259   10     0x10 True
+   0 False  253     0x253               True
+   0 False  252     0x252   66     0x66 True
+   0 False  260     0x260   12     0x12 True
+   0 False  247     0x247               True
+   0 False  247     0x247   57     0x57 True
+   0 False  245     0x245  249    0x249 True
+   0 False  244     0x244  126    0x126 True
+   0 False  266     0x266  138    0x138 True
+   0 False  264     0x264    7    /5007 True
+   0 False  240     0x240               True
+   0 False  241     0x241  149    0x149 True
+   0 False  263     0x263   47     0x47 True
+   0 False  168     0x168  262    0x262 True
+   0 False  182     0x182  232    0x232 True
+   0 False  234     0x234  117    0x117 True
+   0 False  284     0x284   95     0x95 True
+   0 False  233     0x233               True
+   0 False  235     0x235   26     0x26 True
+   0 False  258     0x258  256    0x256 True
+   0 False  236     0x236               True
+   0 False  238     0x238   24     0x24 True
+   0 False  237     0x237   48     0x48 True
+   0 False  255     0x255   10     0x10 True
+   0 False  254     0x254  186    0x186 True
+   0 False  102     0x102  256    0x256 True
+   0 False  243     0x243               True
+   0 False  251     0x251   77     0x77 True
+   0 False  246     0x246   23     0x23 True
+   0 False  257     0x257    2    /5002 True
+   0 False  239     0x239               True
+
+#Level 7  
+   0 False  329     0x329    1    /5001 True
+   0 False  327     0x327  250    0x250 True
+   0 False  330     0x330               True
+   0 False  219     0x219  325    0x325 True
+   0 False  213     0x213  323    0x323 True
+   0 False  318     0x318   97     0x97 True
+   0 False  315     0x315  208    0x208 True
+   0 False  312     0x312   73     0x73 True
+   0 False  265     0x265  310    0x310 True
+   0 False  316     0x316  317    0x317 True
+   0 False  331     0x331  272    0x272 True
+   0 False  311     0x311  147    0x147 True
+   0 False  248     0x248  289    0x289 True
+   0 False  198     0x198  308    0x308 True
+   0 False  217     0x217  309    0x309 True
+   0 False  306     0x306   26     0x26 True
+   0 False  139     0x139  295    0x295 True
+   0 False  297     0x297  299    0x299 True
+   0 False  294     0x294   24     0x24 True
+   0 False  292     0x292  104    0x104 True
+   0 False  288     0x288  300    0x300 True
+   0 False  291     0x291   65     0x65 True
+   0 False  177     0x177  286    0x286 True
+   0 False  298     0x298  305    0x305 True
+   0 False  328     0x328  326    0x326 True
+   0 False  304     0x304  223    0x223 True
+
+#Level 8  
+   0 False  357     0x357   24     0x24 True
+   0 False  157     0x157  339    0x339 True
+   0 False  285     0x285  350    0x350 True
+   0 False  242     0x242  346    0x346 True
+   0 False  337     0x337    4    /5004 True
+   0 False  132     0x132  347    0x347 True
+   0 False  334     0x334  279    0x279 True
+   0 False  335     0x335   21     0x21 True
+   0 False  332     0x332  202    0x202 True
+   0 False  356     0x356               True
+   0 False  338     0x338               True
+   0 False  340     0x340   24     0x24 True
+   0 False  344     0x344  293    0x293 True
+   0 False  353     0x353    4    /5004 True
+   0 False  307     0x307  333    0x333 True
+   0 False  341     0x341    4    /5004 True
+   0 False  336     0x336   10     0x10 True
+   0 False  342     0x342               True
+   0 False  351     0x351  324    0x324 True
+   0 False  345     0x345               True
+   0 False  349     0x349               True
+   0 False  352     0x352               True
+   0 False  348     0x348   21     0x21 True
+   0 False  354     0x354    1    /5001 True
+   0 False  355     0x355  296    0x296 True
+
+#Level 9  
+   0 False  382     0x382  125    0x125 True
+   0 False  360     0x360               True
+   0 False  362     0x362  287    0x287 True
+   0 False  379     0x379  322    0x322 True
+   0 False  375     0x375  301    0x301 True
+   0 False  376     0x376   21     0x21 True
+   0 False  366     0x366    4    /5004 True
+   0 False  372     0x372               True
+   0 False  343     0x343  374    0x374 True
+   0 False  321     0x321  365    0x365 True
+   0 False  370     0x370               True
+   0 False  363     0x363   27     0x27 True
+   0 False  290     0x290  364    0x364 True
+   0 False  313     0x313  373    0x373 True
+   0 False  275     0x275  371    0x371 True
+   0 False  368     0x368  369    0x369 True
+
+#Level 10 
+   0 False  398     0x398    5    /5005 True
+   0 False  303     0x303  383    0x383 True
+   0 False  386     0x386   21     0x21 True
+   0 False  396     0x396   24     0x24 True
+   0 False  158     0x158  392    0x392 True
+   0 False  397     0x397    2    /5002 True
+   0 False  385     0x385   26     0x26 True
+   0 False  378     0x378  394    0x394 True
+   0 False  393     0x393  358    0x358 True
+   0 False  367     0x367  388    0x388 True
+   0 False  391     0x391    3    /5003 True
+   0 False  395     0x395    3    /5003 True
+
+#Level 11 
+   0 False  387     0x387  410    0x410 True
+   0 False  381     0x381  405    0x405 True
+   0 False  359     0x359  409    0x409 True
+   0 False  400     0x400               True
+   0 False  406     0x406    6    /5006 True
+   0 False  361     0x361  402    0x402 True
+   0 False  407     0x407    2    /5002 True
+   0 False  377     0x377  399    0x399 True
+   0 False  380     0x380  404    0x404 True
+   0 False  401     0x401               True
+   0 False  408     0x408   26     0x26 True
+
+#Level 12 
+   0 False  416     0x416               True
+   0 False  419     0x419   26     0x26 True
+   0 False  420     0x420  389    0x389 True
+   0 False  413     0x413  135    0x135 True
+   0 False  412     0x412    3    /5003 True
+   0 False  319     0x319  417    0x417 True
+   0 False  411     0x411    1    /5001 True
+   0 False  384     0x384  415    0x415 True
+   0 False  302     0x302  421    0x421 True
+   0 False  418     0x418    1    /5001 True
+
+#Level 13 
+   0 False  320     0x320  426    0x426 True
+   0 False  430     0x430               True
+   0 False  422     0x422  403    0x403 True
+   0 False  429     0x429   20     0x20 True
+   0 False  427     0x427               True
+   0 False  414     0x414  428    0x428 True
+
+#Level 14 
+   0 False  432     0x432               True
+   0 False  434     0x434               True
+   0 False  437     0x437               True
+   0 False  433     0x433  431    0x431 True
+   0 False  436     0x436  424    0x424 True
+
+#Level 15 
+   0 False  438     0x438  435    0x435 True
+   0 False  442     0x442    3    /5003 True
+   0 False  440     0x440  423    0x423 True
+   0 False  439     0x439  425    0x425 True
+   0 False  441     0x441   20     0x20 True
+
+#Level 16 
+   0 False  446     0x446               True
+   0 False  445     0x445   23     0x23 True
+   0 False  443     0x443    5    /5005 True
+   0 False  390     0x390  444    0x444 True
+
+#Level 17 
+   0 False  451     0x451               True
+   0 False  314     0x314  449    0x449 True
+
+#Level 18 
+   0 False  453     0x453               True
+   0 False  452     0x452  447    0x447 True
+
+#Level 19 
+   0 False  454     0x454  450    0x450 True
+   0 False  455     0x455    0    /5000 True
+
+#Level 20 
+   0 False  456     0x456   19     0x19 True
+   0 False  448     0x448  457    0x457 True
+
+#Level 21 
+   0 False  459     0x459               True
+
+#Level 22 
+   0 False  460     0x460  458    0x458 True
+
+#Level 23 
+   0 False  461     0x461               True
+
+Metrics
+=======
+Levels        : 23
+Crossbar Size : 1x463
+
+************ BENCHMARK: (null) *************
+NOT:    14 :   5007       : ASAP- 1, ALAP- 1, MOB- 0
+NOT:    17 :   5004       : ASAP- 1, ALAP- 1, MOB- 0
+NOR:    61 :   5008  5001 : ASAP- 1, ALAP- 7, MOB- 6
+NOR:   326 :   5008  5004 : ASAP- 1, ALAP- 6, MOB- 5
+NOR:   119 :   5007  5006 : ASAP- 1, ALAP- 8, MOB- 7
+NOR:    59 :   5008  5007 : ASAP- 1, ALAP- 5, MOB- 4
+NOR:   240 :   5005  5002 : ASAP- 1, ALAP- 8, MOB- 7
+NOR:   169 :   5007  5002 : ASAP- 1, ALAP- 4, MOB- 3
+NOR:   312 :   5005  5001 : ASAP- 1, ALAP- 3, MOB- 2
+NOR:   291 :   5007  5005 : ASAP- 1, ALAP- 8, MOB- 7
+NOT:    10 :   5000       : ASAP- 1, ALAP- 4, MOB- 3
+NOT:    11 :   5003       : ASAP- 1, ALAP- 4, MOB- 3
+NOT:    16 :   5002       : ASAP- 1, ALAP- 4, MOB- 3
+NOR:    26 :   5002  5001 : ASAP- 1, ALAP- 9, MOB- 8
+NOT:   117 :   5005       : ASAP- 1, ALAP- 2, MOB- 1
+NOT:    47 :   5006       : ASAP- 1, ALAP- 2, MOB- 1
+NOR:    19 :   5007  5004 : ASAP- 1, ALAP- 2, MOB- 1
+NOT:    13 :   5001       : ASAP- 1, ALAP- 2, MOB- 1
+NOT:    12 :   5008       : ASAP- 1, ALAP- 2, MOB- 1
+NOR:   395 :   5004  5001 : ASAP- 1, ALAP- 9, MOB- 8
+NOR:   282 :   5005  5004 : ASAP- 1, ALAP- 9, MOB- 8
+NOR:    89 :   5008  5006 : ASAP- 1, ALAP- 3, MOB- 2
+NOR:   430 :   5003    10 : ASAP- 2, ALAP- 5, MOB- 3
+NOT:   214 :     61       : ASAP- 2, ALAP-10, MOB- 8
+NOT:   396 :    395       : ASAP- 2, ALAP-10, MOB- 8
+NOR:   388 :   5007    16 : ASAP- 2, ALAP- 5, MOB- 3
+NOR:   323 :   5008   117 : ASAP- 2, ALAP- 5, MOB- 3
+NOR:   301 :    117    13 : ASAP- 2, ALAP- 5, MOB- 3
+NOR:    53 :     12    14 : ASAP- 2, ALAP- 3, MOB- 1
+NOR:   435 :     11  5000 : ASAP- 2, ALAP- 5, MOB- 3
+NOR:    79 :   5008    16 : ASAP- 2, ALAP- 5, MOB- 3
+NOR:    78 :     12  5002 : ASAP- 2, ALAP- 5, MOB- 3
+NOR:    82 :   5008    47 : ASAP- 2, ALAP- 3, MOB- 1
+NOR:    97 :     12  5006 : ASAP- 2, ALAP- 3, MOB- 1
+NOR:   207 :     17    11 : ASAP- 2, ALAP-13, MOB-11
+NOR:    32 :     17  5002 : ASAP- 2, ALAP- 5, MOB- 3
+NOT:   143 :    119       : ASAP- 2, ALAP-10, MOB- 8
+NOR:    31 :   5008    14 : ASAP- 2, ALAP- 5, MOB- 3
+NOT:    27 :     26       : ASAP- 2, ALAP-10, MOB- 8
+NOR:   256 :   5007    47 : ASAP- 2, ALAP- 5, MOB- 3
+NOT:    25 :     19       : ASAP- 2, ALAP-10, MOB- 8
+NOR:   210 :     47  5002 : ASAP- 2, ALAP-13, MOB-11
+NOR:   225 :     12  5004 : ASAP- 2, ALAP- 5, MOB- 3
+NOR:   407 :   5004    11 : ASAP- 2, ALAP-13, MOB-11
+NOT:   170 :    169       : ASAP- 2, ALAP- 5, MOB- 3
+NOT:   313 :    312       : ASAP- 2, ALAP- 4, MOB- 2
+NOR:   249 :   5007   117 : ASAP- 2, ALAP- 9, MOB- 7
+NOR:   426 :     12  5003 : ASAP- 2, ALAP-13, MOB-11
+NOR:    15 :     14  5002 : ASAP- 2, ALAP- 6, MOB- 4
+NOT:   241 :    240       : ASAP- 2, ALAP- 9, MOB- 7
+NOR:   168 :     12    17 : ASAP- 2, ALAP- 5, MOB- 3
+NOR:    48 :   5008    17 : ASAP- 2, ALAP- 6, MOB- 4
+NOR:   307 :     14   117 : ASAP- 2, ALAP- 3, MOB- 1
+NOR:   381 :    117  5000 : ASAP- 2, ALAP-15, MOB-13
+NOR:   183 :   5003    13 : ASAP- 2, ALAP- 9, MOB- 7
+NOR:   382 :   5005    10 : ASAP- 2, ALAP-15, MOB-13
+NOR:   118 :   5007    11 : ASAP- 2, ALAP- 9, MOB- 7
+NOT:   195 :     59       : ASAP- 2, ALAP- 6, MOB- 4
+NOR:   108 :     17    16 : ASAP- 2, ALAP- 9, MOB- 7
+NOR:    51 :   5002    13 : ASAP- 2, ALAP- 7, MOB- 5
+NOR:    62 :     61    17 : ASAP- 2, ALAP- 9, MOB- 7
+NOR:    72 :   5006    16 : ASAP- 2, ALAP- 7, MOB- 5
+NOR:    40 :     17  5001 : ASAP- 2, ALAP- 9, MOB- 7
+NOR:    92 :     47    16 : ASAP- 2, ALAP- 7, MOB- 5
+NOR:   364 :     14  5001 : ASAP- 2, ALAP- 8, MOB- 6
+NOR:    99 :   5004    16 : ASAP- 2, ALAP- 7, MOB- 5
+NOR:   327 :     14  5005 : ASAP- 2, ALAP- 3, MOB- 1
+NOR:   160 :     19  5008 : ASAP- 2, ALAP- 7, MOB- 5
+NOR:   272 :     12   117 : ASAP- 2, ALAP- 8, MOB- 6
+NOR:   182 :     11  5001 : ASAP- 2, ALAP- 8, MOB- 6
+NOR:   136 :     14    11 : ASAP- 2, ALAP- 8, MOB- 6
+NOR:   196 :     11  5002 : ASAP- 2, ALAP- 7, MOB- 5
+NOR:   127 :   5008    11 : ASAP- 2, ALAP- 8, MOB- 6
+NOR:   269 :    117  5004 : ASAP- 2, ALAP- 7, MOB- 5
+NOR:   292 :     12    13 : ASAP- 2, ALAP- 7, MOB- 5
+NOR:   336 :     19    13 : ASAP- 2, ALAP- 3, MOB- 1
+NOR:   149 :     12  5007 : ASAP- 2, ALAP- 5, MOB- 3
+NOR:   138 :     14  5006 : ASAP- 2, ALAP- 5, MOB- 3
+NOR:   134 :     47  5004 : ASAP- 2, ALAP- 4, MOB- 2
+NOR:    18 :     14    17 : ASAP- 2, ALAP- 2, MOB- 0
+NOR:   343 :     47  5001 : ASAP- 2, ALAP- 3, MOB- 1
+NOR:   133 :   5006    17 : ASAP- 2, ALAP- 4, MOB- 2
+NOT:    90 :     89       : ASAP- 2, ALAP- 4, MOB- 2
+NOT:   283 :    282       : ASAP- 2, ALAP-10, MOB- 8
+NOR:   412 :   5005    13 : ASAP- 2, ALAP- 7, MOB- 5
+NOT:   413 :    412       : ASAP- 3, ALAP- 8, MOB- 5
+NOR:   429 :    292    61 : ASAP- 3, ALAP- 8, MOB- 5
+NOR:   344 :    343   117 : ASAP- 3, ALAP- 4, MOB- 1
+NOR:    77 :     72    14 : ASAP- 3, ALAP- 9, MOB- 6
+NOR:   135 :    134   133 : ASAP- 3, ALAP- 5, MOB- 2
+NOT:   384 :     78       : ASAP- 3, ALAP- 8, MOB- 5
+NOT:   337 :    336       : ASAP- 3, ALAP- 4, MOB- 1
+NOR:   126 :    119    82 : ASAP- 3, ALAP- 9, MOB- 6
+NOT:   270 :    269       : ASAP- 3, ALAP- 8, MOB- 5
+NOT:   334 :     18       : ASAP- 3, ALAP- 4, MOB- 1
+NOR:   262 :    138   117 : ASAP- 3, ALAP- 8, MOB- 5
+NOR:   244 :     53    16 : ASAP- 3, ALAP- 8, MOB- 5
+NOT:   197 :    196       : ASAP- 3, ALAP- 8, MOB- 5
+NOR:   128 :    127    17 : ASAP- 3, ALAP- 9, MOB- 6
+NOT:   328 :    327       : ASAP- 3, ALAP- 4, MOB- 1
+NOT:   100 :     99       : ASAP- 3, ALAP- 8, MOB- 5
+NOR:   293 :    292   291 : ASAP- 3, ALAP- 9, MOB- 6
+NOT:    98 :     97       : ASAP- 3, ALAP- 8, MOB- 5
+NOR:    93 :     92    78 : ASAP- 3, ALAP- 8, MOB- 5
+NOR:   366 :    182    15 : ASAP- 3, ALAP- 9, MOB- 6
+NOT:   243 :    133       : ASAP- 3, ALAP- 5, MOB- 2
+NOT:    73 :     72       : ASAP- 3, ALAP- 8, MOB- 5
+NOT:    41 :     40       : ASAP- 3, ALAP-10, MOB- 7
+NOT:    52 :     51       : ASAP- 3, ALAP- 8, MOB- 5
+NOT:    63 :     62       : ASAP- 3, ALAP-10, MOB- 7
+NOR:   304 :    195  5005 : ASAP- 3, ALAP- 7, MOB- 4
+NOR:   233 :     48  5006 : ASAP- 3, ALAP- 7, MOB- 4
+NOR:   226 :    225    78 : ASAP- 3, ALAP- 7, MOB- 4
+NOT:   109 :    108       : ASAP- 3, ALAP-10, MOB- 7
+NOT:   308 :    307       : ASAP- 3, ALAP- 4, MOB- 1
+NOR:    49 :     48    14 : ASAP- 3, ALAP- 7, MOB- 4
+NOR:   184 :    183   182 : ASAP- 3, ALAP-10, MOB- 7
+NOR:   242 :    241    31 : ASAP- 3, ALAP-10, MOB- 7
+NOR:   248 :     78  5006 : ASAP- 3, ALAP-10, MOB- 7
+NOT:   250 :    249       : ASAP- 3, ALAP-10, MOB- 7
+NOT:   361 :    168       : ASAP- 3, ALAP-10, MOB- 7
+NOR:   365 :    364   196 : ASAP- 3, ALAP-10, MOB- 7
+NOR:   417 :    343   133 : ASAP- 3, ALAP-10, MOB- 7
+NOR:    28 :     27    25 : ASAP- 3, ALAP-11, MOB- 8
+NOR:   120 :     97    82 : ASAP- 3, ALAP- 4, MOB- 1
+NOR:    33 :     32    31 : ASAP- 3, ALAP- 6, MOB- 3
+NOR:   383 :    382   381 : ASAP- 3, ALAP-16, MOB-13
+NOT:   436 :    435       : ASAP- 3, ALAP- 6, MOB- 3
+NOT:    37 :     31       : ASAP- 3, ALAP- 6, MOB- 3
+NOT:    71 :     53       : ASAP- 3, ALAP- 4, MOB- 1
+NOR:   144 :    143  5004 : ASAP- 3, ALAP-11, MOB- 8
+NOR:    80 :     79    78 : ASAP- 3, ALAP- 6, MOB- 3
+NOR:    54 :     53    19 : ASAP- 3, ALAP- 4, MOB- 1
+NOT:   431 :    430       : ASAP- 3, ALAP- 6, MOB- 3
+NOR:   360 :    283    89 : ASAP- 3, ALAP-11, MOB- 8
+NOT:   389 :    388       : ASAP- 3, ALAP- 6, MOB- 3
+NOR:    60 :     59    15 : ASAP- 3, ALAP-12, MOB- 9
+NOR:   324 :    323   225 : ASAP- 3, ALAP- 6, MOB- 3
+NOR:   393 :    169    79 : ASAP- 3, ALAP-12, MOB- 9
+NOT:   302 :    301       : ASAP- 3, ALAP- 6, MOB- 3
+NOR:   402 :     72  5001 : ASAP- 3, ALAP-12, MOB- 9
+NOT:   273 :     32       : ASAP- 3, ALAP- 6, MOB- 3
+NOT:   257 :    256       : ASAP- 3, ALAP- 6, MOB- 3
+NOT:   208 :    207       : ASAP- 3, ALAP-14, MOB-11
+NOT:   231 :    149       : ASAP- 3, ALAP- 6, MOB- 3
+NOT:   211 :    210       : ASAP- 3, ALAP-14, MOB-11
+NOR:   189 :     59    53 : ASAP- 3, ALAP- 6, MOB- 3
+NOR:   171 :    170   168 : ASAP- 3, ALAP- 6, MOB- 3
+NOT:   408 :    407       : ASAP- 3, ALAP-14, MOB-11
+NOT:   427 :    426       : ASAP- 3, ALAP-14, MOB-11
+NOR:   215 :    196   214 : ASAP- 3, ALAP-15, MOB-12
+NOR:   152 :     82  5004 : ASAP- 3, ALAP- 6, MOB- 3
+NOR:   150 :    149    31 : ASAP- 3, ALAP- 6, MOB- 3
+NOR:    20 :     19    18 : ASAP- 3, ALAP- 3, MOB- 0
+NOR:    91 :     90    17 : ASAP- 3, ALAP- 9, MOB- 6
+NOT:   139 :    138       : ASAP- 3, ALAP- 6, MOB- 3
+NOR:   335 :    334  5001 : ASAP- 4, ALAP- 5, MOB- 1
+NOT:    21 :     20       : ASAP- 4, ALAP- 4, MOB- 0
+NOR:    64 :     63    51 : ASAP- 4, ALAP-11, MOB- 7
+NOT:   216 :    215       : ASAP- 4, ALAP-16, MOB-12
+NOR:   338 :    337    90 : ASAP- 4, ALAP- 5, MOB- 1
+NOT:   153 :    152       : ASAP- 4, ALAP- 7, MOB- 3
+NOR:    74 :     73    71 : ASAP- 4, ALAP- 9, MOB- 5
+NOR:   159 :     20  5006 : ASAP- 4, ALAP- 7, MOB- 3
+NOR:   263 :    243  5007 : ASAP- 4, ALAP- 6, MOB- 2
+NOR:   137 :    136   135 : ASAP- 4, ALAP- 9, MOB- 5
+NOT:   129 :    128       : ASAP- 4, ALAP-10, MOB- 6
+NOR:   140 :    139  5004 : ASAP- 4, ALAP- 9, MOB- 5
+NOR:   101 :    100    98 : ASAP- 4, ALAP-11, MOB- 7
+NOT:   121 :    120       : ASAP- 4, ALAP- 7, MOB- 3
+NOR:   172 :    171    18 : ASAP- 4, ALAP- 7, MOB- 3
+NOR:    50 :     49  5001 : ASAP- 4, ALAP-11, MOB- 7
+NOR:    38 :     37  5002 : ASAP- 4, ALAP- 9, MOB- 5
+NOT:   234 :    233       : ASAP- 4, ALAP- 8, MOB- 4
+NOR:   314 :    313    71 : ASAP- 4, ALAP- 5, MOB- 1
+NOT:   227 :    226       : ASAP- 4, ALAP- 8, MOB- 4
+NOR:   447 :    243  5000 : ASAP- 4, ALAP- 9, MOB- 5
+NOT:   188 :    135       : ASAP- 4, ALAP- 6, MOB- 2
+NOR:   442 :    436   334 : ASAP- 4, ALAP- 9, MOB- 5
+NOT:   224 :     49       : ASAP- 4, ALAP- 8, MOB- 4
+NOR:   212 :    211    19 : ASAP- 4, ALAP-15, MOB-11
+NOR:   345 :    344   120 : ASAP- 4, ALAP- 5, MOB- 1
+NOR:   198 :    197    17 : ASAP- 4, ALAP- 9, MOB- 5
+NOR:   209 :    208   139 : ASAP- 4, ALAP-15, MOB-11
+NOR:   329 :    328  5001 : ASAP- 4, ALAP- 5, MOB- 1
+NOR:   165 :    189    89 : ASAP- 4, ALAP- 8, MOB- 4
+NOR:   110 :    109  5001 : ASAP- 4, ALAP-13, MOB- 9
+NOT:    55 :     54       : ASAP- 4, ALAP- 5, MOB- 1
+NOR:   309 :    308  5006 : ASAP- 4, ALAP- 5, MOB- 1
+NOR:   251 :    250   248 : ASAP- 4, ALAP-11, MOB- 7
+NOR:   258 :    257  5008 : ASAP- 4, ALAP- 7, MOB- 3
+NOR:   259 :    139  5005 : ASAP- 4, ALAP- 7, MOB- 3
+NOR:   281 :    143   109 : ASAP- 4, ALAP-11, MOB- 7
+NOR:   294 :    293  5006 : ASAP- 4, ALAP-10, MOB- 6
+NOR:   284 :    283    71 : ASAP- 4, ALAP-11, MOB- 7
+NOR:   106 :     71  5006 : ASAP- 4, ALAP- 7, MOB- 3
+NOR:   274 :    138   273 : ASAP- 4, ALAP- 7, MOB- 3
+NOR:   362 :    361   117 : ASAP- 4, ALAP-11, MOB- 7
+NOR:   414 :    413    18 : ASAP- 4, ALAP- 9, MOB- 5
+NOR:   232 :    231   100 : ASAP- 4, ALAP- 9, MOB- 5
+NOR:   245 :    244   243 : ASAP- 4, ALAP- 9, MOB- 5
+NOR:   295 :    231  5006 : ASAP- 4, ALAP- 7, MOB- 3
+NOR:   372 :    241    98 : ASAP- 4, ALAP-11, MOB- 7
+NOT:   367 :    366       : ASAP- 4, ALAP-10, MOB- 6
+NOR:   390 :    389   214 : ASAP- 4, ALAP-11, MOB- 7
+NOT:   394 :    126       : ASAP- 4, ALAP-10, MOB- 6
+NOR:   403 :     80    47 : ASAP- 4, ALAP-11, MOB- 7
+NOR:   452 :    197    13 : ASAP- 4, ALAP-11, MOB- 7
+NOR:   450 :     37  5006 : ASAP- 4, ALAP-11, MOB- 7
+NOR:   303 :    302   150 : ASAP- 4, ALAP- 7, MOB- 3
+NOR:   418 :    417  5007 : ASAP- 4, ALAP-11, MOB- 7
+NOR:   421 :    257   273 : ASAP- 4, ALAP-11, MOB- 7
+NOR:   385 :    364   384 : ASAP- 4, ALAP- 9, MOB- 5
+NOR:    34 :     33    15 : ASAP- 4, ALAP- 7, MOB- 3
+NOR:   325 :    324    13 : ASAP- 4, ALAP- 7, MOB- 3
+NOR:   422 :    396   308 : ASAP- 4, ALAP-11, MOB- 7
+NOR:   174 :     71    16 : ASAP- 4, ALAP- 6, MOB- 2
+NOR:   352 :    328    17 : ASAP- 4, ALAP- 9, MOB- 5
+NOR:   437 :    436    37 : ASAP- 4, ALAP- 7, MOB- 3
+NOR:   432 :    431   389 : ASAP- 4, ALAP- 7, MOB- 3
+NOT:    81 :     80       : ASAP- 4, ALAP- 7, MOB- 3
+NOR:   353 :    270    98 : ASAP- 4, ALAP- 9, MOB- 5
+NOT:    94 :     93       : ASAP- 4, ALAP- 9, MOB- 5
+NOT:    35 :     34       : ASAP- 5, ALAP- 8, MOB- 3
+NOR:    83 :     82    81 : ASAP- 5, ALAP- 8, MOB- 3
+NOT:   438 :    437       : ASAP- 5, ALAP- 8, MOB- 3
+NOR:   354 :    353   352 : ASAP- 5, ALAP-10, MOB- 5
+NOR:   423 :    422   421 : ASAP- 5, ALAP-12, MOB- 7
+NOT:   386 :    385       : ASAP- 5, ALAP-10, MOB- 5
+NOR:   305 :    304   303 : ASAP- 5, ALAP- 8, MOB- 3
+NOR:   175 :    174    11 : ASAP- 5, ALAP- 7, MOB- 2
+NOR:   397 :    396   394 : ASAP- 5, ALAP-11, MOB- 6
+NOR:   404 :    403    14 : ASAP- 5, ALAP-12, MOB- 7
+NOT:   453 :    452       : ASAP- 5, ALAP-12, MOB- 7
+NOR:   368 :    367   365 : ASAP- 5, ALAP-11, MOB- 6
+NOT:   246 :    245       : ASAP- 5, ALAP-10, MOB- 5
+NOR:   373 :    372    79 : ASAP- 5, ALAP-12, MOB- 7
+NOR:   296 :    295    82 : ASAP- 5, ALAP- 8, MOB- 3
+NOR:    22 :     21    16 : ASAP- 5, ALAP- 7, MOB- 2
+NOT:   346 :    345       : ASAP- 5, ALAP- 6, MOB- 1
+NOT:   371 :    335       : ASAP- 5, ALAP-12, MOB- 7
+NOR:   363 :    362   360 : ASAP- 5, ALAP-12, MOB- 7
+NOT:   275 :    274       : ASAP- 5, ALAP- 8, MOB- 3
+NOT:   199 :    198       : ASAP- 5, ALAP-10, MOB- 5
+NOR:   285 :    284   281 : ASAP- 5, ALAP-12, MOB- 7
+NOT:   415 :    414       : ASAP- 5, ALAP-10, MOB- 5
+NOR:   260 :    259   258 : ASAP- 5, ALAP- 8, MOB- 3
+NOT:   107 :    106       : ASAP- 5, ALAP- 8, MOB- 3
+NOR:   155 :     55    47 : ASAP- 5, ALAP- 6, MOB- 1
+NOT:   111 :    110       : ASAP- 5, ALAP-14, MOB- 9
+NOR:   166 :    165    92 : ASAP- 5, ALAP- 9, MOB- 4
+NOT:   330 :    329       : ASAP- 5, ALAP- 6, MOB- 1
+NOR:   310 :    309    59 : ASAP- 5, ALAP- 6, MOB- 1
+NOR:   213 :    212   209 : ASAP- 5, ALAP-16, MOB-11
+NOT:   443 :    442       : ASAP- 5, ALAP-10, MOB- 5
+NOR:   222 :     81  5004 : ASAP- 5, ALAP- 8, MOB- 3
+NOR:   228 :    227   224 : ASAP- 5, ALAP- 9, MOB- 4
+NOT:   448 :    447       : ASAP- 5, ALAP-10, MOB- 5
+NOR:    56 :     55    52 : ASAP- 5, ALAP-11, MOB- 6
+NOR:   315 :    314    17 : ASAP- 5, ALAP- 6, MOB- 1
+NOR:   190 :    189   188 : ASAP- 5, ALAP- 7, MOB- 2
+NOT:   185 :    159       : ASAP- 5, ALAP- 8, MOB- 3
+NOR:    39 :     38    14 : ASAP- 5, ALAP-10, MOB- 5
+NOR:   173 :    172  5006 : ASAP- 5, ALAP- 8, MOB- 3
+NOR:   141 :    140   137 : ASAP- 5, ALAP-10, MOB- 5
+NOR:   122 :    121    11 : ASAP- 5, ALAP- 8, MOB- 3
+NOR:   130 :    129   126 : ASAP- 5, ALAP-11, MOB- 6
+NOR:   339 :    338   335 : ASAP- 5, ALAP- 6, MOB- 1
+NOR:   264 :    263    53 : ASAP- 5, ALAP- 7, MOB- 2
+NOR:   161 :    160   159 : ASAP- 5, ALAP- 8, MOB- 3
+NOR:   154 :    153   189 : ASAP- 5, ALAP- 8, MOB- 3
+NOR:    75 :     74    12 : ASAP- 5, ALAP-10, MOB- 5
+NOR:   341 :    312    21 : ASAP- 5, ALAP- 5, MOB- 0
+NOR:    95 :     94    91 : ASAP- 5, ALAP-10, MOB- 5
+NOT:    65 :     64       : ASAP- 5, ALAP-12, MOB- 7
+NOT:   433 :    432       : ASAP- 5, ALAP- 8, MOB- 3
+NOR:    66 :     65    60 : ASAP- 6, ALAP-13, MOB- 7
+NOR:    96 :     95    14 : ASAP- 6, ALAP-11, MOB- 5
+NOR:    76 :     75    17 : ASAP- 6, ALAP-11, MOB- 5
+NOT:   316 :    315       : ASAP- 6, ALAP- 7, MOB- 1
+NOT:   342 :    341       : ASAP- 6, ALAP- 6, MOB- 0
+NOR:   162 :    161    16 : ASAP- 6, ALAP- 9, MOB- 3
+NOR:   123 :    122   119 : ASAP- 6, ALAP- 9, MOB- 3
+NOT:   265 :    264       : ASAP- 6, ALAP- 8, MOB- 2
+NOR:   340 :    339   117 : ASAP- 6, ALAP- 7, MOB- 1
+NOR:    57 :     56    50 : ASAP- 6, ALAP-12, MOB- 6
+NOR:   142 :    141  5008 : ASAP- 6, ALAP-11, MOB- 5
+NOR:   186 :    185  5002 : ASAP- 6, ALAP- 9, MOB- 3
+NOR:    42 :     41    39 : ASAP- 6, ALAP-11, MOB- 5
+NOT:   191 :    190       : ASAP- 6, ALAP- 8, MOB- 2
+NOR:    36 :     35    13 : ASAP- 6, ALAP-11, MOB- 5
+NOR:   311 :    310    13 : ASAP- 6, ALAP- 7, MOB- 1
+NOR:   167 :    166    17 : ASAP- 6, ALAP-10, MOB- 4
+NOT:   286 :    285       : ASAP- 6, ALAP-13, MOB- 7
+NOR:   200 :    199   195 : ASAP- 6, ALAP-11, MOB- 5
+NOR:   331 :    330   326 : ASAP- 6, ALAP- 7, MOB- 1
+NOT:   187 :     22       : ASAP- 6, ALAP- 8, MOB- 2
+NOR:    23 :     22    15 : ASAP- 6, ALAP-10, MOB- 4
+NOR:   374 :    373   371 : ASAP- 6, ALAP-13, MOB- 7
+NOR:   247 :    246   242 : ASAP- 6, ALAP-11, MOB- 5
+NOR:   449 :    448    71 : ASAP- 6, ALAP-11, MOB- 5
+NOR:   223 :    222  5007 : ASAP- 6, ALAP- 9, MOB- 3
+NOT:   398 :    397       : ASAP- 6, ALAP-12, MOB- 6
+NOR:   405 :    404   402 : ASAP- 6, ALAP-13, MOB- 7
+NOR:   444 :    443    27 : ASAP- 6, ALAP-11, MOB- 5
+NOR:   217 :    216   213 : ASAP- 6, ALAP-17, MOB-11
+NOR:   235 :    234    35 : ASAP- 6, ALAP- 9, MOB- 3
+NOR:   439 :    438    52 : ASAP- 6, ALAP- 9, MOB- 3
+NOR:   434 :    433   429 : ASAP- 6, ALAP- 9, MOB- 3
+NOT:    84 :     83       : ASAP- 6, ALAP- 9, MOB- 3
+NOR:   355 :    354    13 : ASAP- 6, ALAP-11, MOB- 5
+NOR:   112 :    111   107 : ASAP- 6, ALAP-15, MOB- 9
+NOT:   424 :    423       : ASAP- 6, ALAP-13, MOB- 7
+NOR:   306 :    305    47 : ASAP- 6, ALAP- 9, MOB- 3
+NOR:   387 :    386   256 : ASAP- 6, ALAP-11, MOB- 5
+NOR:   261 :    260    17 : ASAP- 6, ALAP- 9, MOB- 3
+NOR:   416 :    415   188 : ASAP- 6, ALAP-11, MOB- 5
+NOR:   271 :    270   107 : ASAP- 6, ALAP- 9, MOB- 3
+NOT:   369 :    368       : ASAP- 6, ALAP-12, MOB- 6
+NOR:   276 :    275   272 : ASAP- 6, ALAP- 9, MOB- 3
+NOR:   297 :    296   117 : ASAP- 6, ALAP- 9, MOB- 3
+NOR:   156 :    155  5002 : ASAP- 6, ALAP- 7, MOB- 1
+NOT:   176 :    175       : ASAP- 6, ALAP- 8, MOB- 2
+NOR:   298 :    297  5001 : ASAP- 7, ALAP-10, MOB- 3
+NOR:   370 :    369   363 : ASAP- 7, ALAP-13, MOB- 6
+NOT:   157 :    156       : ASAP- 7, ALAP- 8, MOB- 1
+NOR:   419 :    418   416 : ASAP- 7, ALAP-12, MOB- 5
+NOR:   391 :    390   387 : ASAP- 7, ALAP-12, MOB- 5
+NOR:    85 :     84    77 : ASAP- 7, ALAP-10, MOB- 3
+NOR:   236 :    235   232 : ASAP- 7, ALAP-10, MOB- 3
+NOR:   406 :    405   364 : ASAP- 7, ALAP-14, MOB- 7
+NOR:   229 :    228   223 : ASAP- 7, ALAP-10, MOB- 3
+NOR:   440 :    439   434 : ASAP- 7, ALAP-10, MOB- 3
+NOR:   177 :    176   173 : ASAP- 7, ALAP- 9, MOB- 2
+NOR:   399 :    398   393 : ASAP- 7, ALAP-13, MOB- 6
+NOR:   347 :    346   342 : ASAP- 7, ALAP- 7, MOB- 0
+NOR:   252 :    251   247 : ASAP- 7, ALAP-12, MOB- 5
+NOR:   451 :    450   449 : ASAP- 7, ALAP-12, MOB- 5
+NOR:    24 :     23    13 : ASAP- 7, ALAP-11, MOB- 4
+NOR:   145 :    144   142 : ASAP- 7, ALAP-12, MOB- 5
+NOR:    43 :     42    36 : ASAP- 7, ALAP-12, MOB- 5
+NOR:    58 :     57    47 : ASAP- 7, ALAP-13, MOB- 6
+NOR:   266 :    265   262 : ASAP- 7, ALAP- 9, MOB- 2
+NOR:   317 :    316   311 : ASAP- 7, ALAP- 8, MOB- 1
+NOR:   124 :    123   118 : ASAP- 7, ALAP-10, MOB- 3
+NOR:   102 :    101    96 : ASAP- 7, ALAP-12, MOB- 5
+NOR:   192 :    191   187 : ASAP- 7, ALAP- 9, MOB- 2
+NOR:   277 :    276   271 : ASAP- 7, ALAP-10, MOB- 3
+NOR:   332 :    331   325 : ASAP- 7, ALAP- 8, MOB- 1
+NOR:   333 :    332    47 : ASAP- 8, ALAP- 9, MOB- 1
+NOR:   409 :    408   406 : ASAP- 8, ALAP-15, MOB- 7
+NOR:    67 :     66    58 : ASAP- 8, ALAP-14, MOB- 6
+NOR:   454 :    453   451 : ASAP- 8, ALAP-13, MOB- 5
+NOR:    86 :     85  5004 : ASAP- 8, ALAP-11, MOB- 3
+NOR:    29 :     28    24 : ASAP- 8, ALAP-12, MOB- 4
+NOR:   158 :    157   154 : ASAP- 8, ALAP- 9, MOB- 1
+NOR:   420 :    419    16 : ASAP- 8, ALAP-13, MOB- 5
+NOR:   299 :    298   294 : ASAP- 8, ALAP-11, MOB- 3
+NOT:   278 :    277       : ASAP- 8, ALAP-11, MOB- 3
+NOT:   237 :    236       : ASAP- 8, ALAP-11, MOB- 3
+NOR:   230 :    229    47 : ASAP- 8, ALAP-11, MOB- 3
+NOR:   348 :    347   340 : ASAP- 8, ALAP- 8, MOB- 0
+NOR:   125 :    124  5004 : ASAP- 8, ALAP-11, MOB- 3
+NOR:   375 :    374   370 : ASAP- 8, ALAP-14, MOB- 6
+NOR:   441 :    440  5004 : ASAP- 8, ALAP-11, MOB- 3
+NOR:   392 :    391    17 : ASAP- 8, ALAP-13, MOB- 5
+NOT:   178 :    177       : ASAP- 8, ALAP-10, MOB- 2
+NOR:   267 :    266   261 : ASAP- 8, ALAP-10, MOB- 2
+NOT:   253 :    252       : ASAP- 8, ALAP-13, MOB- 5
+NOT:    44 :     43       : ASAP- 8, ALAP-13, MOB- 5
+NOT:   318 :    317       : ASAP- 8, ALAP- 9, MOB- 1
+NOR:   146 :    145    16 : ASAP- 8, ALAP-13, MOB- 5
+NOR:   103 :    102  5001 : ASAP- 8, ALAP-13, MOB- 5
+NOR:   193 :    192   186 : ASAP- 8, ALAP-10, MOB- 2
+NOR:   194 :    193   184 : ASAP- 9, ALAP-11, MOB- 2
+NOT:    68 :     67       : ASAP- 9, ALAP-15, MOB- 6
+NOR:    87 :     86    76 : ASAP- 9, ALAP-12, MOB- 3
+NOR:   319 :    318   306 : ASAP- 9, ALAP-10, MOB- 1
+NOR:   179 :    178   167 : ASAP- 9, ALAP-11, MOB- 2
+NOR:   268 :    267    16 : ASAP- 9, ALAP-11, MOB- 2
+NOR:   300 :    299  5004 : ASAP- 9, ALAP-12, MOB- 3
+NOT:   376 :    375       : ASAP- 9, ALAP-15, MOB- 6
+NOR:   400 :    399   392 : ASAP- 9, ALAP-14, MOB- 5
+NOR:   425 :    424   420 : ASAP- 9, ALAP-14, MOB- 5
+NOT:   349 :    348       : ASAP- 9, ALAP- 9, MOB- 0
+NOR:    30 :     29    12 : ASAP- 9, ALAP-13, MOB- 4
+NOR:   163 :    162   158 : ASAP- 9, ALAP-10, MOB- 1
+NOR:   445 :    444   441 : ASAP- 9, ALAP-12, MOB- 3
+NOR:   131 :    130   125 : ASAP- 9, ALAP-12, MOB- 3
+NOR:   238 :    237   230 : ASAP- 9, ALAP-12, MOB- 3
+NOR:   239 :    238  5005 : ASAP-10, ALAP-13, MOB- 3
+NOR:   201 :    200   194 : ASAP-10, ALAP-12, MOB- 2
+NOR:   320 :    319    16 : ASAP-10, ALAP-11, MOB- 1
+NOR:   446 :    445    47 : ASAP-10, ALAP-13, MOB- 3
+NOR:   428 :    427   425 : ASAP-10, ALAP-15, MOB- 5
+NOR:   132 :    131  5002 : ASAP-10, ALAP-13, MOB- 3
+NOR:    88 :     87    13 : ASAP-10, ALAP-13, MOB- 3
+NOR:    45 :     44    30 : ASAP-10, ALAP-14, MOB- 4
+NOR:   350 :    349   333 : ASAP-10, ALAP-10, MOB- 0
+NOR:   279 :    278   268 : ASAP-10, ALAP-12, MOB- 2
+NOR:   401 :    400  5003 : ASAP-10, ALAP-15, MOB- 5
+NOR:   164 :    163  5003 : ASAP-10, ALAP-11, MOB- 1
+NOR:   180 :    179   164 : ASAP-11, ALAP-12, MOB- 1
+NOR:   104 :    103    88 : ASAP-11, ALAP-14, MOB- 3
+NOR:   410 :    409   401 : ASAP-11, ALAP-16, MOB- 5
+NOT:   202 :    201       : ASAP-11, ALAP-13, MOB- 2
+NOR:    46 :     45  5006 : ASAP-11, ALAP-15, MOB- 4
+NOR:   455 :    454   446 : ASAP-11, ALAP-14, MOB- 3
+NOR:   351 :    350  5002 : ASAP-11, ALAP-11, MOB- 0
+NOR:   254 :    253   239 : ASAP-11, ALAP-14, MOB- 3
+NOR:   147 :    146   132 : ASAP-11, ALAP-14, MOB- 3
+NOT:   321 :    320       : ASAP-11, ALAP-12, MOB- 1
+NOR:   280 :    279    13 : ASAP-11, ALAP-13, MOB- 2
+NOT:   456 :    455       : ASAP-12, ALAP-15, MOB- 3
+NOR:   148 :    147    13 : ASAP-12, ALAP-15, MOB- 3
+NOR:   322 :    321   300 : ASAP-12, ALAP-13, MOB- 1
+NOR:   411 :    410   383 : ASAP-12, ALAP-17, MOB- 5
+NOR:   105 :    104  5003 : ASAP-12, ALAP-15, MOB- 3
+NOR:   356 :    355   351 : ASAP-12, ALAP-12, MOB- 0
+NOR:   181 :    180  5001 : ASAP-12, ALAP-13, MOB- 1
+NOR:    69 :     68    46 : ASAP-12, ALAP-16, MOB- 4
+NOR:   287 :    286   280 : ASAP-12, ALAP-14, MOB- 2
+NOR:   255 :    254  5001 : ASAP-12, ALAP-15, MOB- 3
+NOR:   113 :    112   105 : ASAP-13, ALAP-16, MOB- 3
+NOT:   288 :    287       : ASAP-13, ALAP-15, MOB- 2
+NOR:   457 :    456   428 : ASAP-13, ALAP-16, MOB- 3
+NOR:    70 :     69    11 : ASAP-13, ALAP-17, MOB- 4
+NOT:   357 :    356       : ASAP-13, ALAP-13, MOB- 0
+NOR:   203 :    202   181 : ASAP-13, ALAP-14, MOB- 1
+NOT:   114 :    113       : ASAP-14, ALAP-17, MOB- 3
+NOT:   458 :    457       : ASAP-14, ALAP-17, MOB- 3
+NOT:   204 :    203       : ASAP-14, ALAP-15, MOB- 1
+NOR:   289 :    288   255 : ASAP-14, ALAP-16, MOB- 2
+NOR:   358 :    357   322 : ASAP-14, ALAP-14, MOB- 0
+NOR:   115 :    114    70 : ASAP-15, ALAP-18, MOB- 3
+NOR:   359 :    358  5003 : ASAP-15, ALAP-15, MOB- 0
+NOR:   205 :    204   148 : ASAP-15, ALAP-16, MOB- 1
+NOR:   459 :    458   411 : ASAP-15, ALAP-18, MOB- 3
+NOR:   290 :    289    11 : ASAP-15, ALAP-17, MOB- 2
+NOT:   460 :    459       : ASAP-16, ALAP-19, MOB- 3
+NOR:   206 :    205   117 : ASAP-16, ALAP-17, MOB- 1
+NOR:   116 :    115  5005 : ASAP-16, ALAP-19, MOB- 3
+NOR:   377 :    376   359 : ASAP-16, ALAP-16, MOB- 0
+NOT:   378 :    377       : ASAP-17, ALAP-17, MOB- 0
+NOR:   218 :    217   206 : ASAP-17, ALAP-18, MOB- 1
+NOT:   219 :    218       : ASAP-18, ALAP-19, MOB- 1
+NOR:   379 :    378   290 : ASAP-18, ALAP-18, MOB- 0
+NOR:   220 :    219   116 : ASAP-19, ALAP-20, MOB- 1
+NOR:   380 :    379  5000 : ASAP-19, ALAP-19, MOB- 0
+NOR:   221 :    220    10 : ASAP-20, ALAP-21, MOB- 1
+NOR:   461 :    460   380 : ASAP-20, ALAP-20, MOB- 0
+NOT:   462 :    461       : ASAP-21, ALAP-21, MOB- 0
+NOR:   463 :    462   221 : ASAP-22, ALAP-22, MOB- 0
+NOT:   464 :    463       : ASAP-23, ALAP-23, MOB- 0
+---------------------
+
+ASAP SCHEDULE:
+=============
+Gate distribution across levels:
+  22 63 71 67 53 47 26 25 16 12 11 10 6 5 5 4 2 2 2 2 1 1 1 
+Number of levels: 23, MaxGates: 71
+Number of memristors: 208
+Time steps (serial): 477, Time steps (parallel): 46
+Crossbar size (serial): 71 x 3
+Crossbar size (parallel): 71 x 208
+
+ALAP SCHEDULE:
+=============
+Gate distribution across levels:
+  2 6 10 17 26 30 39 47 52 46 48 32 30 18 19 10 8 4 4 2 2 1 1 
+Number of levels: 23, MaxGates: 52
+Number of memristors: 127
+Time steps (serial): 477, Time steps (parallel): 46
+Crossbar size (serial): 52 x 3
+Crossbar size (parallel): 52 x 127
+
+LIST SCHEDULE:
+=============
+Gate distribution across levels:
+  7 5 4 2 1 1 1 
+Number of levels: 7, MaxGates: 7
+Number of memristors: 19
+Time steps (serial): 461, Time steps (parallel): 14
+Crossbar size (serial): 7 x 3
+Crossbar size (parallel): 7 x 19
