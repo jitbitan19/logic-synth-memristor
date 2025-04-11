@@ -108,7 +108,7 @@ void name_format();
 int main(int argc, char *argv[])
 {
 
-    const char *file_name = "BENCH/Bench/sao2f2.txt";
+    const char *file_name = "BENCH/Bench/exam1_d.txt";
     netlist = fopen(file_name, "r");
 
     FILE *output_file = freopen("fo.txt", "w", stdout);
@@ -201,6 +201,7 @@ void naive_map()
     printf("=====================================\n");
     show_crossbar();
 }
+
 void compact_map()
 {
     init_crossbar();
@@ -209,9 +210,8 @@ void compact_map()
     int inv_map[MAXGATES];
     for (int i = 0; i < MAXGATES; i++)
         inv_map[gates[i].out] = i;
-    int av_row[MAXROW], av_col[MAXCOL];
+    int av_row[MAXROW];
     memset(av_row, 0, sizeof(av_row));
-    memset(av_col, 0, sizeof(av_col));
 
     for (int i = 0; i < num_primary; i++)
     {
@@ -220,7 +220,6 @@ void compact_map()
         crossbar[i][0].jdx = 0;
         av_row[i] = 1;
     }
-    av_col[0] = num_primary;
     max_idx = num_primary - 1;
 
     for (int i = 0; i < ng; i++)
@@ -288,40 +287,6 @@ void compact_map()
                 max_idx = map_idx;
             if (map_jdx > max_jdx)
                 max_jdx = map_jdx;
-            // else if (temp_jdx == temp_vdx)
-            // {
-            //     // map_idx = av_col[temp_jdx]++;
-            //     // map_jdx = temp_jdx;
-            //     map_idx = temp_udx;
-            //     map_jdx = av_row[map_idx];
-
-            //     tmem = &crossbar[map_idx][map_jdx];
-            //     tmem->is_copy = true;
-            //     tmem->input[0] = &crossbar[temp_idx][temp_jdx];
-            //     tmem->value = crossbar[temp_idx][temp_jdx].value;
-            //     tmem->idx = map_idx;
-            //     tmem->jdx = map_jdx;
-
-            //     temp_idx = map_idx;
-            //     temp_jdx = map_jdx;
-            //     map_jdx = av_row[map_idx];
-            // }
-            // else
-            // {
-            //     map_idx = av_col[temp_vdx]++;
-            //     map_jdx = temp_vdx;
-
-            //     tmem = &crossbar[map_idx][map_jdx];
-            //     tmem->is_copy = true;
-            //     tmem->input[0] = &crossbar[temp_idx][temp_jdx];
-            //     tmem->value = crossbar[temp_idx][temp_jdx].value;
-            //     tmem->idx = map_idx;
-            //     tmem->jdx = map_jdx;
-
-            //     temp_idx = map_idx;
-            //     temp_jdx = map_jdx;
-            //     map_idx = av_col[temp_vdx]++;
-            // }
         }
     }
 
@@ -402,11 +367,16 @@ void show_crossbar()
         }
     }
     printf("\n");
+    printf("-----------------------\n");
     printf("Metrics:\n");
-    printf("Primary Inputs: %d\n", num_primary);
-    printf("Levels        : %d\n", curr_level);
-    printf("Crossbar Size : %dx%d\n", max_idx + 1, max_jdx + 1);
-    printf("--------------------------------------------\n\n");
+    printf("Primary Inputs   : %d\n", num_primary);
+    printf("Levels           : %d\n", curr_level);
+    printf("Read Operations  : %d\n", max_asap);
+    printf("Write Operations : %d\n", 2 * max_asap + 1);
+    printf("Evaluation Cycles: %d\n", max_asap);
+    printf("Total Cycles     : %d\n", 4 * max_asap + 1);
+    printf("Crossbar Size    : %dx%d\n", max_idx + 1, max_jdx + 1);
+    printf("-----------------------\n\n");
 }
 
 void name_format(memristive_gate *mem)
