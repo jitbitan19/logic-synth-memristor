@@ -108,7 +108,7 @@ void name_format();
 int main(int argc, char *argv[])
 {
 
-    const char *file_name = "BENCH/Bench/exam1_d.txt";
+    const char *file_name = "BENCH/Bench/9sym_d.txt";
     netlist = fopen(file_name, "r");
 
     FILE *output_file = freopen("fo.txt", "w", stdout);
@@ -369,13 +369,13 @@ void show_crossbar()
     printf("\n");
     printf("-----------------------\n");
     printf("Metrics:\n");
-    printf("Primary Inputs   : %d\n", num_primary);
-    printf("Levels           : %d\n", curr_level);
-    printf("Read Operations  : %d\n", max_asap);
-    printf("Write Operations : %d\n", 2 * max_asap + 1);
-    printf("Evaluation Cycles: %d\n", max_asap);
-    printf("Total Cycles     : %d\n", 4 * max_asap + 1);
-    printf("Crossbar Size    : %dx%d\n", max_idx + 1, max_jdx + 1);
+    printf("Primary Inputs    : %d\n", num_primary);
+    printf("Levels            : %d\n", curr_level);
+    printf("Read Operations   : %d\n", max_asap);
+    printf("Write Operations  : %d\n", 2 * max_asap + 1);
+    printf("Evaluation Cycles : %d\n", max_asap);
+    printf("Total Cycles      : %d\n", 4 * max_asap + 1);
+    printf("Crossbar Size     : %dx%d\n", max_idx + 1, max_jdx + 1);
     printf("-----------------------\n\n");
 }
 
