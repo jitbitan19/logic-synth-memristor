@@ -29,6 +29,7 @@
 #define MAXROW 1000
 #define MAXCOL 1000
 #define MAXCPY 100
+#define OUTBIAS 6000
 
 typedef struct memristive_gate
 {                                            // A simpler gate structure to hold the mappings
@@ -49,10 +50,11 @@ typedef struct
     int out;                    // The output line for the gate.
     int asap_level;             // ASAP (As Soon As Possible) schedule level for the gate.
     int alap_level;             // ALAP (As Late As Possible) schedule level for the gate.
-    int mobility;               // Difference between alap_level and asap_level
     int list_level;             // List-based scheduling level.
+    int mobility;               // Difference between alap_level and asap_level
     int output_gates[MAXGATES]; // Stores indices of gates that use this gate's output
     int output_count;           // Number of gates in output_gates array
+    bool is_output;             // Indicates whether the gate is an output line
     memristive_gate *gate_map;  // Pointer to the actual mapping
 } table_gate;
 
@@ -108,7 +110,7 @@ void name_format();
 int main(int argc, char *argv[])
 {
 
-    const char *file_name = "BENCH/Bench/9sym_d.txt";
+    const char *file_name = "BENCH/Bench/fi.txt";
     netlist = fopen(file_name, "r");
 
     FILE *output_file = freopen("fo.txt", "w", stdout);
@@ -340,20 +342,12 @@ void show_crossbar()
                 memristive_gate *ip2 = crossbar[i][j].input[1];
 
                 printf("%4d ", ip1->jdx);
-                // if (ip1->value >= MAXGATES)
-                //     sprintf(buffer, "/%c", 'a' + ip1->value - MAXGATES);
-                // else
-                //     sprintf(buffer, "%dx%d", ip1->idx, ip1->jdx);
                 name_format(ip1);
                 printf("%9s ", buffer);
 
                 if (crossbar[i][j].fanin > 1)
                 {
                     printf("%4d", ip2->jdx);
-                    // if (ip2->value >= MAXGATES)
-                    //     sprintf(buffer, "/%c", 'a' + ip2->value - MAXGATES);
-                    // else
-                    //     sprintf(buffer, "%dx%d", ip2->idx, ip2->jdx);
                     name_format(ip2);
                     printf("%9s ", buffer);
                 }
@@ -382,7 +376,8 @@ void show_crossbar()
 void name_format(memristive_gate *mem)
 {
     if (mem->value >= MAXGATES)
-        sprintf(buffer, "/%c", 'a' + mem->value - MAXGATES);
+        sprintf(buffer, "/i%d", mem->value - MAXGATES);
+    // sprintf(buffer, "/%c", 'a' + mem->value - MAXGATES);
     else if (mem->is_copy)
         name_format(mem->input[0]);
     else
@@ -900,16 +895,20 @@ void parse_gates()
         {
         case 2: // NOT gate
             gates[ng].fanin = 1;
-            gates[ng].out = varid[0];
-            gates[ng].input[0] = varid[1];
+            gates[ng].out = varid[0] >= OUTBIAS ? varid[0] - OUTBIAS : varid[0];
+            gates[ng].input[0] = varid[1] >= OUTBIAS ? varid[1] - OUTBIAS : varid[1];
+            if (varid[0] >= OUTBIAS)
+                gates[ng].is_output = 1;
             ng++;
             break;
 
         case 3: // 2-input NOR
             gates[ng].fanin = 2;
-            gates[ng].out = varid[0];
-            gates[ng].input[0] = varid[1];
-            gates[ng].input[1] = varid[2];
+            gates[ng].out = varid[0] >= OUTBIAS ? varid[0] - OUTBIAS : varid[0];
+            gates[ng].input[0] = varid[1] >= OUTBIAS ? varid[1] - OUTBIAS : varid[1];
+            gates[ng].input[1] = varid[2] >= OUTBIAS ? varid[2] - OUTBIAS : varid[2];
+            if (varid[0] >= OUTBIAS)
+                gates[ng].is_output = 1;
             ng++;
             break;
 
