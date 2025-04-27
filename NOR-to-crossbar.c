@@ -3,7 +3,7 @@
   of the ABC tool, and generates statistics for memristor crossbar
   mapping using both ASAP and ALAP schedules. The program has to be
   invoked as:
-     ./a.out  <file-name>
+  $ ./a  <file-name>
 
   There are some constraints on the input file format.
   a) There must be a dot ('.') in the first column of the last line
@@ -19,6 +19,7 @@
 #include <ctype.h>
 #include <time.h>
 #include <stdbool.h>
+#include <sys/stat.h>
 
 #define MAXGATES 5000
 #define MAXFANIN 5
@@ -69,7 +70,7 @@ int num_ip = 0;                           // Number of primary inputs.
 int num_op = 0;                           // Number of outputs
 int num_gates = 0;                        // Number of gates;
 int tempvar = 1;                          // Temporary lines start as -1, -2, etc.
-FILE *netlist;                            // A file pointer that will point to the netlist file being read.
+FILE *file;                               // A file pointer that will point to the netlist file being read.
 int primary_input_values[MAXPI];          // Stores the values for the primary inputs
 int gate_values[MAXGATES];                // Stores the values for the gates
 int max_asap = 0;                         // Total no of asap levels for the given netlist
@@ -77,6 +78,7 @@ int max_alap = 0;                         // Total no of alap levels for the giv
 int max_list = 0;                         // Total no of list levels for the given netlist
 int max_idx = 0;                          // Total used rows of the memristor crossbar
 int max_jdx = 0;                          // Total used cols of the memristor crossbar
+char bench_name[25];                      // Name of the current benchmark file
 
 // Functions prototypes
 int cmp_level(const void *a, const void *b);
@@ -104,7 +106,7 @@ void compute_list_level();
 int list_schedule_possible(int maxlevel, int maxgates);
 void naive_map();
 void compact_map();
-void show_crossbar();
+void show_crossbar(int);
 void name_format(memristive_gate *);
 void gen_nor_module();
 void wire_format(int);
@@ -113,12 +115,18 @@ void wire_format(int);
 int main(int argc, char *argv[])
 {
 
-  const char *file_name = "BENCH/Bench/fi.txt";
-  FILE *output_file = freopen("fo.txt", "w", stdout);
-  netlist = fopen(file_name, "r");
+  char dir[100] = "BENCH/iscas_bench/";
+  char *ext = ".txt";
+  strcpy(bench_name, argv[1]);
+
+  strcat(dir, argv[1]);
+  strcat(dir, ext);
+  file = fopen(dir, "r");
 
   int i;
   parse_gates();
+  fclose(file);
+
   // find_gate_outputs();
   // print_gate_outputs();
 
@@ -145,17 +153,12 @@ int main(int argc, char *argv[])
   // for (int level = 1; level <= max_asap; level++)
   // 	map_level_to_crossbar(level);
 
-  printf("************ BENCHMARK: %s *************", argv[1]);
   print_gates();
+  print_stat();
 
   gen_nor_module();
   naive_map();
   compact_map();
-
-  print_stat();
-
-  fclose(netlist);
-  fclose(output_file);
 }
 
 /*******************************************************
@@ -164,46 +167,79 @@ int main(int argc, char *argv[])
 *******************************************************/
 void gen_nor_module()
 {
-  printf("NOR_2 Mapped Module\n");
-  printf("===================\n");
-  qsort(gates, num_gates, sizeof(table_gate), cmp_level);
+  char result_dir[50] = "Results/";
+  mkdir(result_dir, 0755);
+  char sub_dir[20] = "magic/";
+  strcat(result_dir, sub_dir);
+  mkdir(result_dir, 0755);
+  char *sub = "_magic";
+  char *ext = ".v";
+  char result_file_path[100];
+  sprintf(result_file_path, "%s%s%s%s", result_dir, bench_name, sub, ext);
+  file = fopen(result_file_path, "w");
 
-  printf("module NOR_NOT_MODULE(\n");
+  fprintf(file, "// NOR_NOT mapped module module_name\n\n");
+  qsort(gates, num_gates, sizeof(table_gate), cmp_level);
+  // Module declr 1
+  // printf("module NOR_2 (\n");
+  // for (int i = 0; i < num_ip; i++)
+  //   printf("  ip_%d,\n", i + 1);
+  // for (int i = 0; i < num_op - 1; i++)
+  //   printf("  op_%d,\n", i + 1);
+  // printf("  op_%d\n", num_op);
+  // printf(");\n\n");
+
+  // for (int i = 0; i < num_ip; i++)
+  //   printf("input  i%d;\n", i + 1);
+  // for (int i = 0; i < num_op - 1; i++)
+  //   printf("output i%d;\n", i + 1);
+  // printf("output i%d;\n\n", num_op);
+
+  // Module declr 2
+  fprintf(file, "module module_name (\n");
   for (int i = 0; i < num_ip; i++)
-    printf("\tinput  ip_%d,\n", i + 1);
+    fprintf(file, "  input  ip_%d,\n", i + 1);
   for (int i = 0; i < num_op - 1; i++)
-    printf("\toutput op_%d,\n", i + 1);
-  printf("\toutput op_%d\n);\n", num_op);
-  printf("\n");
+    fprintf(file, "  output op_%d,\n", i + 1);
+  fprintf(file, "  output op_%d\n);\n", num_op);
+  fprintf(file, "\n");
 
   for (int i = num_op + 1; i <= num_gates; i++)
-    printf("wire wr_%d;\n", i);
-  printf("\n");
+    fprintf(file, "  wire wr_%d;\n", i);
+  fprintf(file, "\n");
 
   for (int i = 0; i < num_gates; i++)
   {
     char temp = ')';
     int ip1 = gates[i].input[0];
     int ip2 = gates[i].input[1];
-    wire_format(ip1);
+    wire_format(gates[i].out);
 
     if (gates[i].fanin == 1)
     {
-      printf("INVX1  g%d( .A%-9s, %13s", i, buffer, " ");
+      sprintf(buffer, "g%d", i + 1);
+      fprintf(file, "  not %5s", buffer);
+      wire_format(gates[i].out);
+      fprintf(file, "( %-7s,", buffer);
+      wire_format(ip1);
+      fprintf(file, " %8s %-7s );\n", " ", buffer);
     }
     else
     {
-      printf("NOR2X1 g%d( .A%-9s, ", i, buffer);
+      sprintf(buffer, "g%d", i + 1);
+      fprintf(file, "  nor %5s(", buffer);
+      wire_format(gates[i].out);
+      fprintf(file, " %-7s,", buffer);
+      wire_format(ip1);
+      fprintf(file, " %-7s,", buffer);
       wire_format(ip2);
-      printf(".B%-9s, ", buffer);
+      fprintf(file, " %-7s );\n", buffer);
     }
-    wire_format(gates[i].out);
-    printf(".Y%-9s );\n", buffer);
   }
-  printf("\n");
+  fprintf(file, "\nendmodule\n");
+  fclose(file);
 
-  printf("endmodule\n");
-  printf("--------------------------\n\n\n");
+  printf("NOR_NOT mapped verilog written successfully!%24s%s\n", " ", result_file_path);
 }
 
 /*******************************************************
@@ -270,9 +306,9 @@ void naive_map()
       crossbar[0][max_jdx].input[1] = gates[inv_map[ip2]].gate_map;
   }
 
-  printf("Naively Mapped Crossbar Configuration\n");
-  printf("=====================================\n");
-  show_crossbar();
+  // printf("Naively Mapped Crossbar Configuration\n");
+  // printf("=====================================\n");
+  show_crossbar(1);
 }
 
 /*******************************************************
@@ -382,17 +418,28 @@ void compact_map()
     }
   }
 
-  printf("Compactly Mapped Crossbar Configuration\n");
-  printf("=======================================\n");
-  show_crossbar();
+  // printf("Compactly Mapped Crossbar Configuration\n");
+  // printf("=======================================\n");
+  show_crossbar(0);
 }
 
 /*******************************************************
   Shows the memristor placement in the global crossbar
   array in the micro-operation file format with metrics
 *******************************************************/
-void show_crossbar()
+void show_crossbar(int flag)
 {
+  char result_dir[50] = "Results/";
+  mkdir(result_dir, 0755);
+  char *sub_dir = flag ? "micro_ins_naive/" : "micro_ins_compact/";
+  strcat(result_dir, sub_dir);
+  mkdir(result_dir, 0755);
+  char *suf = flag ? "_naive" : "_compact";
+  char *ext = ".txt";
+  char result_file_path[100];
+  sprintf(result_file_path, "%s%s%s%s", result_dir, bench_name, suf, ext);
+  file = fopen(result_file_path, "w");
+
   int curr_level = 0;
   for (int l = 0; l < max_asap; l++)
   {
@@ -408,42 +455,48 @@ void show_crossbar()
         if (crossbar[i][j].asap_level > curr_level)
         {
           curr_level = crossbar[i][j].asap_level;
-          printf("# Level: %2d _____________________________________\n", curr_level);
+          fprintf(file, "# Level: %2d _____________________________________\n", curr_level);
         }
 
-        printf("%4d %5s ", crossbar[i][j].idx, "False");
+        fprintf(file, "%4d %5s ", crossbar[i][j].idx, "False");
         memristive_gate *ip1 = crossbar[i][j].input[0];
         memristive_gate *ip2 = crossbar[i][j].input[1];
 
-        printf("%4d ", ip1->jdx);
+        fprintf(file, "%4d ", ip1->jdx);
         name_format(ip1);
-        printf("%9s ", buffer);
+        fprintf(file, "%9s ", buffer);
 
         if (crossbar[i][j].fanin > 1)
         {
-          printf("%4d", ip2->jdx);
+          fprintf(file, "%4d", ip2->jdx);
           name_format(ip2);
-          printf("%9s ", buffer);
+          fprintf(file, "%9s ", buffer);
         }
         else
-          printf("%14s", " ");
+          fprintf(file, "%14s", " ");
 
-        printf("%4d ", crossbar[i][j].jdx);
-        printf("True\n");
+        fprintf(file, "%4d ", crossbar[i][j].jdx);
+        fprintf(file, "True\n");
       }
     }
   }
-  printf("\n");
-  printf("Metrics\n");
-  printf("-------\n");
-  printf("Primary Inputs    : %d\n", num_ip);
-  printf("Levels            : %d\n", curr_level);
-  printf("Read Operations   : %d\n", max_asap);
-  printf("Write Operations  : %d\n", 2 * max_asap + 1);
-  printf("Evaluation Cycles : %d\n", max_asap);
-  printf("Total Cycles      : %d\n", 4 * max_asap + 1);
-  printf("Crossbar Size     : %dx%d\n", max_idx + 1, max_jdx + 1);
-  printf("---------------------------\n\n\n");
+  fprintf(file, "\n");
+  fprintf(file, "Metrics\n");
+  fprintf(file, "-------\n");
+  fprintf(file, "Primary Inputs    : %d\n", num_ip);
+  fprintf(file, "Levels            : %d\n", curr_level);
+  fprintf(file, "Read Operations   : %d\n", max_asap);
+  fprintf(file, "Write Operations  : %d\n", 2 * max_asap + 1);
+  fprintf(file, "Evaluation Cycles : %d\n", max_asap);
+  fprintf(file, "Total Cycles      : %d\n", 4 * max_asap + 1);
+  fprintf(file, "Crossbar Size     : %dx%d\n", max_idx + 1, max_jdx + 1);
+  fprintf(file, "---------------------------\n\n\n");
+
+  fclose(file);
+  if (flag)
+    printf("Naively mapped crossbar micro instructions written successfully!    %s\n", result_file_path);
+  else
+    printf("Compactly mapped crossbar micro instructions written successfully!  %s\n", result_file_path);
 }
 
 /*******************************************************
@@ -467,11 +520,11 @@ void name_format(memristive_gate *mem)
 void wire_format(int ip)
 {
   if (ip >= MAXGATES)
-    sprintf(buffer, "(ip_%d)", ip - MAXGATES + 1);
+    sprintf(buffer, "ip_%d", ip - MAXGATES + 1);
   else if (ip > num_op)
-    sprintf(buffer, "(wr_%d)", ip);
+    sprintf(buffer, "wr_%d", ip);
   else
-    sprintf(buffer, "(op_%d)", ip);
+    sprintf(buffer, "op_%d", ip);
 }
 
 int cmp_level(const void *a, const void *b)
@@ -669,6 +722,17 @@ void map_level_to_crossbar(int level)
 ***********************************************/
 void print_stat() // The print_stat function calculates and prints various statistics about the scheduling methods.
 {                 // maxl: Tracks the maximum level.
+  char result_dir[50] = "Results/";
+  mkdir(result_dir, 0755);
+  char sub_dir[20] = "schedule_stats/";
+  strcat(result_dir, sub_dir);
+  mkdir(result_dir, 0755);
+  char *sub = "_stats";
+  char *ext = ".txt";
+  char result_file_path[100];
+  sprintf(result_file_path, "%s%s%s%s", result_dir, bench_name, sub, ext);
+  file = fopen(result_file_path, "w");
+
   int i, j, maxl, count, maxgates, gates_level;
   int gate_count[MAXLEVEL];
   int cross_rows[500];                                            // Tracks the rows in a crossbar array for the memristors.
@@ -702,14 +766,14 @@ void print_stat() // The print_stat function calculates and prints various stati
     if (gate_count[i] > maxgates)
       maxgates = gate_count[i];
 
-  printf("ASAP SCHEDULE:"); // The code prints the gate distribution across levels, the number of levels, and the maximum number of gates in a level for the ASAP schedule.
-  printf("\n=============");
+  fprintf(file, "ASAP SCHEDULE:"); // The code prints the gate distribution across levels, the number of levels, and the maximum number of gates in a level for the ASAP schedule.
+  fprintf(file, "\n=============");
 
-  printf("\nGate distribution across levels:\n  ");
+  fprintf(file, "\nGate distribution across levels:\n  ");
   for (i = 0; i < maxl; i++)
-    printf("%d ", gate_count[i]);
+    fprintf(file, "%d ", gate_count[i]);
 
-  printf("\nNumber of levels: %d, MaxGates: %d", maxl, maxgates);
+  fprintf(file, "\nNumber of levels: %d, MaxGates: %d", maxl, maxgates);
 
   // ** Now count the number of memristors and crossbar columns **
   for (i = 0; i < maxgates; i++) // Initialize the cross_rows array to track how many crossbar rows are used for memristors at each level. Each entry in cross_rows represents a "row" in the crossbar where memristors are assigned. Initially, all rows are set to 0, meaning no memristor is assigned yet.
@@ -747,19 +811,19 @@ void print_stat() // The print_stat function calculates and prints various stati
       asap_memr_serial += 2;
     else
       asap_memr_serial += 3;
-  printf("\nNumber of memristors: %d", asap_memr_serial);
+  fprintf(file, "\nNumber of memristors: %d", asap_memr_serial);
 
   time_parallel = 2 * maxl;
   time_serial = asap_not + asap_nor + maxl;
-  printf("\nTime steps (serial): %d, Time steps (parallel): %d",
-         time_serial, time_parallel);
+  fprintf(file, "\nTime steps (serial): %d, Time steps (parallel): %d",
+          time_serial, time_parallel);
 
-  printf("\nCrossbar size (serial): %d x %d", maxgates, 3); // Crossbar Size in Parallel Configuration
+  fprintf(file, "\nCrossbar size (serial): %d x %d", maxgates, 3); // Crossbar Size in Parallel Configuration
   count = 0;
   for (i = 0; i < maxgates; i++)
     if (cross_rows[i] == 1)
       count++; // No. of columns less reqd.
-  printf("\nCrossbar size (parallel): %d x %d", maxgates, (3 * maxgates) - count);
+  fprintf(file, "\nCrossbar size (parallel): %d x %d", maxgates, (3 * maxgates) - count);
 
   //************* FOR ALAP SCHEDULE ***********
 
@@ -788,13 +852,13 @@ void print_stat() // The print_stat function calculates and prints various stati
     if (gate_count[i] > maxgates)
       maxgates = gate_count[i];
 
-  printf("\n\nALAP SCHEDULE:");
-  printf("\n=============");
-  printf("\nGate distribution across levels:\n  ");
+  fprintf(file, "\n\nALAP SCHEDULE:");
+  fprintf(file, "\n=============");
+  fprintf(file, "\nGate distribution across levels:\n  ");
   for (i = 0; i < maxl; i++)
-    printf("%d ", gate_count[i]);
+    fprintf(file, "%d ", gate_count[i]);
 
-  printf("\nNumber of levels: %d, MaxGates: %d", maxl, maxgates);
+  fprintf(file, "\nNumber of levels: %d, MaxGates: %d", maxl, maxgates);
 
   // ** Now count the number of memristors and crossbar columns **
   for (i = 0; i < maxgates; i++)
@@ -833,19 +897,19 @@ void print_stat() // The print_stat function calculates and prints various stati
       alap_memr_serial += 2;
     else
       alap_memr_serial += 3;
-  printf("\nNumber of memristors: %d", alap_memr_serial);
+  fprintf(file, "\nNumber of memristors: %d", alap_memr_serial);
 
   time_parallel = 2 * maxl;
   time_serial = alap_not + alap_nor + maxl;
-  printf("\nTime steps (serial): %d, Time steps (parallel): %d",
-         time_serial, time_parallel);
+  fprintf(file, "\nTime steps (serial): %d, Time steps (parallel): %d",
+          time_serial, time_parallel);
 
-  printf("\nCrossbar size (serial): %d x %d", maxgates, 3);
+  fprintf(file, "\nCrossbar size (serial): %d x %d", maxgates, 3);
   count = 0;
   for (i = 0; i < maxgates; i++)
     if (cross_rows[i] == 1)
       count++; // No. of columns less reqd.
-  printf("\nCrossbar size (parallel): %d x %d\n", maxgates, (3 * maxgates) - count);
+  fprintf(file, "\nCrossbar size (parallel): %d x %d\n", maxgates, (3 * maxgates) - count);
 
   //************* FOR LIST SCHEDULE ***********
   maxl = 0;
@@ -873,14 +937,14 @@ void print_stat() // The print_stat function calculates and prints various stati
     if (gate_count[i] > maxgates)
       maxgates = gate_count[i];
 
-  printf("\nLIST SCHEDULE:");
-  printf("\n=============");
+  fprintf(file, "\nLIST SCHEDULE:");
+  fprintf(file, "\n=============");
 
-  printf("\nGate distribution across levels:\n  ");
+  fprintf(file, "\nGate distribution across levels:\n  ");
   for (i = 0; i < maxl; i++)
-    printf("%d ", gate_count[i]);
+    fprintf(file, "%d ", gate_count[i]);
 
-  printf("\nNumber of levels: %d, MaxGates: %d", maxl, maxgates);
+  fprintf(file, "\nNumber of levels: %d, MaxGates: %d", maxl, maxgates);
 
   // ** Now count the number of memristors and crossbar columns **
   for (i = 0; i < maxgates; i++)
@@ -919,19 +983,22 @@ void print_stat() // The print_stat function calculates and prints various stati
       list_memr_serial += 2;
     else
       list_memr_serial += 3;
-  printf("\nNumber of memristors: %d", list_memr_serial);
+  fprintf(file, "\nNumber of memristors: %d", list_memr_serial);
 
   time_parallel = 2 * maxl;
   time_serial = list_not + list_nor + maxl;
-  printf("\nTime steps (serial): %d, Time steps (parallel): %d",
-         time_serial, time_parallel);
+  fprintf(file, "\nTime steps (serial): %d, Time steps (parallel): %d",
+          time_serial, time_parallel);
 
-  printf("\nCrossbar size (serial): %d x %d", maxgates, 3);
+  fprintf(file, "\nCrossbar size (serial): %d x %d", maxgates, 3);
   count = 0;
   for (i = 0; i < maxgates; i++)
     if (cross_rows[i] == 1)
       count++; // No. of columns less reqd.
-  printf("\nCrossbar size (parallel): %d x %d", maxgates, (3 * maxgates) - count);
+  fprintf(file, "\nCrossbar size (parallel): %d x %d", maxgates, (3 * maxgates) - count);
+
+  fclose(file);
+  printf("Gate Scheduling Stats written successfully!%25s%s\n", " ", result_file_path);
 }
 
 /*****************************************
@@ -939,6 +1006,7 @@ void print_stat() // The print_stat function calculates and prints various stati
 *****************************************/
 void print_gates()
 {
+  printf("Benchmark: %s", bench_name);
   int i, j;
 
   for (i = 0; i < num_gates; i++) // The loop runs through all the gates (num_gates is the number of gates). For each gate, it prints its relevant details.
@@ -958,7 +1026,7 @@ void print_gates()
 
     printf(" : ASAP-%2d, ALAP-%2d, MOB-%2d", gates[i].asap_level, gates[i].alap_level, gates[i].mobility);
   }
-  printf("\n----------------------------------------------------\n\n\n");
+  printf("\n----------------------------------------------------\n");
 }
 
 /***********************************************
@@ -972,7 +1040,7 @@ void parse_gates()
 
   for (;;)
   {
-    fgets(line, sizeof(line), netlist);
+    fgets(line, sizeof(line), file);
 
     if (line[0] == '.')
       break;
