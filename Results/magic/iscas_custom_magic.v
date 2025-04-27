@@ -13,11 +13,11 @@ module half_adder (
   wire wr_7;
 
   not    g1( wr_3   ,          b      );
-  not    g2( wr_5   ,          a      );
-  nor    g3( wr_4   , wr_3   , a      );
+  nor    g2( wr_4   , wr_3   , a      );
+  not    g3( wr_5   ,          a      );
   nor    g4( wr_6   , b      , wr_5    );
-  nor    g5( s      , wr_3   , wr_5    );
-  nor    g6( wr_7   , wr_6   , wr_4    );
-  not    g7( c      ,          wr_7    );
+  nor    g5( wr_7   , wr_6   , wr_4    );
+  not    g6( c      ,          wr_7    );
+  nor    g7( s      , wr_3   , wr_5    );
 
 endmodule

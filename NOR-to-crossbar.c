@@ -218,18 +218,18 @@ void gen_nor_module()
       sprintf(buffer, "g%d", i + 1);
       fprintf(file, "  not %5s", buffer);
       wire_format(gates[i].out);
-      fprintf(file, "( %-7s,", buffer);
+      fprintf(file, "( %-7s ,", buffer);
       wire_format(ip1);
-      fprintf(file, " %8s %-7s );\n", " ", buffer);
+      fprintf(file, " %9s %-7s );\n", " ", buffer);
     }
     else
     {
       sprintf(buffer, "g%d", i + 1);
       fprintf(file, "  nor %5s(", buffer);
       wire_format(gates[i].out);
-      fprintf(file, " %-7s,", buffer);
+      fprintf(file, " %-7s ,", buffer);
       wire_format(ip1);
-      fprintf(file, " %-7s,", buffer);
+      fprintf(file, " %-7s ,", buffer);
       wire_format(ip2);
       fprintf(file, " %-7s );\n", buffer);
     }

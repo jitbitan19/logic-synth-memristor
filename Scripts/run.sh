@@ -1,4 +1,4 @@
-filename=iscas_custom
+filename=iscas85_c7552
 
 mkdir -p Results/magic
 mkdir -p Results/micro_ins_compact
