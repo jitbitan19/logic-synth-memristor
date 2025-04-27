@@ -1,0 +1,13 @@
+
+Metrics
+-------
+Primary Inputs    : 5135
+Levels            : 0
+Read Operations   : 1
+Write Operations  : 3
+Evaluation Cycles : 1
+Total Cycles      : 5
+Crossbar Size     : 1x8530
+---------------------------
+
+

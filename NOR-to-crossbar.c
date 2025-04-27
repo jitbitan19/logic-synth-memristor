@@ -110,18 +110,22 @@ void show_crossbar(int);
 void name_format(memristive_gate *);
 void gen_nor_module();
 void wire_format(int);
+void get_bench_name(const char *, char *);
 
 /*************** MAIN FUNCTION ********************/
 int main(int argc, char *argv[])
 {
 
-  char dir[100] = "BENCH/iscas_bench/";
-  char *ext = ".txt";
-  strcpy(bench_name, argv[1]);
+  // char dir[100] = "BENCH/iscas_bench/";
+  // char *ext = ".txt";
+  // strcpy(bench_name, argv[1]);
 
-  strcat(dir, argv[1]);
-  strcat(dir, ext);
-  file = fopen(dir, "r");
+  // strcat(dir, argv[1]);
+  // strcat(dir, ext);
+  // file = fopen(dir, "r");
+
+  file = fopen(argv[1], "r");
+  get_bench_name(argv[1], bench_name);
 
   int i;
   parse_gates();
@@ -141,8 +145,8 @@ int main(int argc, char *argv[])
   compute_alap_level();
   compute_list_level();
 
-  find_primary_inputs();
-  assign_random_binary_values();
+  // find_primary_inputs();
+  // assign_random_binary_values();
 
   // initialize the gate_values array to -1
   for (int i = 0; i < MAXGATES; i++)
@@ -153,7 +157,7 @@ int main(int argc, char *argv[])
   // for (int level = 1; level <= max_asap; level++)
   // 	map_level_to_crossbar(level);
 
-  print_gates();
+  // print_gates();
   print_stat();
 
   gen_nor_module();
@@ -167,19 +171,13 @@ int main(int argc, char *argv[])
 *******************************************************/
 void gen_nor_module()
 {
-  char result_dir[50] = "Results/";
-  mkdir(result_dir, 0755);
-  char sub_dir[20] = "magic/";
-  strcat(result_dir, sub_dir);
-  mkdir(result_dir, 0755);
-  char *sub = "_magic";
-  char *ext = ".v";
   char result_file_path[100];
-  sprintf(result_file_path, "%s%s%s%s", result_dir, bench_name, sub, ext);
+  sprintf(result_file_path, "Results/magic/%s_magic.v", bench_name);
   file = fopen(result_file_path, "w");
 
   fprintf(file, "// NOR_NOT mapped module module_name\n\n");
   qsort(gates, num_gates, sizeof(table_gate), cmp_level);
+
   // Module declr 1
   // printf("module NOR_2 (\n");
   // for (int i = 0; i < num_ip; i++)
@@ -238,8 +236,6 @@ void gen_nor_module()
   }
   fprintf(file, "\nendmodule\n");
   fclose(file);
-
-  printf("NOR_NOT mapped verilog written successfully!%24s%s\n", " ", result_file_path);
 }
 
 /*******************************************************
@@ -306,8 +302,6 @@ void naive_map()
       crossbar[0][max_jdx].input[1] = gates[inv_map[ip2]].gate_map;
   }
 
-  // printf("Naively Mapped Crossbar Configuration\n");
-  // printf("=====================================\n");
   show_crossbar(1);
 }
 
@@ -418,8 +412,6 @@ void compact_map()
     }
   }
 
-  // printf("Compactly Mapped Crossbar Configuration\n");
-  // printf("=======================================\n");
   show_crossbar(0);
 }
 
@@ -429,15 +421,11 @@ void compact_map()
 *******************************************************/
 void show_crossbar(int flag)
 {
-  char result_dir[50] = "Results/";
-  mkdir(result_dir, 0755);
-  char *sub_dir = flag ? "micro_ins_naive/" : "micro_ins_compact/";
-  strcat(result_dir, sub_dir);
-  mkdir(result_dir, 0755);
-  char *suf = flag ? "_naive" : "_compact";
-  char *ext = ".txt";
   char result_file_path[100];
-  sprintf(result_file_path, "%s%s%s%s", result_dir, bench_name, suf, ext);
+  if (flag)
+    sprintf(result_file_path, "Results/micro_ins_naive/%s_naive.txt", bench_name);
+  else
+    sprintf(result_file_path, "Results/micro_ins_compact/%s_compact.txt", bench_name);
   file = fopen(result_file_path, "w");
 
   int curr_level = 0;
@@ -493,10 +481,6 @@ void show_crossbar(int flag)
   fprintf(file, "---------------------------\n\n\n");
 
   fclose(file);
-  if (flag)
-    printf("Naively mapped crossbar micro instructions written successfully!    %s\n", result_file_path);
-  else
-    printf("Compactly mapped crossbar micro instructions written successfully!  %s\n", result_file_path);
 }
 
 /*******************************************************
@@ -525,6 +509,16 @@ void wire_format(int ip)
     sprintf(buffer, "wr_%d", ip);
   else
     sprintf(buffer, "op_%d", ip);
+}
+
+void get_bench_name(const char *path, char *out)
+{
+  const char *slash = strrchr(path, '/');
+  const char *filename = slash ? slash + 1 : path;
+  const char *dot = strrchr(filename, '.');
+  size_t len = dot ? (size_t)(dot - filename) : strlen(filename);
+  strncpy(out, filename, len);
+  out[len] = '\0';
 }
 
 int cmp_level(const void *a, const void *b)
@@ -722,15 +716,8 @@ void map_level_to_crossbar(int level)
 ***********************************************/
 void print_stat() // The print_stat function calculates and prints various statistics about the scheduling methods.
 {                 // maxl: Tracks the maximum level.
-  char result_dir[50] = "Results/";
-  mkdir(result_dir, 0755);
-  char sub_dir[20] = "schedule_stats/";
-  strcat(result_dir, sub_dir);
-  mkdir(result_dir, 0755);
-  char *sub = "_stats";
-  char *ext = ".txt";
   char result_file_path[100];
-  sprintf(result_file_path, "%s%s%s%s", result_dir, bench_name, sub, ext);
+  sprintf(result_file_path, "Results/schedule_stats/%s_stats.txt", bench_name);
   file = fopen(result_file_path, "w");
 
   int i, j, maxl, count, maxgates, gates_level;
@@ -998,7 +985,6 @@ void print_stat() // The print_stat function calculates and prints various stati
   fprintf(file, "\nCrossbar size (parallel): %d x %d", maxgates, (3 * maxgates) - count);
 
   fclose(file);
-  printf("Gate Scheduling Stats written successfully!%25s%s\n", " ", result_file_path);
 }
 
 /*****************************************
@@ -1186,7 +1172,7 @@ void get_vars(char x[], int varid[], int nv)
       i++;
 
     if (x[i - 1] == 'x')
-      nx_flag = 1;
+      nx_flag = 1, num_ip++;
     else
       nx_flag = 0;
 

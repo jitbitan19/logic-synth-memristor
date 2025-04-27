@@ -1,11 +1,12 @@
-// NOR_NOT mapped module module_name
+// NOR_NOT mapped module half_adder
 
-module module_name (
-  input  ip_1,
-  input  ip_2,
-  output op_1,
-  output op_2
-);
+module half_adder (
+  input  a      ,
+  input  b      ,
+  input  ip_3,
+  input  ip_4,
+  output c      ,
+  output s      );
 
   wire wr_3;
   wire wr_4;
@@ -13,12 +14,12 @@ module module_name (
   wire wr_6;
   wire wr_7;
 
-  not    g1( wr_3   ,          ip_2    );
-  not    g2( wr_5   ,          ip_1    );
-  nor    g3( wr_4   , wr_3   , ip_1    );
-  nor    g4( wr_6   , ip_2   , wr_5    );
-  nor    g5( op_2   , wr_3   , wr_5    );
+  not    g1( wr_3   ,          b      );
+  not    g2( wr_5   ,          a      );
+  nor    g3( wr_4   , wr_3   , a      );
+  nor    g4( wr_6   , b      , wr_5    );
+  nor    g5( s      , wr_3   , wr_5    );
   nor    g6( wr_7   , wr_6   , wr_4    );
-  not    g7( op_1   ,          wr_7    );
+  not    g7( c      ,          wr_7    );
 
 endmodule
