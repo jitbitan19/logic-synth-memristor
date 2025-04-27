@@ -1,4 +1,4 @@
-filename=iscas85_c7552
+filename=iscas_custom
 
 mkdir -p Results/magic
 mkdir -p Results/micro_ins_compact
@@ -17,15 +17,15 @@ EOF
 rm abc.history
 echo "Generation successful!"
 
-echo "Reformating $filename netlist..."
+echo "Reformatting $filename netlist..."
 python3 ./Scripts/reformat_1.py BENCH/netlist/$filename.txt
-echo "Reformating successful!"
+echo "Reformatting successful!"
 
 echo "Generating Results..."
 gcc ./NOR-to-crossbar.c -o ./bin/main
 ./bin/main ./BENCH/netlist/$filename.txt
 echo "Result generation successful!"
 
-echo "Reformating ${filename}_magic.v..."
+echo "Reformatting ${filename}_magic.v..."
 python3 ./Scripts/reformat_2.py ./BENCH/iscas/$filename.v ./Results/magic/${filename}_magic.v
-echo "Reformating successful!"
+echo "Reformatting successful!"

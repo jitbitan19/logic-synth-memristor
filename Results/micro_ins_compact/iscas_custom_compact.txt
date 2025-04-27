@@ -10,13 +10,13 @@
 
 Metrics
 -------
-Primary Inputs    : 4
+Primary Inputs    : 2
 Levels            : 3
 Read Operations   : 4
 Write Operations  : 9
 Evaluation Cycles : 4
 Total Cycles      : 17
-Crossbar Size     : 4x10
+Crossbar Size     : 2x10
 ---------------------------
 
 

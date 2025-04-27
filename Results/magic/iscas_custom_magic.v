@@ -3,8 +3,6 @@
 module half_adder (
   input  a      ,
   input  b      ,
-  input  ip_3,
-  input  ip_4,
   output c      ,
   output s      );
 

@@ -1042,6 +1042,9 @@ void parse_gates()
       gates[num_gates].input[0] = varid[1] >= OUTBIAS ? varid[1] - OUTBIAS : varid[1];
       if (varid[0] >= OUTBIAS)
         gates[num_gates].is_output = 1, num_op++;
+
+      if (gates[num_gates].input[0] >= MAXGATES && gates[num_gates].input[0] - MAXGATES + 1 > num_ip)
+        num_ip = gates[num_gates].input[0] - MAXGATES + 1;
       num_gates++;
       break;
 
@@ -1052,6 +1055,12 @@ void parse_gates()
       gates[num_gates].input[1] = varid[2] >= OUTBIAS ? varid[2] - OUTBIAS : varid[2];
       if (varid[0] >= OUTBIAS)
         gates[num_gates].is_output = 1, num_op++;
+
+      if (gates[num_gates].input[0] >= MAXGATES && gates[num_gates].input[0] - MAXGATES + 1 > num_ip)
+        num_ip = gates[num_gates].input[0] - MAXGATES + 1;
+      if (gates[num_gates].input[1] >= MAXGATES && gates[num_gates].input[1] - MAXGATES + 1 > num_ip)
+        num_ip = gates[num_gates].input[1] - MAXGATES + 1;
+
       num_gates++;
       break;
 
@@ -1172,7 +1181,7 @@ void get_vars(char x[], int varid[], int nv)
       i++;
 
     if (x[i - 1] == 'x')
-      nx_flag = 1, num_ip++;
+      nx_flag = 1;
     else
       nx_flag = 0;
 

@@ -9730,13 +9730,13 @@
 
 Metrics
 -------
-Primary Inputs    : 428
+Primary Inputs    : 207
 Levels            : 43
 Read Operations   : 44
 Write Operations  : 89
 Evaluation Cycles : 44
 Total Cycles      : 177
-Crossbar Size     : 428x1287
+Crossbar Size     : 207x1287
 ---------------------------
 
 
