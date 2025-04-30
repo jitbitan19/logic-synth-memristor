@@ -13,11 +13,14 @@
 # Level:  4 _____________________________________
    0 False    4       1x3    3      0x3    5 True
    1 False    4       4x3    3      1x3    5 True
+# Level:  5 _____________________________________
+   0 False    5       0x5                  6 True
+   1 False    5       1x5                  6 True
 
 Metrics
 -------
 Primary Inputs    : 5
-Levels            : 4
+Levels            : 5
 Read Operations   : 5
 Write Operations  : 11
 Evaluation Cycles : 5

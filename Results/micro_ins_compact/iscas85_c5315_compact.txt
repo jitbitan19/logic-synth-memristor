@@ -1,0 +1,2975 @@
+# Level:  1 _____________________________________
+   0 False    0        /0                  1 True
+   0 False    0        /0                  2 True
+   0 False    0        /0                  3 True
+   0 False    0        /0                  4 True
+   0 False    0        /0                  5 True
+   0 False    0        /0                  6 True
+   1 False    0        /1                  1 True
+   2 False    0        /2                  1 True
+   3 False    0        /3                  1 True
+   4 False    0        /4                  1 True
+   5 False    0        /5                  1 True
+   6 False    0        /6                  1 True
+   7 False    0        /7                  1 True
+   8 False    0        /8                  1 True
+   9 False    0        /9                  1 True
+  10 False    0       /10                  1 True
+  11 False    0       /11                  1 True
+  12 False    0       /12                  1 True
+  13 False    0       /13                  1 True
+  14 False    0       /14                  1 True
+  15 False    0       /15                  1 True
+  16 False    0       /16                  1 True
+  17 False    0       /17                  1 True
+  18 False    0       /18                  1 True
+  19 False    0       /19                  1 True
+  20 False    0       /20                  1 True
+  21 False    0       /21                  1 True
+  22 False    0       /22                  1 True
+  23 False    0       /23                  1 True
+  24 False    0       /24                  1 True
+  25 False    0       /25                  1 True
+  26 False    0       /26                  1 True
+  27 False    0       /27                  1 True
+  28 False    0       /28                  1 True
+  29 False    0       /29                  1 True
+  30 False    0       /30                  1 True
+  31 False    0       /31                  1 True
+  32 False    0       /32                  1 True
+  33 False    0       /33                  1 True
+  34 False    0       /34                  1 True
+  35 False    0       /35                  1 True
+  36 False    0       /36                  1 True
+  37 False    0       /37                  1 True
+  38 False    0       /38                  1 True
+  39 False    0       /39                  1 True
+  40 False    0       /40                  1 True
+  41 False    0       /41                  1 True
+  42 False    0       /42                  1 True
+  43 False    0       /43                  1 True
+  44 False    0       /44                  1 True
+  45 False    0       /45                  1 True
+  46 False    0       /46                  1 True
+  47 False    0       /47                  1 True
+  48 False    0       /48                  1 True
+  49 False    0       /49                  1 True
+  50 False    0       /50                  1 True
+  51 False    0       /51                  1 True
+  52 False    0       /52                  1 True
+  53 False    0       /53                  1 True
+  54 False    0       /54                  1 True
+  55 False    0       /55                  1 True
+  56 False    0       /56                  1 True
+  57 False    0       /57                  1 True
+  58 False    0       /58                  1 True
+  59 False    0       /59                  1 True
+  60 False    0       /60                  1 True
+  61 False    0       /61                  1 True
+  62 False    0       /62                  1 True
+  63 False    0       /63                  1 True
+  63 False    0       /63                  2 True
+  64 False    0       /64                  1 True
+  65 False    0       /65                  1 True
+  65 False    0       /65                  2 True
+  65 False    0       /65                  3 True
+  66 False    0       /66                  1 True
+  67 False    0       /67                  1 True
+  68 False    0       /68                  1 True
+  69 False    0       /69                  1 True
+  70 False    0       /70                  1 True
+  71 False    0       /71                  1 True
+  72 False    0       /72                  1 True
+  73 False    0       /73                  1 True
+  74 False    0       /74                  1 True
+  75 False    0       /75                  1 True
+  76 False    0       /76                  1 True
+  77 False    0       /77                  1 True
+  78 False    0       /78                  1 True
+  79 False    0       /79                  1 True
+  80 False    0       /80                  1 True
+  81 False    0       /81                  1 True
+  82 False    0       /82                  1 True
+  83 False    0       /83                  1 True
+  84 False    0       /84                  1 True
+  85 False    0       /85                  1 True
+  86 False    0       /86                  1 True
+  87 False    0       /87                  1 True
+  88 False    0       /88                  1 True
+  89 False    0       /89                  1 True
+  89 False    2      /166    0      /89    3 True
+  90 False    0       /90                  1 True
+  91 False    0       /91                  1 True
+  91 False    2      /166    0      /91    3 True
+  92 False    0       /92                  1 True
+  93 False    0       /93                  1 True
+  93 False    2      /166    0      /93    3 True
+  94 False    0       /94                  1 True
+  95 False    0       /95                  1 True
+  95 False    2      /166    0      /95    3 True
+  96 False    0       /96                  1 True
+  97 False    0       /97                  1 True
+  97 False    2      /147    0      /97    3 True
+  98 False    0       /98                  1 True
+  99 False    0       /99                  1 True
+ 100 False    0      /100                  1 True
+ 101 False    0      /101                  1 True
+ 102 False    0      /102                  1 True
+ 102 False    2      /166    0     /102    3 True
+ 103 False    0      /103                  1 True
+ 104 False    0      /104                  1 True
+ 104 False    2      /166    0     /104    3 True
+ 105 False    0      /105                  1 True
+ 106 False    0      /106                  1 True
+ 106 False    2      /166    0     /106    3 True
+ 107 False    0      /107                  1 True
+ 108 False    0      /108                  1 True
+ 108 False    2      /166    0     /108    3 True
+ 109 False    0      /109                  1 True
+ 110 False    0      /110                  1 True
+ 111 False    0      /111                  1 True
+ 112 False    0      /112                  1 True
+ 112 False    0      /112                  2 True
+ 113 False    0      /113                  1 True
+ 113 False    0      /113                  2 True
+ 113 False    0      /113                  3 True
+ 114 False    0      /114                  1 True
+ 115 False    0      /115                  1 True
+ 116 False    0      /116                  1 True
+ 117 False    0      /117                  1 True
+ 118 False    0      /118                  1 True
+ 119 False    0      /119                  1 True
+ 120 False    0      /120                  1 True
+ 120 False    2      /166    0     /120    3 True
+ 121 False    0      /121                  1 True
+ 122 False    0      /122                  1 True
+ 123 False    0      /123                  1 True
+ 124 False    0      /124                  1 True
+ 125 False    0      /125                  1 True
+ 125 False    2      /166    0     /125    3 True
+ 126 False    0      /126                  1 True
+ 127 False    0      /127                  1 True
+ 127 False    2      /166    0     /127    3 True
+ 128 False    0      /128                  1 True
+ 129 False    0      /129                  1 True
+ 130 False    0      /130                  1 True
+ 131 False    0      /131                  1 True
+ 132 False    0      /132                  1 True
+ 133 False    0      /133                  1 True
+ 134 False    0      /134                  1 True
+ 135 False    0      /135                  1 True
+ 136 False    0      /136                  1 True
+ 137 False    0      /137                  1 True
+ 138 False    0      /138                  1 True
+ 139 False    0      /139                  1 True
+ 140 False    0      /140                  1 True
+ 141 False    0      /141                  1 True
+ 142 False    0      /142                  1 True
+ 143 False    0      /143                  1 True
+ 144 False    0      /144                  1 True
+ 145 False    0      /145                  1 True
+ 146 False    0      /146                  1 True
+ 147 False    0      /147                  1 True
+ 148 False    0      /148                  1 True
+ 149 False    0      /149                  1 True
+ 150 False    0      /150                  1 True
+ 150 False    0      /150                  2 True
+ 150 False    0      /150                  3 True
+ 151 False    0      /151                  1 True
+ 151 False    0      /151                  2 True
+ 151 False    0      /151                  3 True
+ 152 False    0      /152                  1 True
+ 153 False    0      /153                  1 True
+ 154 False    0      /154                  1 True
+ 155 False    0      /155                  1 True
+ 156 False    0      /156                  1 True
+ 157 False    0      /157                  1 True
+ 158 False    0      /158                  1 True
+ 159 False    0      /159                  1 True
+ 160 False    0      /160                  1 True
+ 161 False    0      /161                  1 True
+ 162 False    0      /162                  1 True
+ 164 False    0      /164                  1 True
+ 165 False    0      /165                  1 True
+ 169 False    0      /169                  1 True
+ 170 False    0      /170                  1 True
+ 171 False    0      /171                  1 True
+ 172 False    0      /172                  1 True
+ 173 False    0      /173                  1 True
+ 174 False    0      /174                  1 True
+ 175 False    0      /175                  1 True
+ 176 False    0      /176                  1 True
+ 177 False    0      /177                  1 True
+# Level:  2 _____________________________________
+   0 False    7     133x1    1      0x1    8 True
+   2 False    2     171x1    1      2x1    3 True
+   2 False    4     174x1    1      2x1    5 True
+   3 False    2     171x1    1      3x1    3 True
+   3 False    4     174x1    1      3x1    5 True
+   4 False    2     171x1    1      4x1    3 True
+   4 False    4     174x1    1      4x1    5 True
+   5 False    2     171x1    1      5x1    3 True
+   5 False    4     174x1    1      5x1    5 True
+  10 False    2      11x1    1     10x1    3 True
+  10 False    4      11x1    1     10x1    5 True
+  10 False    6      /163    1     10x1    7 True
+  12 False    2     162x1    1     12x1    3 True
+  13 False    2     171x1    1     13x1    3 True
+  13 False    4     174x1    1     13x1    5 True
+  14 False    2     171x1    1     14x1    3 True
+  14 False    4     174x1    1     14x1    5 True
+  15 False    2     171x1    1     15x1    3 True
+  15 False    4     174x1    1     15x1    5 True
+  16 False    2     171x1    1     16x1    3 True
+  16 False    4     174x1    1     16x1    5 True
+  17 False    2     171x1    1     17x1    3 True
+  17 False    4     174x1    1     17x1    5 True
+  18 False    2     176x1    1     18x1    3 True
+  19 False    2     176x1    1     19x1    3 True
+  21 False    2     171x1    1     21x1    3 True
+  21 False    4     174x1    1     21x1    5 True
+  22 False    2     171x1    1     22x1    3 True
+  22 False    4     174x1    1     22x1    5 True
+  23 False    2     171x1    1     23x1    3 True
+  23 False    4     174x1    1     23x1    5 True
+  24 False    2     171x1    1     24x1    3 True
+  24 False    4     174x1    1     24x1    5 True
+  25 False    2     171x1    1     25x1    3 True
+  25 False    4     174x1    1     25x1    5 True
+  26 False    2     171x1    1     26x1    3 True
+  26 False    4     174x1    1     26x1    5 True
+  31 False    2     162x1    1     31x1    3 True
+  31 False    4      /162    1     31x1    5 True
+  32 False    2      /162    1     32x1    3 True
+  33 False    2     162x1    1     33x1    3 True
+  34 False    2      /162    1     34x1    3 True
+  35 False    2     171x1    1     35x1    3 True
+  35 False    4     174x1    1     35x1    5 True
+  36 False    2     176x1    1     36x1    3 True
+  37 False    2     176x1    1     37x1    3 True
+  38 False    2     171x1    1     38x1    3 True
+  38 False    4     174x1    1     38x1    5 True
+  39 False    2     171x1    1     39x1    3 True
+  39 False    4     174x1    1     39x1    5 True
+  40 False    2     174x1    1     40x1    3 True
+  40 False    4     171x1    1     40x1    5 True
+  41 False    2     174x1    1     41x1    3 True
+  41 False    4     171x1    1     41x1    5 True
+  42 False    2     176x1    1     42x1    3 True
+  43 False    2     176x1    1     43x1    3 True
+  44 False    2     176x1    1     44x1    3 True
+  45 False    2     176x1    1     45x1    3 True
+  46 False    2     176x1    1     46x1    3 True
+  47 False    2     176x1    1     47x1    3 True
+  48 False    2     176x1    1     48x1    3 True
+  49 False    2     176x1    1     49x1    3 True
+  50 False    2     176x1    1     50x1    3 True
+  51 False    2     176x1    1     51x1    3 True
+  52 False    2     176x1    1     52x1    3 True
+  53 False    2     176x1    1     53x1    3 True
+  53 False    4     169x1    1     53x1    5 True
+  54 False    2     176x1    1     54x1    3 True
+  55 False    2     176x1    1     55x1    3 True
+  56 False    2     176x1    1     56x1    3 True
+  57 False    2     176x1    1     57x1    3 True
+  58 False    2     176x1    1     58x1    3 True
+  59 False    2     176x1    1     59x1    3 True
+  61 False    2     177x1    1     61x1    3 True
+  62 False    2      /164    1     62x1    3 True
+  65 False    4      66x1    1     65x1    5 True
+  67 False    2     158x1    1     67x1    3 True
+  67 False    4     160x1    1     67x1    5 True
+  68 False    2     158x1    1     68x1    3 True
+  68 False    4     160x1    1     68x1    5 True
+  69 False    2     158x1    1     69x1    3 True
+  69 False    4     160x1    1     69x1    5 True
+  70 False    2     158x1    1     70x1    3 True
+  70 False    4     160x1    1     70x1    5 True
+  71 False    2     158x1    1     71x1    3 True
+  71 False    4     160x1    1     71x1    5 True
+  72 False    2     158x1    1     72x1    3 True
+  72 False    4     160x1    1     72x1    5 True
+  73 False    2     158x1    1     73x1    3 True
+  73 False    4     160x1    1     73x1    5 True
+  74 False    2     158x1    1     74x1    3 True
+  74 False    4     160x1    1     74x1    5 True
+  75 False    2     158x1    1     75x1    3 True
+  75 False    4     160x1    1     75x1    5 True
+  76 False    2     158x1    1     76x1    3 True
+  76 False    4     160x1    1     76x1    5 True
+  77 False    2     158x1    1     77x1    3 True
+  77 False    4     160x1    1     77x1    5 True
+  78 False    2     158x1    1     78x1    3 True
+  78 False    4     160x1    1     78x1    5 True
+  79 False    2     158x1    1     79x1    3 True
+  79 False    4     160x1    1     79x1    5 True
+  80 False    2     158x1    1     80x1    3 True
+  80 False    4     160x1    1     80x1    5 True
+  81 False    2     158x1    1     81x1    3 True
+  81 False    4     160x1    1     81x1    5 True
+  82 False    2     158x1    1     82x1    3 True
+  82 False    4     160x1    1     82x1    5 True
+  83 False    2     158x1    1     83x1    3 True
+  83 False    4     160x1    1     83x1    5 True
+  84 False    2     158x1    1     84x1    3 True
+  84 False    4     160x1    1     84x1    5 True
+  85 False    2     158x1    1     85x1    3 True
+  85 False    4     160x1    1     85x1    5 True
+  86 False    2     158x1    1     86x1    3 True
+  86 False    4     160x1    1     86x1    5 True
+  87 False    2      /123    1     87x1    3 True
+  87 False    4      99x1    1     87x1    5 True
+  87 False    6     141x1    0      /87    7 True
+  87 False    8      97x1    1     87x1    9 True
+  87 False   10     101x1    0      /87   11 True
+  87 False   12      89x1    0      /87   13 True
+  87 False   14       /89    1     87x1   15 True
+  88 False    2     123x1    1     88x1    3 True
+  89 False    4      /123    1     89x1    5 True
+  89 False    6     142x1    0      /89    7 True
+  89 False    8      99x1    1     89x1    9 True
+  89 False   10      97x1    1     89x1   11 True
+  89 False   12     101x1    0      /89   13 True
+  89 False   14      /168    1     89x1   15 True
+  89 False   16      /165    1     89x1   17 True
+  90 False    2     123x1    1     90x1    3 True
+  91 False    4      /123    1     91x1    5 True
+  91 False    6     143x1    0      /91    7 True
+  91 False    8      99x1    1     91x1    9 True
+  91 False   10      97x1    1     91x1   11 True
+  91 False   12     101x1    0      /91   13 True
+  91 False   14      /168    1     91x1   15 True
+  91 False   16      93x1    0      /91   17 True
+  91 False   18       /93    1     91x1   19 True
+  91 False   20      /165    1     91x1   21 True
+  92 False    2     123x1    1     92x1    3 True
+  93 False    4      /123    1     93x1    5 True
+  93 False    6     139x1    0      /93    7 True
+  93 False    8      99x1    1     93x1    9 True
+  93 False   10      97x1    1     93x1   11 True
+  93 False   12     101x1    0      /93   13 True
+  93 False   14      /168    1     93x1   15 True
+  93 False   16      /165    1     93x1   17 True
+  94 False    2     123x1    1     94x1    3 True
+  95 False    4      /123    1     95x1    5 True
+  95 False    6     140x1    0      /95    7 True
+  95 False    8      99x1    1     95x1    9 True
+  95 False   10      97x1    1     95x1   11 True
+  95 False   12     101x1    0      /95   13 True
+  95 False   14     102x1    0      /95   15 True
+  95 False   16      /102    1     95x1   17 True
+  95 False   18      /168    1     95x1   19 True
+  95 False   20      /165    1     95x1   21 True
+  96 False    2     123x1    1     96x1    3 True
+  97 False    4     127x1    1     97x1    5 True
+  97 False    6     125x1    1     97x1    7 True
+  97 False    8     120x1    1     97x1    9 True
+  97 False   10     106x1    1     97x1   11 True
+  97 False   12     104x1    1     97x1   13 True
+  97 False   14     102x1    1     97x1   15 True
+  97 False   16     116x1    1     97x1   17 True
+  97 False   18     118x1    1     97x1   19 True
+  97 False   20     108x1    1     97x1   21 True
+  97 False   22     112x1    1     97x1   23 True
+  99 False    2     127x1    1     99x1    3 True
+  99 False    4     125x1    1     99x1    5 True
+  99 False    6     120x1    1     99x1    7 True
+  99 False    8     106x1    1     99x1    9 True
+  99 False   10     104x1    1     99x1   11 True
+  99 False   12     102x1    1     99x1   13 True
+  99 False   14     116x1    1     99x1   15 True
+  99 False   16     118x1    1     99x1   17 True
+  99 False   18     147x1    1     99x1   19 True
+  99 False   20     108x1    1     99x1   21 True
+  99 False   22     129x1    1     99x1   23 True
+  99 False   24     114x1    1     99x1   25 True
+ 100 False    2      /129    1    100x1    3 True
+ 100 False    4      /114    1    100x1    5 True
+ 101 False    2      /127    1    101x1    3 True
+ 101 False    4      /125    1    101x1    5 True
+ 101 False    6      /120    1    101x1    7 True
+ 101 False    8      /106    1    101x1    9 True
+ 101 False   10      /104    1    101x1   11 True
+ 101 False   12      /102    1    101x1   13 True
+ 101 False   14      /116    1    101x1   15 True
+ 101 False   16      /118    1    101x1   17 True
+ 101 False   18      /112    1    101x1   19 True
+ 101 False   20      /108    1    101x1   21 True
+ 102 False    4      /123    1    102x1    5 True
+ 102 False    6     136x1    0     /102    7 True
+ 102 False    8      /168    1    102x1    9 True
+ 102 False   10      /165    1    102x1   11 True
+ 103 False    2     123x1    1    103x1    3 True
+ 104 False    4      /123    1    104x1    5 True
+ 104 False    6     137x1    0     /104    7 True
+ 104 False    8     106x1    0     /104    9 True
+ 104 False   10      /106    1    104x1   11 True
+ 104 False   12      /168    1    104x1   13 True
+ 104 False   14      /165    1    104x1   15 True
+ 105 False    2     123x1    1    105x1    3 True
+ 106 False    4      /123    1    106x1    5 True
+ 106 False    6     138x1    0     /106    7 True
+ 106 False    8      /168    1    106x1    9 True
+ 106 False   10      /165    1    106x1   11 True
+ 107 False    2     123x1    1    107x1    3 True
+ 108 False    4      /123    1    108x1    5 True
+ 108 False    6     134x1    0     /108    7 True
+ 108 False    8     110x1    0     /108    9 True
+ 108 False   10      /110    1    108x1   11 True
+ 108 False   12      /168    1    108x1   13 True
+ 108 False   14      /165    1    108x1   15 True
+ 109 False    2     123x1    1    109x1    3 True
+ 110 False    2      /123    1    110x1    3 True
+ 111 False    2     123x1    1    111x1    3 True
+ 112 False    3      /122    1    112x1    4 True
+ 112 False    5     114x1    0     /112    6 True
+ 112 False    7      /114    1    112x1    8 True
+ 113 False    4     122x1    1    113x1    5 True
+ 114 False    2      /122    1    114x1    3 True
+ 115 False    2     122x1    1    115x1    3 True
+ 116 False    2      /122    1    116x1    3 True
+ 116 False    4     144x1    0     /116    5 True
+ 116 False    6     118x1    0     /116    7 True
+ 116 False    8      /118    1    116x1    9 True
+ 117 False    2     122x1    1    117x1    3 True
+ 118 False    2      /122    1    118x1    3 True
+ 118 False    4     145x1    0     /118    5 True
+ 119 False    2     122x1    1    119x1    3 True
+ 120 False    4      /122    1    120x1    5 True
+ 120 False    6     146x1    0     /120    7 True
+ 120 False    8      /168    1    120x1    9 True
+ 120 False   10      /165    1    120x1   11 True
+ 121 False    2     122x1    1    121x1    3 True
+ 122 False    2     129x1    0     /122    3 True
+ 122 False    4     130x1    1    122x1    5 True
+ 122 False    6      /124    1    122x1    7 True
+ 122 False    8     125x1    0     /122    9 True
+ 122 False   10     126x1    1    122x1   11 True
+ 122 False   12     127x1    0     /122   13 True
+ 122 False   14     128x1    1    122x1   15 True
+ 122 False   16     131x1    0     /122   17 True
+ 122 False   18     132x1    1    122x1   19 True
+ 125 False    4     148x1    0     /125    5 True
+ 125 False    6     127x1    0     /125    7 True
+ 125 False    8      /127    1    125x1    9 True
+ 125 False   10      /168    1    125x1   11 True
+ 125 False   12      /165    1    125x1   13 True
+ 127 False    4     149x1    0     /127    5 True
+ 127 False    6      /168    1    127x1    7 True
+ 127 False    8      /165    1    127x1    9 True
+ 129 False    2     131x1    0     /129    3 True
+ 129 False    4      /131    1    129x1    5 True
+ 135 False    2     153x1    1    135x1    3 True
+ 147 False    2      /168    1    147x1    3 True
+ 147 False    4     165x1    0     /147    5 True
+ 152 False    2     153x1    1    152x1    3 True
+ 152 False    4     155x1    1    152x1    5 True
+ 175 False    2     176x1    1    175x1    3 True
+# Level:  3 _____________________________________
+   2 False    3       2x3                  6 True
+   2 False    5       2x5                  7 True
+   3 False    3       3x3                  6 True
+   3 False    5       3x5                  7 True
+   4 False    3       4x3                  6 True
+   4 False    5       4x5                  7 True
+   5 False    3       5x3                  6 True
+   5 False    5       5x5                  7 True
+  10 False    3      10x3                  8 True
+  10 False    5      10x5                  9 True
+  10 False    7      10x7                 10 True
+  12 False    4      34x3    3     12x3    5 True
+  13 False    3      13x3                  6 True
+  13 False    5      13x5                  7 True
+  14 False    3      14x3                  6 True
+  14 False    5      14x5                  7 True
+  15 False    3      15x3                  6 True
+  15 False    5      15x5                  7 True
+  16 False    3      16x3                  6 True
+  16 False    5      16x5                  7 True
+  17 False    3      17x3                  6 True
+  17 False    5      17x5                  7 True
+  18 False    3      18x3                  4 True
+  19 False    3      19x3                  4 True
+  21 False    3      21x3                  6 True
+  21 False    5      21x5                  7 True
+  22 False    3      22x3                  6 True
+  22 False    5      22x5                  7 True
+  23 False    3      23x3                  6 True
+  23 False    5      23x5                  7 True
+  24 False    3      24x3                  6 True
+  24 False    5      24x5                  7 True
+  25 False    3      25x3                  6 True
+  25 False    5      25x5                  7 True
+  26 False    3      26x3                  6 True
+  26 False    5      26x5                  7 True
+  31 False    5      31x5    3     31x3    6 True
+  33 False    4      32x3    3     33x3    5 True
+  35 False    3      35x3                  6 True
+  35 False    5      35x5                  7 True
+  38 False    3      38x3                  6 True
+  38 False    5      38x5                  7 True
+  39 False    3      39x3                  6 True
+  39 False    5      39x5                  7 True
+  40 False    3      40x3                  6 True
+  40 False    5      40x5                  7 True
+  41 False    3      41x3                  6 True
+  41 False    5      41x5                  7 True
+  42 False    3      42x3                  4 True
+  43 False    3      43x3                  4 True
+  44 False    3      44x3                  4 True
+  45 False    3      45x3                  4 True
+  46 False    3      46x3                  4 True
+  47 False    3      47x3                  4 True
+  48 False    3      48x3                  4 True
+  49 False    3      49x3                  4 True
+  50 False    3      50x3                  4 True
+  51 False    3      51x3                  4 True
+  52 False    3      52x3                  4 True
+  53 False    3      53x3                  6 True
+  53 False    5      53x5                  7 True
+  54 False    3      54x3                  4 True
+  55 False    3      55x3                  4 True
+  56 False    3      56x3                  4 True
+  57 False    3      57x3                  4 True
+  58 False    3      58x3                  4 True
+  59 False    3      59x3                  4 True
+  67 False    3      67x3                  6 True
+  67 False    5      67x5                  7 True
+  68 False    3      68x3                  6 True
+  68 False    5      68x5                  7 True
+  69 False    3      69x3                  6 True
+  69 False    5      69x5                  7 True
+  70 False    3      70x3                  6 True
+  70 False    5      70x5                  7 True
+  71 False    3      71x3                  6 True
+  71 False    5      71x5                  7 True
+  72 False    3      72x3                  6 True
+  72 False    5      72x5                  7 True
+  73 False    3      73x3                  6 True
+  73 False    5      73x5                  7 True
+  74 False    3      74x3                  6 True
+  74 False    5      74x5                  7 True
+  75 False    3      75x3                  6 True
+  75 False    5      75x5                  7 True
+  76 False    3      76x3                  6 True
+  76 False    5      76x5                  7 True
+  77 False    3      77x3                  6 True
+  77 False    5      77x5                  7 True
+  78 False    3      78x3                  6 True
+  78 False    5      78x5                  7 True
+  79 False    3      79x3                  6 True
+  79 False    5      79x5                  7 True
+  80 False    3      80x3                  6 True
+  80 False    5      80x5                  7 True
+  81 False    3      81x3                  6 True
+  81 False    5      81x5                  7 True
+  82 False    3      82x3                  6 True
+  82 False    5      82x5                  7 True
+  83 False    3      83x3                  6 True
+  83 False    5      83x5                  7 True
+  84 False    3      84x3                  6 True
+  84 False    5      84x5                  7 True
+  85 False    3      85x3                  6 True
+  85 False    5      85x5                  7 True
+  86 False    3      86x3                  6 True
+  86 False    5      86x5                  7 True
+  87 False   16      88x3    3     87x3   17 True
+  87 False    5      87x5                 18 True
+  87 False    7      87x7                 19 True
+  87 False   15     87x15   13    87x13   20 True
+  89 False   18      90x3    5     89x5   19 True
+  89 False    7      89x7                 20 True
+  89 False    9      89x9                 21 True
+  89 False   15     89x15                 22 True
+  91 False   22      92x3    5     91x5   23 True
+  91 False    7      91x7                 24 True
+  91 False    9      91x9                 25 True
+  91 False   15     91x15                 26 True
+  91 False   19     91x19   17    91x17   27 True
+  93 False   18      94x3    5     93x5   19 True
+  93 False    7      93x7                 20 True
+  93 False    9      93x9                 21 True
+  93 False   15     93x15                 22 True
+  95 False   22      96x3    5     95x5   23 True
+  95 False    7      95x7                 24 True
+  95 False    9      95x9                 25 True
+  95 False   17     95x17   15    95x15   26 True
+  95 False   19     95x19                 27 True
+  97 False   24    101x19   23    97x23   25 True
+  99 False    3      99x3                 26 True
+  99 False    5      99x5                 27 True
+  99 False    7      99x7                 28 True
+  99 False    9      99x9                 29 True
+  99 False   11     99x11                 30 True
+  99 False   13     99x13                 31 True
+  99 False   15     99x15                 32 True
+  99 False   17     99x17                 33 True
+  99 False   34      97x3   19    99x19   35 True
+  99 False   21     99x21                 36 True
+  99 False   37     100x3   23    99x23   38 True
+  99 False   39     100x5   25    99x25   40 True
+ 102 False   12     103x3    5    102x5   13 True
+ 102 False    7     102x7                 14 True
+ 102 False    9     102x9                 15 True
+ 104 False   16     105x3    5    104x5   17 True
+ 104 False    7     104x7                 18 True
+ 104 False   11    104x11    9    104x9   19 True
+ 104 False   13    104x13                 20 True
+ 106 False   12     107x3    5    106x5   13 True
+ 106 False    7     106x7                 14 True
+ 106 False    9     106x9                 15 True
+ 108 False   16     109x3    5    108x5   17 True
+ 108 False    7     108x7                 18 True
+ 108 False   11    108x11    9    108x9   19 True
+ 108 False   13    108x13                 20 True
+ 110 False    4     111x3    3    110x3    5 True
+ 112 False    9     113x5    4    112x4   10 True
+ 112 False    8     112x8    6    112x6   11 True
+ 114 False    4     115x3    3    114x3    5 True
+ 116 False   10     117x3    3    116x3   11 True
+ 116 False    5     116x5                 12 True
+ 116 False    9     116x9    7    116x7   13 True
+ 118 False    6     119x3    3    118x3    7 True
+ 118 False    5     118x5                  8 True
+ 120 False   12     121x3    5    120x5   13 True
+ 120 False    7     120x7                 14 True
+ 120 False    9     120x9                 15 True
+ 122 False    5     122x5    3    122x3   20 True
+ 122 False    7     122x7                 21 True
+ 122 False   11    122x11    9    122x9   22 True
+ 122 False   15    122x15   13   122x13   23 True
+ 122 False   19    122x19   17   122x17   24 True
+ 125 False    5     125x5                 14 True
+ 125 False    9     125x9    7    125x7   15 True
+ 125 False   11    125x11                 16 True
+ 127 False    5     127x5                 10 True
+ 127 False    7     127x7                 11 True
+ 129 False    5     129x5    3    129x3    6 True
+ 134 False    2     97x21    0     /134    3 True
+ 134 False    4    108x15    0     /134    5 True
+ 135 False    3     135x3                  4 True
+ 136 False    2     97x15    0     /136    3 True
+ 136 False    4    102x11    0     /136    5 True
+ 137 False    2     97x13    0     /137    3 True
+ 137 False    4    104x15    0     /137    5 True
+ 138 False    2     97x11    0     /138    3 True
+ 138 False    4    106x11    0     /138    5 True
+ 139 False    2     93x11    0     /139    3 True
+ 139 False    4     93x17    0     /139    5 True
+ 140 False    2     95x11    0     /140    3 True
+ 140 False    4     95x21    0     /140    5 True
+ 141 False    2      87x9    0     /141    3 True
+ 142 False    2     89x11    0     /142    3 True
+ 142 False    4     89x17    0     /142    5 True
+ 143 False    2     91x11    0     /143    3 True
+ 143 False    4     91x21    0     /143    5 True
+ 144 False    2     97x17    0     /144    3 True
+ 145 False    2     97x19    0     /145    3 True
+ 146 False    2      97x9    0     /146    3 True
+ 146 False    4    120x11    0     /146    5 True
+ 147 False    6     122x7    0     /147    7 True
+ 147 False    8     122x7    1    147x1    9 True
+ 147 False    5     147x5    3    147x3   10 True
+ 148 False    2      97x7    0     /148    3 True
+ 148 False    4    125x13    0     /148    5 True
+ 149 False    2      97x5    0     /149    3 True
+ 149 False    4     127x9    0     /149    5 True
+ 152 False    3     152x3                  6 True
+# Level:  4 _____________________________________
+   6 False    2      10x8    1      6x1    3 True
+   7 False    2      10x8    1      7x1    3 True
+   8 False    2      10x8    1      8x1    3 True
+   9 False    2      10x8    1      9x1    3 True
+  10 False   11      33x5    8     10x8   12 True
+  10 False   13      12x5    8     10x8   14 True
+  10 False   15      31x6    8     10x8   16 True
+  20 False    2    122x20    1     20x1    3 True
+  27 False    2      10x8    1     27x1    3 True
+  28 False    2      10x8    1     28x1    3 True
+  29 False    2      10x8    1     29x1    3 True
+  30 False    2      10x8    1     30x1    3 True
+  60 False    2    112x10    1     60x1    3 True
+  64 False    2      10x8    1     64x1    3 True
+  87 False   17     87x17                 21 True
+  87 False   20     87x20                 22 True
+  89 False   19     89x19                 23 True
+  91 False   23     91x23                 28 True
+  91 False   27     91x27                 29 True
+  93 False   19     93x19                 23 True
+  95 False   23     95x23                 28 True
+  95 False   26     95x26                 29 True
+  97 False   25     97x25                 26 True
+  97 False   27     99x40   25    97x25   28 True
+  99 False   35     99x35                 41 True
+  99 False   38     99x38                 42 True
+  99 False   40     99x40                 43 True
+ 100 False    6    127x10    1    100x1    7 True
+ 100 False    8    125x14    1    100x1    9 True
+ 100 False   10    120x14    1    100x1   11 True
+ 100 False   12    106x14    1    100x1   13 True
+ 100 False   14    104x18    1    100x1   15 True
+ 100 False   16    102x14    1    100x1   17 True
+ 100 False   18     95x24    1    100x1   19 True
+ 100 False   20    116x12    1    100x1   21 True
+ 100 False   22     118x8    1    100x1   23 True
+ 100 False   24    108x18    1    100x1   25 True
+ 100 False   26     87x19    1    100x1   27 True
+ 100 False   28     93x20    1    100x1   29 True
+ 100 False   30     91x24    1    100x1   31 True
+ 100 False   32     89x20    1    100x1   33 True
+ 102 False   13    102x13                 16 True
+ 104 False   17    104x17                 21 True
+ 104 False   19    104x19                 22 True
+ 104 False   23     95x26   19   104x19   24 True
+ 106 False   13    106x13                 16 True
+ 108 False   17    108x17                 21 True
+ 108 False   19    108x19                 22 True
+ 110 False    5     110x5                  6 True
+ 112 False   10    112x10                 12 True
+ 112 False   11    112x11                 13 True
+ 114 False    5     114x5                  6 True
+ 116 False   11    116x11                 14 True
+ 116 False   13    116x13                 15 True
+ 118 False    7     118x7                  9 True
+ 120 False   13    120x13                 16 True
+ 120 False   17     129x6    1    120x1   18 True
+ 120 False   19    125x15    0     /120   20 True
+ 122 False   20    122x20                 25 True
+ 122 False   22    122x22                 26 True
+ 122 False   23    122x23                 27 True
+ 122 False   24    122x24                 28 True
+ 122 False   29    120x13   21   122x21   30 True
+ 125 False   15    125x15                 17 True
+ 129 False    6     129x6                  7 True
+ 134 False    6    108x17    0     /134    7 True
+ 134 False    8    108x17    1    134x1    9 True
+ 134 False   10     99x36    1    134x1   11 True
+ 134 False    3     134x3                 12 True
+ 134 False   13    108x20    1    134x1   14 True
+ 134 False    5     134x5                 15 True
+ 135 False    5     152x6    1    135x1    6 True
+ 136 False    6    102x13    0     /136    7 True
+ 136 False    8    102x13    1    136x1    9 True
+ 136 False   10     99x31    1    136x1   11 True
+ 136 False    3     136x3                 12 True
+ 136 False   13    102x15    1    136x1   14 True
+ 136 False    5     136x5                 15 True
+ 137 False    6    104x17    0     /137    7 True
+ 137 False    8    104x17    1    137x1    9 True
+ 137 False   10     99x30    1    137x1   11 True
+ 137 False    3     137x3                 12 True
+ 137 False   13    104x20    1    137x1   14 True
+ 137 False    5     137x5                 15 True
+ 138 False    6    106x13    0     /138    7 True
+ 138 False    8    106x13    1    138x1    9 True
+ 138 False   10     99x29    1    138x1   11 True
+ 138 False    3     138x3                 12 True
+ 138 False   13    106x15    1    138x1   14 True
+ 138 False    5     138x5                 15 True
+ 139 False    6     93x19    0     /139    7 True
+ 139 False    8     93x19    1    139x1    9 True
+ 139 False   10     93x21    1    139x1   11 True
+ 139 False    3     139x3                 12 True
+ 139 False   13     93x22    1    139x1   14 True
+ 139 False    5     139x5                 15 True
+ 140 False    6     95x23    0     /140    7 True
+ 140 False    8     95x23    1    140x1    9 True
+ 140 False   10     95x25    1    140x1   11 True
+ 140 False    3     140x3                 12 True
+ 140 False   13     95x27    1    140x1   14 True
+ 140 False    5     140x5                 15 True
+ 141 False    4     87x17    0     /141    5 True
+ 141 False    6     87x18    1    141x1    7 True
+ 141 False    3     141x3                  8 True
+ 141 False    9     87x17    1    141x1   10 True
+ 142 False    6     89x19    0     /142    7 True
+ 142 False    8     89x19    1    142x1    9 True
+ 142 False   10     89x21    1    142x1   11 True
+ 142 False    3     142x3                 12 True
+ 142 False   13     89x22    1    142x1   14 True
+ 142 False    5     142x5                 15 True
+ 143 False    6     91x23    0     /143    7 True
+ 143 False    8     91x23    1    143x1    9 True
+ 143 False   10     91x25    1    143x1   11 True
+ 143 False    3     143x3                 12 True
+ 143 False   13     91x26    1    143x1   14 True
+ 143 False    5     143x5                 15 True
+ 144 False    4    116x11    0     /144    5 True
+ 144 False    6    116x11    1    144x1    7 True
+ 144 False    8     99x32    1    144x1    9 True
+ 144 False    3     144x3                 10 True
+ 145 False    4     118x7    0     /145    5 True
+ 145 False    6     118x7    1    145x1    7 True
+ 145 False    8     99x33    1    145x1    9 True
+ 145 False    3     145x3                 10 True
+ 146 False    6    120x13    0     /146    7 True
+ 146 False    8    120x13    1    146x1    9 True
+ 146 False   10     99x28    1    146x1   11 True
+ 146 False    3     146x3                 12 True
+ 146 False   13    120x15    1    146x1   14 True
+ 146 False    5     146x5                 15 True
+ 147 False   11    122x21    1    147x1   12 True
+ 147 False    9     147x9                 13 True
+ 147 False   10    147x10                 14 True
+ 148 False    6    122x22    0     /148    7 True
+ 148 False    8    122x22    1    148x1    9 True
+ 148 False   10     99x27    1    148x1   11 True
+ 148 False    3     148x3                 12 True
+ 148 False   13    125x16    1    148x1   14 True
+ 148 False    5     148x5                 15 True
+ 149 False    6    122x23    0     /149    7 True
+ 149 False    8    122x23    1    149x1    9 True
+ 149 False   10     99x26    1    149x1   11 True
+ 149 False    3     149x3                 12 True
+ 149 False   13    127x11    1    149x1   14 True
+ 149 False    5     149x5                 15 True
+ 157 False    2      78x6    1    157x1    3 True
+ 157 False    4      77x6    0     /157    5 True
+ 157 False    6      80x6    1    157x1    7 True
+ 157 False    8      79x6    0     /157    9 True
+ 157 False   10      75x6    1    157x1   11 True
+ 157 False   12      85x6    0     /157   13 True
+ 157 False   14      71x6    1    157x1   15 True
+ 157 False   16      81x6    0     /157   17 True
+ 157 False   18      69x6    1    157x1   19 True
+ 157 False   20      70x6    0     /157   21 True
+ 157 False   22      67x6    1    157x1   23 True
+ 157 False   24      68x6    0     /157   25 True
+ 157 False   26      76x6    1    157x1   27 True
+ 157 False   28      86x6    0     /157   29 True
+ 157 False   30      74x6    1    157x1   31 True
+ 157 False   32      84x6    0     /157   33 True
+ 157 False   34      73x6    1    157x1   35 True
+ 157 False   36      83x6    0     /157   37 True
+ 157 False   38      72x6    1    157x1   39 True
+ 157 False   40      82x6    0     /157   41 True
+ 159 False    2      78x7    1    159x1    3 True
+ 159 False    4      77x7    0     /159    5 True
+ 159 False    6      80x7    1    159x1    7 True
+ 159 False    8      79x7    0     /159    9 True
+ 159 False   10      75x7    1    159x1   11 True
+ 159 False   12      85x7    0     /159   13 True
+ 159 False   14      71x7    1    159x1   15 True
+ 159 False   16      81x7    0     /159   17 True
+ 159 False   18      69x7    1    159x1   19 True
+ 159 False   20      70x7    0     /159   21 True
+ 159 False   22      67x7    1    159x1   23 True
+ 159 False   24      68x7    0     /159   25 True
+ 159 False   26      76x7    1    159x1   27 True
+ 159 False   28      86x7    0     /159   29 True
+ 159 False   30      74x7    1    159x1   31 True
+ 159 False   32      84x7    0     /159   33 True
+ 159 False   34      73x7    1    159x1   35 True
+ 159 False   36      83x7    0     /159   37 True
+ 159 False   38      72x7    1    159x1   39 True
+ 159 False   40      82x7    0     /159   41 True
+ 167 False    1    125x14    0     /167    2 True
+ 167 False    3    127x10    0     /167    4 True
+ 167 False    5    120x14    0     /167    6 True
+ 167 False    7    106x14    0     /167    8 True
+ 167 False    9    108x18    0     /167   10 True
+ 167 False   11    102x14    0     /167   12 True
+ 167 False   13    104x18    0     /167   14 True
+ 167 False   15     93x20    0     /167   16 True
+ 167 False   17     95x24    0     /167   18 True
+ 167 False   19     89x20    0     /167   20 True
+ 167 False   21     91x24    0     /167   22 True
+ 169 False    2     97x25    0     /169    3 True
+ 170 False    2      53x7    0     /170    3 True
+ 172 False    2      21x6    1    172x1    3 True
+ 172 False    4       2x6    0     /172    5 True
+ 172 False    6      13x6    1    172x1    7 True
+ 172 False    8      15x6    0     /172    9 True
+ 172 False   10       5x6    1    172x1   11 True
+ 172 False   12      26x6    0     /172   13 True
+ 172 False   14       4x6    1    172x1   15 True
+ 172 False   16      25x6    0     /172   17 True
+ 172 False   18      24x6    1    172x1   19 True
+ 172 False   20      23x6    0     /172   21 True
+ 172 False   22      40x7    1    172x1   23 True
+ 172 False   24      41x7    0     /172   25 True
+ 172 False   26      17x6    1    172x1   27 True
+ 172 False   28      16x6    0     /172   29 True
+ 172 False   30      39x6    1    172x1   31 True
+ 172 False   32      38x6    0     /172   33 True
+ 172 False   34      14x6    1    172x1   35 True
+ 172 False   36      35x6    0     /172   37 True
+ 172 False   38      22x6    1    172x1   39 True
+ 172 False   40       3x6    0     /172   41 True
+ 173 False    2      21x7    1    173x1    3 True
+ 173 False    4       2x7    0     /173    5 True
+ 173 False    6      13x7    1    173x1    7 True
+ 173 False    8      15x7    0     /173    9 True
+ 173 False   10       5x7    1    173x1   11 True
+ 173 False   12      26x7    0     /173   13 True
+ 173 False   14       4x7    1    173x1   15 True
+ 173 False   16      25x7    0     /173   17 True
+ 173 False   18      24x7    1    173x1   19 True
+ 173 False   20      23x7    0     /173   21 True
+ 173 False   22      40x6    1    173x1   23 True
+ 173 False   24      41x6    0     /173   25 True
+ 173 False   26      17x7    1    173x1   27 True
+ 173 False   28      16x7    0     /173   29 True
+ 173 False   30      39x7    1    173x1   31 True
+ 173 False   32      38x7    0     /173   33 True
+ 173 False   34      14x7    1    173x1   35 True
+ 173 False   36      35x7    0     /173   37 True
+ 173 False   38      22x7    1    173x1   39 True
+ 173 False   40       3x7    0     /173   41 True
+ 175 False    4      59x4    0     /175    5 True
+ 175 False    6      57x4    0     /175    7 True
+ 175 False    8      18x4    0     /175    9 True
+ 175 False   10      58x4    0     /175   11 True
+ 175 False   12      49x4    0     /175   13 True
+ 175 False   14      53x6    0     /175   15 True
+ 175 False   16      51x4    0     /175   17 True
+ 175 False   18      46x4    0     /175   19 True
+ 175 False   20      42x4    0     /175   21 True
+ 175 False   22      47x4    0     /175   23 True
+ 175 False   24      52x4    0     /175   25 True
+ 175 False   26      56x4    0     /175   27 True
+ 175 False   28      55x4    0     /175   29 True
+ 175 False   30      54x4    0     /175   31 True
+ 175 False   32      45x4    0     /175   33 True
+ 175 False   34      44x4    0     /175   35 True
+ 175 False   36      19x4    0     /175   37 True
+ 175 False   38      43x4    0     /175   39 True
+ 175 False   40      50x4    0     /175   41 True
+ 175 False   42      48x4    0     /175   43 True
+ 176 False    2     97x25    0     /176    3 True
+# Level:  5 _____________________________________
+   6 False    3       6x3                  4 True
+   7 False    3       7x3                  4 True
+   8 False    3       8x3                  4 True
+   9 False    3       9x3                  4 True
+  10 False   12     10x12                 17 True
+  10 False   14     10x14                 18 True
+  10 False   16     10x16                 19 True
+  10 False   14     10x14                 20 True
+  20 False    4    122x25    0      /20    5 True
+  20 False    6    122x25    0      /20    7 True
+  27 False    3      27x3                  4 True
+  28 False    3      28x3                  4 True
+  29 False    3      29x3                  4 True
+  30 False    3      30x3                  4 True
+  60 False    4    112x12    0      /60    5 True
+  64 False    3      64x3                  4 True
+  87 False   23     141x8   11    87x11   24 True
+  87 False   25     110x6   17    87x17   26 True
+  87 False   27     110x5   21    87x21   28 True
+  89 False   24    142x12   13    89x13   25 True
+  89 False   26    142x15    3     89x3   27 True
+  91 False   30    143x12   13    91x13   31 True
+  91 False   32     89x23   23    91x23   33 True
+  91 False   34     89x19   28    91x28   35 True
+  91 False   36     87x22   27    91x27   37 True
+  91 False   38     87x20   29    91x29   39 True
+  91 False   40    143x15    3     91x3   41 True
+  93 False   24    139x12   13    93x13   25 True
+  93 False   26     95x23   23    93x23   27 True
+  93 False   28     95x28   19    93x19   29 True
+  93 False   30    139x15    3     93x3   31 True
+  95 False   30    140x12   13    95x13   31 True
+  95 False   32    108x19   29    95x29   33 True
+  95 False   34    108x22   29    95x29   35 True
+  95 False   36    140x15    3     95x3   37 True
+  97 False   29     99x43   26    97x26   30 True
+  97 False   31     99x40   26    97x26   32 True
+ 101 False   22    149x12    3    101x3   23 True
+ 101 False   24    148x12    5    101x5   25 True
+ 101 False   26    146x12    7    101x7   27 True
+ 101 False   28    138x12    9    101x9   29 True
+ 101 False   30    137x12   11   101x11   31 True
+ 101 False   32    136x12   13   101x13   33 True
+ 101 False   34    144x10   15   101x15   35 True
+ 101 False   36    145x10   17   101x17   37 True
+ 101 False   38    134x12   21   101x21   39 True
+ 102 False   17    136x15    3    102x3   18 True
+ 104 False   25     95x26   22   104x22   26 True
+ 104 False   24    104x24                 27 True
+ 104 False   28    102x16   17   104x17   29 True
+ 104 False   30    102x13   21   104x21   31 True
+ 104 False   32    137x15    3    104x3   33 True
+ 106 False   17    108x17   16   106x16   18 True
+ 106 False   19    108x21   13   106x13   20 True
+ 106 False   21    138x15    3    106x3   22 True
+ 108 False   23    134x15    3    108x3   24 True
+ 114 False    7    112x12    5    114x5    8 True
+ 114 False    9    112x10    6    114x6   10 True
+ 114 False   11    112x12    6    114x6   12 True
+ 116 False   16    112x13   13   116x13   17 True
+ 116 False   18    112x11   15   116x15   19 True
+ 118 False   10    116x14    7    118x7   11 True
+ 118 False   12    116x11    9    118x9   13 True
+ 120 False   21    125x17    0     /120   22 True
+ 120 False   23     129x7    1    120x1   24 True
+ 120 False   18    120x18                 25 True
+ 120 False   20    120x20                 26 True
+ 120 False   27    146x15    3    120x3   28 True
+ 122 False   28    122x28   20   122x20   31 True
+ 122 False   24    122x24   25   122x25   32 True
+ 122 False   33    120x16    7    122x7   34 True
+ 122 False   27    122x27   22   122x22   35 True
+ 122 False   23    122x23   26   122x26   36 True
+ 125 False   18    148x15    3    125x3   19 True
+ 127 False   12    149x15    3    127x3   13 True
+ 134 False   16    108x21    1    134x1   17 True
+ 134 False    9     134x9                 18 True
+ 134 False   19    108x21    0     /134   20 True
+ 134 False   21    100x25   11   134x11   22 True
+ 134 False   23    167x10   14   134x14   24 True
+ 135 False    6     135x6                  7 True
+ 136 False   16    102x16    1    136x1   17 True
+ 136 False    9     136x9                 18 True
+ 136 False   19    100x17   11   136x11   20 True
+ 136 False   21    167x12   14   136x14   22 True
+ 137 False   16    104x21    1    137x1   17 True
+ 137 False    9     137x9                 18 True
+ 137 False   19    100x15   11   137x11   20 True
+ 137 False   21    167x14   14   137x14   22 True
+ 138 False   16    106x16    1    138x1   17 True
+ 138 False    9     138x9                 18 True
+ 138 False   19    100x13   11   138x11   20 True
+ 138 False   21     167x8   14   138x14   22 True
+ 139 False   16     93x23    1    139x1   17 True
+ 139 False    9     139x9                 18 True
+ 139 False   19     93x23    0     /139   20 True
+ 139 False   21    100x29   11   139x11   22 True
+ 139 False   23    167x16   14   139x14   24 True
+ 140 False   16     95x28    1    140x1   17 True
+ 140 False   18    100x19   11   140x11   19 True
+ 140 False   20    167x18   14   140x14   21 True
+ 141 False   11     87x21    1    141x1   12 True
+ 141 False   13    100x27    7    141x7   14 True
+ 142 False   16     89x23    1    142x1   17 True
+ 142 False   18    100x33   11   142x11   19 True
+ 142 False   20    167x20   14   142x14   21 True
+ 142 False    9     142x9                 22 True
+ 143 False   16     91x28    1    143x1   17 True
+ 143 False    9     143x9                 18 True
+ 143 False   19    100x31   11   143x11   20 True
+ 143 False   21    167x22   14   143x14   22 True
+ 144 False   11    116x14    1    144x1   12 True
+ 144 False    7     144x7                 13 True
+ 144 False   14    100x21    9    144x9   15 True
+ 145 False   11     118x9    1    145x1   12 True
+ 145 False    7     145x7                 13 True
+ 145 False   14     118x9    0     /145   15 True
+ 145 False   16    100x23    9    145x9   17 True
+ 146 False   16    120x16    1    146x1   17 True
+ 146 False   18    100x11   11   146x11   19 True
+ 146 False   20     167x6   14   146x14   21 True
+ 147 False    7     147x7   12   147x12   15 True
+ 148 False   16    122x26    1    148x1   17 True
+ 148 False    9     148x9                 18 True
+ 148 False   19     100x9   11   148x11   20 True
+ 148 False   21     167x2   14   148x14   22 True
+ 149 False   16    122x27    1    149x1   17 True
+ 149 False    9     149x9                 18 True
+ 149 False   19     100x7   11   149x11   20 True
+ 149 False   21     167x4   14   149x14   22 True
+ 157 False    5     157x5    3    157x3   42 True
+ 157 False    9     157x9    7    157x7   43 True
+ 157 False   13    157x13   11   157x11   44 True
+ 157 False   17    157x17   15   157x15   45 True
+ 157 False   21    157x21   19   157x19   46 True
+ 157 False   25    157x25   23   157x23   47 True
+ 157 False   29    157x29   27   157x27   48 True
+ 157 False   33    157x33   31   157x31   49 True
+ 157 False   37    157x37   35   157x35   50 True
+ 157 False   41    157x41   39   157x39   51 True
+ 159 False    5     159x5    3    159x3   42 True
+ 159 False    9     159x9    7    159x7   43 True
+ 159 False   13    159x13   11   159x11   44 True
+ 159 False   17    159x17   15   159x15   45 True
+ 159 False   21    159x21   19   159x19   46 True
+ 159 False   25    159x25   23   159x23   47 True
+ 159 False   29    159x29   27   159x27   48 True
+ 159 False   33    159x33   31   159x31   49 True
+ 159 False   37    159x37   35   159x35   50 True
+ 159 False   41    159x41   39   159x39   51 True
+ 169 False    3     169x3                  4 True
+ 172 False    5     172x5    3    172x3   42 True
+ 172 False    9     172x9    7    172x7   43 True
+ 172 False   13    172x13   11   172x11   44 True
+ 172 False   17    172x17   15   172x15   45 True
+ 172 False   21    172x21   19   172x19   46 True
+ 172 False   25    172x25   23   172x23   47 True
+ 172 False   29    172x29   27   172x27   48 True
+ 172 False   33    172x33   31   172x31   49 True
+ 172 False   37    172x37   35   172x35   50 True
+ 172 False   41    172x41   39   172x39   51 True
+ 173 False    5     173x5    3    173x3   42 True
+ 173 False    9     173x9    7    173x7   43 True
+ 173 False   13    173x13   11   173x11   44 True
+ 173 False   17    173x17   15   173x15   45 True
+ 173 False   21    173x21   19   173x19   46 True
+ 173 False   25    173x25   23   173x23   47 True
+ 173 False   29    173x29   27   173x27   48 True
+ 173 False   33    173x33   31   173x31   49 True
+ 173 False   37    173x37   35   173x35   50 True
+ 173 False   41    173x41   39   173x39   51 True
+ 175 False   41    175x41    3    175x3   44 True
+ 175 False   43    175x43    3    175x3   45 True
+ 176 False    4     99x42    0     /176    5 True
+ 176 False    6    147x14    0     /176    7 True
+ 176 False    8     99x43    0     /176    9 True
+ 176 False    3     176x3                 10 True
+# Level:  6 _____________________________________
+  20 False    5      20x5                  8 True
+  20 False    3      20x3    7     20x7    9 True
+  60 False    3      60x3    5     60x5    6 True
+  87 False   28     87x28   26    87x26   29 True
+  91 False   35     91x35   33    91x33   42 True
+  91 False   39     91x39   37    91x37   43 True
+  93 False   29     93x29   27    93x27   32 True
+  95 False   33     95x33                 38 True
+  95 False   35     95x35                 39 True
+  97 False   28     97x28   30    97x30   33 True
+  97 False   32     97x32                 34 True
+ 104 False   26    104x26                 34 True
+ 104 False   31    104x31   29   104x29   35 True
+ 106 False   20    106x20   18   106x18   23 True
+ 108 False   25    104x27   19   108x19   26 True
+ 114 False   13    144x13    6    114x6   14 True
+ 114 False   15    145x13    6    114x6   16 True
+ 114 False   10    114x10    8    114x8   17 True
+ 114 False   12    114x12                 18 True
+ 116 False   19    116x19   17   116x17   20 True
+ 118 False   13    118x13   11   118x11   14 True
+ 120 False   22    120x22                 29 True
+ 120 False   24    120x24                 30 True
+ 122 False   37    147x15   20   122x20   38 True
+ 122 False   32    122x32   31   122x31   39 True
+ 122 False   30    122x30   34   122x34   40 True
+ 122 False   36    122x36   35   122x35   41 True
+ 125 False   20    120x25   17   125x17   21 True
+ 129 False    8    120x26    6    129x6    9 True
+ 134 False   17    134x17    7    134x7   25 True
+ 134 False   20    134x20                 26 True
+ 134 False   22    134x22                 27 True
+ 134 False   24    134x24                 28 True
+ 136 False   17    136x17    7    136x7   23 True
+ 136 False   20    136x20                 24 True
+ 136 False   22    136x22                 25 True
+ 137 False   17    137x17    7    137x7   23 True
+ 137 False   20    137x20                 24 True
+ 137 False   22    137x22                 25 True
+ 138 False   17    138x17    7    138x7   23 True
+ 138 False   20    138x20                 24 True
+ 138 False   22    138x22                 25 True
+ 139 False   17    139x17    7    139x7   25 True
+ 139 False   20    139x20                 26 True
+ 139 False   22    139x22                 27 True
+ 139 False   24    139x24                 28 True
+ 140 False   17    140x17    7    140x7   22 True
+ 140 False   19    140x19                 23 True
+ 140 False   21    140x21                 24 True
+ 141 False   12    141x12    5    141x5   15 True
+ 141 False   14    141x14                 16 True
+ 142 False   17    142x17    7    142x7   23 True
+ 142 False   19    142x19                 24 True
+ 142 False   21    142x21                 25 True
+ 143 False   17    143x17    7    143x7   23 True
+ 143 False   20    143x20                 24 True
+ 143 False   22    143x22                 25 True
+ 144 False    5     144x5   12   144x12   16 True
+ 144 False   15    144x15                 17 True
+ 145 False    5     145x5   12   145x12   18 True
+ 145 False   15    145x15                 19 True
+ 145 False   17    145x17                 20 True
+ 146 False    7     146x7   17   146x17   22 True
+ 146 False   19    146x19                 23 True
+ 146 False   21    146x21                 24 True
+ 147 False   16    148x18   15   147x15   17 True
+ 147 False   18    149x18   15   147x15   19 True
+ 147 False   15    147x15                 20 True
+ 148 False    7     148x7   17   148x17   23 True
+ 148 False   20    148x20                 24 True
+ 148 False   22    148x22                 25 True
+ 149 False    7     149x7   17   149x17   23 True
+ 149 False   20    149x20                 24 True
+ 149 False   22    149x22                 25 True
+ 154 False    2     135x7    1    154x1    3 True
+ 157 False   42    157x42                 52 True
+ 157 False   43    157x43                 53 True
+ 157 False   44    157x44                 54 True
+ 157 False   45    157x45                 55 True
+ 157 False   46    157x46                 56 True
+ 157 False   47    157x47                 57 True
+ 157 False   48    157x48                 58 True
+ 157 False   49    157x49                 59 True
+ 157 False   50    157x50                 60 True
+ 157 False   51    157x51                 61 True
+ 159 False   42    159x42                 52 True
+ 159 False   43    159x43                 53 True
+ 159 False   44    159x44                 54 True
+ 159 False   45    159x45                 55 True
+ 159 False   46    159x46                 56 True
+ 159 False   47    159x47                 57 True
+ 159 False   48    159x48                 58 True
+ 159 False   49    159x49                 59 True
+ 159 False   50    159x50                 60 True
+ 159 False   51    159x51                 61 True
+ 162 False    2       7x4    0     /162    3 True
+ 162 False    4       9x4    0     /162    5 True
+ 162 False    6      27x4    0     /162    7 True
+ 162 False    8      30x4    0     /162    9 True
+ 162 False   10       8x4    1    162x1   11 True
+ 162 False   12      29x4    1    162x1   13 True
+ 162 False   14       6x4    1    162x1   15 True
+ 162 False   16      28x4    1    162x1   17 True
+ 170 False    4     169x4    0     /170    5 True
+ 172 False   42    172x42                 52 True
+ 172 False   43    172x43                 53 True
+ 172 False   44    172x44                 54 True
+ 172 False   45    172x45                 55 True
+ 172 False   46    172x46                 56 True
+ 172 False   47    172x47                 57 True
+ 172 False   48    172x48                 58 True
+ 172 False   49    172x49                 59 True
+ 172 False   50    172x50                 60 True
+ 172 False   51    172x51                 61 True
+ 173 False   42    173x42                 52 True
+ 173 False   43    173x43                 53 True
+ 173 False   44    173x44                 54 True
+ 173 False   45    173x45                 55 True
+ 173 False   46    173x46                 56 True
+ 173 False   47    173x47                 57 True
+ 173 False   48    173x48                 58 True
+ 173 False   49    173x49                 59 True
+ 173 False   50    173x50                 60 True
+ 173 False   51    173x51                 61 True
+ 175 False   46    176x10    0     /175   47 True
+ 175 False   44    175x44                 48 True
+ 175 False   45    175x45                 49 True
+ 176 False    5     176x5                 11 True
+ 176 False    7     176x7                 12 True
+ 176 False    9     176x9                 13 True
+# Level:  7 _____________________________________
+   1 False    2    138x23    1      1x1    3 True
+   1 False    4    134x25    1      1x1    5 True
+   1 False    6    134x25    0       /1    7 True
+  10 False   21     162x5    9     10x9   22 True
+  10 False   23     162x7    9     10x9   24 True
+  10 False   25     162x9    9     10x9   26 True
+  20 False   10    149x23    1     20x1   11 True
+  20 False    9      20x9                 12 True
+  60 False    6      60x6                  7 True
+  87 False   29     87x29                 30 True
+  91 False   42     91x42                 44 True
+  91 False   45     87x29   42    91x42   46 True
+  91 False   43     91x43                 47 True
+  93 False   32     93x32                 33 True
+  97 False   33     97x33                 35 True
+ 104 False   36     95x38   22   104x22   37 True
+ 104 False   38     95x39   19   104x19   39 True
+ 104 False   35    104x35                 40 True
+ 106 False   23    106x23                 24 True
+ 108 False   27    104x34   22   108x22   28 True
+ 112 False   14    144x16   12   112x12   15 True
+ 114 False   19    144x16    6    114x6   20 True
+ 114 False   16    114x16                 21 True
+ 114 False   14    114x14                 22 True
+ 114 False   17    114x17                 23 True
+ 116 False   20    116x20                 21 True
+ 118 False   14    118x14                 15 True
+ 122 False   38    122x38                 42 True
+ 122 False   43    149x23   20   122x20   44 True
+ 122 False   45    149x23   25   122x25   46 True
+ 122 False   39    122x39                 47 True
+ 122 False   40    122x40                 48 True
+ 122 False   41    122x41                 49 True
+ 122 False   40    122x40   39   122x39   50 True
+ 125 False   22    120x30   15   125x15   23 True
+ 129 False   10    120x29    7    129x7   11 True
+ 134 False   25    134x25                 29 True
+ 134 False   30    101x39   27   134x27   31 True
+ 134 False   32    108x24   28   134x28   33 True
+ 136 False   26    134x18   23   136x23   27 True
+ 136 False   28    137x18   23   136x23   29 True
+ 136 False   30    138x18   23   136x23   31 True
+ 136 False   32    101x33   24   136x24   33 True
+ 136 False   23    136x23                 34 True
+ 136 False   35    102x18   25   136x25   36 True
+ 137 False   26    136x23   23   137x23   27 True
+ 137 False   28    138x18   23   137x23   29 True
+ 137 False   30    101x31   24   137x24   31 True
+ 137 False   23    137x23                 32 True
+ 137 False   33    104x33   25   137x25   34 True
+ 138 False   26    136x23   23   138x23   27 True
+ 138 False   28    134x18   23   138x23   29 True
+ 138 False   30    134x25   23   138x23   31 True
+ 138 False   32    140x22   23   138x23   33 True
+ 138 False   23    138x23                 34 True
+ 138 False   35    101x29   24   138x24   36 True
+ 138 False   37    137x23   23   138x23   38 True
+ 138 False   39    106x22   25   138x25   40 True
+ 139 False   29    142x23   25   139x25   30 True
+ 139 False   25    139x25                 31 True
+ 139 False   32     93x25   27   139x27   33 True
+ 139 False   34     93x31   28   139x28   35 True
+ 140 False   25    136x23   22   140x22   26 True
+ 140 False   22    140x22                 27 True
+ 140 False   28    136x18   22   140x22   29 True
+ 140 False   30     95x31   23   140x23   31 True
+ 140 False   32     95x37   24   140x24   33 True
+ 141 False   15    141x15                 17 True
+ 141 False   18     87x24   16   141x16   19 True
+ 141 False   20    142x23   15   141x15   21 True
+ 141 False   22    142x22   15   141x15   23 True
+ 142 False   26    143x18   23   142x23   27 True
+ 142 False   28    139x18   23   142x23   29 True
+ 142 False   23    142x23                 30 True
+ 142 False   31     89x25   24   142x24   32 True
+ 142 False   33     89x27   25   142x25   34 True
+ 143 False   26    142x23   23   143x23   27 True
+ 143 False   28    139x18   23   143x23   29 True
+ 143 False   30    139x25   23   143x23   31 True
+ 143 False   23    143x23                 32 True
+ 143 False   33     91x31   24   143x24   34 True
+ 143 False   35    139x20   23   143x23   36 True
+ 143 False   37     139x9   23   143x23   38 True
+ 143 False   39     91x41   25   143x25   40 True
+ 143 False   41    141x15   23   143x23   42 True
+ 144 False   18    145x13   16   144x16   19 True
+ 144 False   16    144x16                 20 True
+ 144 False   21    101x35   17   144x17   22 True
+ 144 False   23    145x15   16   144x16   24 True
+ 144 False   25     145x7   16   144x16   26 True
+ 145 False   21     114x6   18   145x18   22 True
+ 145 False   23    144x16   18   145x18   24 True
+ 145 False   18    145x18                 25 True
+ 145 False   26    101x37   20   145x20   27 True
+ 145 False   28    114x18   18   145x18   29 True
+ 146 False   22    146x22                 25 True
+ 146 False   26    147x13   22   146x22   27 True
+ 146 False   28    101x27   23   146x23   29 True
+ 146 False   30    120x28   24   146x24   31 True
+ 147 False   21    148x23   15   147x15   22 True
+ 147 False   23    149x23   15   147x15   24 True
+ 147 False   19    147x19                 25 True
+ 147 False   17    147x17                 26 True
+ 147 False   27    146x22   15   147x15   28 True
+ 148 False   26    149x18   23   148x23   27 True
+ 148 False   28    101x25   24   148x24   29 True
+ 148 False   23    148x23                 30 True
+ 148 False   31    149x23   23   148x23   32 True
+ 148 False   33    125x19   25   148x25   34 True
+ 149 False   23    149x23                 26 True
+ 149 False   27    146x22   23   149x23   28 True
+ 149 False   29    101x23   24   149x24   30 True
+ 149 False   31    127x13   25   149x25   32 True
+ 149 False   33      20x8   23   149x23   34 True
+ 154 False    3     154x3                  4 True
+ 162 False   18      10x9    3    162x3   19 True
+ 169 False    5      60x6    0     /169    6 True
+ 175 False   50    176x11    0     /175   51 True
+ 175 False   52    176x12    0     /175   53 True
+ 175 False   54    176x13    0     /175   55 True
+ 175 False   47    175x47   15   175x15   56 True
+ 176 False   14      20x9    0     /176   15 True
+# Level:  8 _____________________________________
+   1 False    3       1x3                  8 True
+   1 False    9    134x29    1      1x1   10 True
+  10 False   22     10x22                 27 True
+  10 False   24     10x24                 28 True
+  10 False   26     10x26                 29 True
+  20 False   11     20x11                 13 True
+  87 False   31     93x32   30    87x30   32 True
+  87 False   33     93x33   30    87x30   34 True
+  91 False   48     87x29   44    91x44   49 True
+  91 False   46     91x46                 50 True
+  98 False    2     154x4    1     98x1    3 True
+  99 False   44    146x29   41    99x41   45 True
+ 104 False   41    108x28   37   104x37   42 True
+ 104 False   43    108x26   39   104x39   44 True
+ 106 False   25    104x40   23   106x23   26 True
+ 106 False   27    104x35   24   106x24   28 True
+ 112 False   16    114x22   12   112x12   17 True
+ 112 False   15    112x15                 18 True
+ 114 False   20    114x20                 24 True
+ 118 False   16    114x23   14   118x14   17 True
+ 118 False   18    114x17   15   118x15   19 True
+ 122 False   44    122x44                 51 True
+ 122 False   46    122x46                 52 True
+ 122 False   41    122x41   48   122x48   53 True
+ 122 False   40    122x40   47   122x47   54 True
+ 122 False   49    122x49   48   122x48   55 True
+ 122 False   50    122x50                 56 True
+ 125 False   24    129x11   21   125x21   25 True
+ 125 False   26     129x9   23   125x23   27 True
+ 134 False   31    134x31                 34 True
+ 134 False   35       1x5    9    134x9   36 True
+ 134 False   33    134x33                 37 True
+ 136 False   27    136x27                 37 True
+ 136 False   31    136x31                 38 True
+ 136 False   29    136x29                 39 True
+ 136 False   33    136x33                 40 True
+ 136 False   36    136x36                 41 True
+ 136 False   42    137x34   36   136x36   43 True
+ 137 False   27    137x27                 35 True
+ 137 False   31    137x31                 36 True
+ 137 False   34    137x34                 37 True
+ 138 False   27    138x27                 41 True
+ 138 False   29    138x29                 42 True
+ 138 False   31    138x31                 43 True
+ 138 False   29    138x29    9    138x9   44 True
+ 138 False   33    138x33                 45 True
+ 138 False   36    138x36                 46 True
+ 138 False   38    138x38                 47 True
+ 138 False   40    138x40                 48 True
+ 139 False   30    139x30                 36 True
+ 139 False   33    139x33                 37 True
+ 139 False   35    139x35                 38 True
+ 140 False   26    140x26                 34 True
+ 140 False   31    140x31                 35 True
+ 140 False   33    140x33                 36 True
+ 141 False   19    141x19                 24 True
+ 141 False   21    141x21                 25 True
+ 142 False   29    142x29                 35 True
+ 142 False   32    142x32                 36 True
+ 142 False   34    142x34                 37 True
+ 142 False   27    142x27                 38 True
+ 142 False   39    143x40   34   142x34   40 True
+ 143 False   27    143x27                 43 True
+ 143 False   29    143x29    9    143x9   44 True
+ 143 False   31    143x31    9    143x9   45 True
+ 143 False   46    139x26   32   143x32   47 True
+ 143 False   34    143x34                 48 True
+ 143 False   49    139x18   32   143x32   50 True
+ 143 False   40    143x40                 51 True
+ 143 False   42    143x42                 52 True
+ 144 False   19    144x19    7    144x7   27 True
+ 144 False   28    114x21   16   144x16   29 True
+ 144 False   30    145x24    7    144x7   31 True
+ 144 False   22    144x22                 32 True
+ 144 False   33    145x19   20   144x20   34 True
+ 144 False   35    145x13   20   144x20   36 True
+ 145 False   22    145x22                 30 True
+ 145 False   27    145x27                 31 True
+ 145 False   32     97x34   27   145x27   33 True
+ 145 False   29    145x29                 34 True
+ 146 False   32    122x42   22   146x22   33 True
+ 146 False   34    147x26   22   146x22   35 True
+ 146 False   29    146x29                 36 True
+ 146 False   31    146x31                 37 True
+ 146 False   38    147x10   31   146x31   39 True
+ 147 False   22    147x22                 29 True
+ 147 False   24    147x24                 30 True
+ 147 False   28    147x28                 31 True
+ 148 False   35    147x25   23   148x23   36 True
+ 148 False   29    148x29                 37 True
+ 148 False   32    148x32                 38 True
+ 148 False   34    148x34                 39 True
+ 149 False   35    122x42   23   149x23   36 True
+ 149 False   37    122x44    9    149x9   38 True
+ 149 False   28    149x28                 39 True
+ 149 False   30    149x30                 40 True
+ 149 False   32    149x32                 41 True
+ 149 False   42      20x5   26   149x26   43 True
+ 162 False   19    162x19                 20 True
+ 169 False    6     169x6                  7 True
+ 175 False   51    175x51    5    175x5   57 True
+ 175 False   53    175x53   11   175x11   58 True
+ 175 False   55    175x55   17   175x17   59 True
+ 175 False   56    175x56                 60 True
+ 176 False   15    176x15                 16 True
+# Level:  9 _____________________________________
+   1 False   11    138x47    1      1x1   12 True
+   1 False   10      1x10    7      1x7   13 True
+  20 False   14    148x38    1     20x1   15 True
+  87 False   32     87x32                 35 True
+  87 False   34     87x34                 36 True
+  91 False   49     91x49                 51 True
+  93 False   34     91x50   32    93x32   35 True
+  98 False    3      98x3                  4 True
+  99 False   46    146x36   35    99x35   47 True
+ 104 False   42    104x42                 45 True
+ 104 False   44    104x44                 46 True
+ 106 False   28    106x28   26   106x26   29 True
+ 114 False   25    144x29    6    114x6   26 True
+ 114 False   27    144x27    6    114x6   28 True
+ 114 False   29    112x18    6    114x6   30 True
+ 118 False   19    118x19   17   118x17   20 True
+ 122 False   57    147x30   25   122x25   58 True
+ 122 False   59     20x13   25   122x25   60 True
+ 122 False   53    122x53                 61 True
+ 122 False   54    122x54                 62 True
+ 122 False   55    122x55                 63 True
+ 122 False   56    122x56   41   122x41   64 True
+ 125 False   25    125x25                 28 True
+ 125 False   27    125x27                 29 True
+ 134 False   38    138x41   25   134x25   39 True
+ 134 False   40       1x8   25   134x25   41 True
+ 134 False   36    134x36                 42 True
+ 136 False   44    140x31   40   136x40   45 True
+ 136 False   46    140x35   33   136x33   47 True
+ 136 False   43    136x43                 48 True
+ 137 False   38    138x42   23   137x23   39 True
+ 137 False   40    138x43   23   137x23   41 True
+ 137 False   42    136x38   23   137x23   43 True
+ 137 False   44    140x34   23   137x23   45 True
+ 137 False   46    138x45   23   137x23   47 True
+ 137 False   48    138x41   23   137x23   49 True
+ 138 False   49    136x37   23   138x23   50 True
+ 138 False   51    137x35   18   138x18   52 True
+ 138 False   44    138x44                 53 True
+ 138 False   54    137x31   46   138x46   55 True
+ 138 False   56    137x36   36   138x36   57 True
+ 138 False   58    134x36   34   138x34   59 True
+ 139 False   39    143x43   18   139x18   40 True
+ 139 False   41    143x44   18   139x18   42 True
+ 139 False   43    143x34   37   139x37   44 True
+ 139 False   45    143x48   33   139x33   46 True
+ 139 False   47    141x25   25   139x25   48 True
+ 140 False   37    136x37   22   140x22   38 True
+ 140 False   39    136x39   22   140x22   40 True
+ 141 False   26    142x36   19   141x19   27 True
+ 141 False   28    142x32   24   141x24   29 True
+ 141 False   30    142x38   15   141x15   31 True
+ 142 False   41    143x44   23   142x23   42 True
+ 142 False   40    142x40                 43 True
+ 142 False   44    143x52   23   142x23   45 True
+ 143 False   53    139x36   23   143x23   54 True
+ 143 False   44    143x44                 55 True
+ 143 False   56    142x35   23   143x23   57 True
+ 143 False   45    143x45                 58 True
+ 143 False   47    143x47   36   143x36   59 True
+ 143 False   50    143x50   38   143x38   60 True
+ 144 False   37    145x30   16   144x16   38 True
+ 144 False   27    144x27                 39 True
+ 144 False   31    144x31                 40 True
+ 144 False   41    145x31   22   144x22   42 True
+ 144 False   43    145x27   32   144x32   44 True
+ 144 False   34    144x34   24   144x24   45 True
+ 144 False   36    144x36   26   144x26   46 True
+ 144 False   29    144x29                 47 True
+ 144 False   48    145x34   16   144x16   49 True
+ 145 False   35    114x24   13   145x13   36 True
+ 145 False   37    144x27   13   145x13   38 True
+ 145 False   33    145x33                 39 True
+ 146 False   33    146x33                 40 True
+ 146 False   39    146x39                 41 True
+ 148 False   40    122x51   23   148x23   41 True
+ 148 False   42    122x52   23   148x23   43 True
+ 148 False   36    148x36                 44 True
+ 148 False   45    147x31   23   148x23   46 True
+ 148 False   47    149x39   23   148x23   48 True
+ 148 False   49    147x30   23   148x23   50 True
+ 149 False   44    147x29   18   149x18   45 True
+ 149 False   36    149x36                 46 True
+ 149 False   38    149x38                 47 True
+ 149 False   48    148x29   40   149x40   49 True
+ 149 False   50    148x37   30   149x30   51 True
+ 149 False   43    149x43   34   149x34   52 True
+ 162 False   20    162x20   11   162x11   21 True
+ 162 False   22     10x27   13   162x13   23 True
+ 162 False   24     10x28   15   162x15   25 True
+ 162 False   26     10x29   17   162x17   27 True
+ 170 False    6     169x7    1    170x1    7 True
+ 175 False   61    176x16    1    175x1   62 True
+ 175 False   57    175x57                 63 True
+ 175 False   58    175x58                 64 True
+ 175 False   59    175x59                 65 True
+ 176 False   17    149x41    0     /176   18 True
+ 176 False   19    146x37    0     /176   20 True
+ 176 False   21    148x39    0     /176   22 True
+ 176 False   23    144x32    0     /176   24 True
+ 176 False   25    145x31    0     /176   26 True
+ 176 False   27    134x37    0     /176   28 True
+ 176 False   29    140x36    0     /176   30 True
+ 176 False   31    136x41    0     /176   32 True
+ 176 False   33    137x37    0     /176   34 True
+ 176 False   35    138x48    0     /176   36 True
+ 176 False   37    141x24    0     /176   38 True
+ 176 False   39    142x37    0     /176   40 True
+ 176 False   41    143x51    0     /176   42 True
+ 176 False   43    139x38    0     /176   44 True
+# Level: 10 _____________________________________
+   1 False   12      1x12                 14 True
+   1 False   13      1x13                 15 True
+  20 False   15     20x15                 16 True
+  65 False    6    162x21    1     65x1    7 True
+  65 False    8    162x23    1     65x1    9 True
+  65 False   10    162x25    1     65x1   11 True
+  65 False   12    162x27    1     65x1   13 True
+  91 False   52     87x35   44    91x44   53 True
+  91 False   54     87x36   42    91x42   55 True
+  93 False   36     91x51   33    93x33   37 True
+  99 False   47     99x47   45    99x45   48 True
+ 104 False   46    104x46   45   104x45   47 True
+ 106 False   29    106x29                 30 True
+ 112 False   19    144x47   12   112x12   20 True
+ 114 False   31    145x36    6    114x6   32 True
+ 114 False   26    114x26                 33 True
+ 114 False   34    144x39    5    114x5   35 True
+ 114 False   30    114x30                 36 True
+ 118 False   20    118x20                 21 True
+ 122 False   58    122x58                 65 True
+ 122 False   61    122x61   47   122x47   66 True
+ 122 False   62    122x62   49   122x49   67 True
+ 122 False   63    122x63   39   122x39   68 True
+ 125 False   29    125x29   28   125x28   30 True
+ 134 False   39    134x39                 43 True
+ 134 False   44    136x48   33   134x33   45 True
+ 136 False   47    136x47   45   136x45   49 True
+ 137 False   39    137x39    9    137x9   50 True
+ 137 False   41    137x41   39   137x39   51 True
+ 137 False   43    137x43                 52 True
+ 137 False   45    137x45                 53 True
+ 137 False   47    137x47                 54 True
+ 137 False   49    137x49                 55 True
+ 138 False   50    138x50                 60 True
+ 138 False   31    138x31   53   138x53   61 True
+ 138 False   57    138x57   55   138x55   62 True
+ 138 False   63    134x41    9    138x9   64 True
+ 138 False   65    134x42   23   138x23   66 True
+ 139 False   49    143x55    9    139x9   50 True
+ 139 False   46    139x46   44   139x44   51 True
+ 139 False   48    139x48                 52 True
+ 140 False   38    140x38                 41 True
+ 140 False   42    142x43   33   140x33   43 True
+ 141 False   29    141x29   27   141x27   32 True
+ 142 False   46    139x40    9    142x9   47 True
+ 142 False   48    143x57    9    142x9   49 True
+ 142 False   50    143x55   30   142x30   51 True
+ 142 False   45    142x45                 52 True
+ 143 False   61    139x40   54   143x54   62 True
+ 143 False   31    143x31   55   143x55   63 True
+ 143 False   58    143x58   29   143x29   64 True
+ 143 False   59    143x59                 65 True
+ 143 False   57    143x57                 66 True
+ 144 False   50    145x36   38   144x38   51 True
+ 144 False   52    145x24   39   144x39   53 True
+ 144 False   40    144x40   19   144x19   54 True
+ 144 False   44    144x44   42   144x42   55 True
+ 144 False   45    144x45                 56 True
+ 144 False   57    145x39   22   144x22   58 True
+ 144 False   49    144x49                 59 True
+ 145 False   40    144x39    7    145x7   41 True
+ 146 False   42    148x44   22   146x22   43 True
+ 148 False   51    149x46   23   148x23   52 True
+ 148 False   41    148x41    9    148x9   53 True
+ 148 False   43    148x43   41   148x41   54 True
+ 148 False   46    148x46                 55 True
+ 148 False   48    148x48                 56 True
+ 148 False   50    148x50                 57 True
+ 149 False   53    122x46   47   149x47   54 True
+ 149 False   55    146x40   23   149x23   56 True
+ 149 False   51    149x51   49   149x49   57 True
+ 149 False   58    122x60    9    149x9   59 True
+ 149 False   60    146x41   32   149x32   61 True
+ 149 False   52    149x52                 62 True
+ 175 False   63    175x63   62   175x62   66 True
+ 176 False   18    176x18                 45 True
+ 176 False   20    176x20                 46 True
+ 176 False   22    176x22                 47 True
+ 176 False   24    176x24                 48 True
+ 176 False   26    176x26                 49 True
+ 176 False   50    149x52    0     /176   51 True
+ 176 False   28    176x28                 52 True
+ 176 False   30    176x30                 53 True
+ 176 False   32    176x32                 54 True
+ 176 False   34    176x34                 55 True
+ 176 False   36    176x36                 56 True
+ 176 False   38    176x38                 57 True
+ 176 False   40    176x40                 58 True
+ 176 False   42    176x42                 59 True
+ 176 False   44    176x44                 60 True
+ 176 False   61      1x13    0     /176   62 True
+# Level: 11 _____________________________________
+   1 False   16    137x55    1      1x1   17 True
+  20 False   17    148x57    1     20x1   18 True
+  91 False   56     93x37   53    91x53   57 True
+  91 False   58     93x35   55    91x55   59 True
+  91 False   60    104x47   47    91x47   61 True
+  99 False   48     99x48                 49 True
+ 104 False   47    104x47                 48 True
+ 112 False   17    112x17   20   112x20   21 True
+ 114 False   32    114x32                 37 True
+ 114 False   33    114x33   14   114x14   38 True
+ 114 False   35    114x35   28   114x28   39 True
+ 114 False   40    144x54    5    114x5   41 True
+ 116 False   22    125x30   21   116x21   23 True
+ 122 False   69    148x55   25   122x25   70 True
+ 122 False   71     20x16   25   122x25   72 True
+ 122 False   67    122x67   66   122x66   73 True
+ 122 False   64    122x64   68   122x68   74 True
+ 125 False   30    125x30                 31 True
+ 134 False   46    137x53   25   134x25   47 True
+ 134 False   48      1x14   25   134x25   49 True
+ 134 False   45    134x45                 50 True
+ 136 False   50    137x54   23   136x23   51 True
+ 136 False   49    136x49                 52 True
+ 137 False   56    138x60   23   137x23   57 True
+ 137 False   50    137x50                 58 True
+ 137 False   59    134x43   23   137x23   60 True
+ 137 False   51    137x51                 61 True
+ 138 False   61    138x61                 67 True
+ 138 False   68    140x41   23   138x23   69 True
+ 138 False   62    138x62                 70 True
+ 138 False   71    136x49   62   138x62   72 True
+ 138 False   64    138x64                 73 True
+ 138 False   59    138x59   66   138x66   74 True
+ 139 False   53    143x63   20   139x20   54 True
+ 139 False   42    139x42   50   139x50   55 True
+ 139 False   51    139x51                 56 True
+ 139 False   57    142x52   25   139x25   58 True
+ 140 False   44    137x52   22   140x22   45 True
+ 140 False   43    140x43                 46 True
+ 141 False   32    141x32                 33 True
+ 141 False   34    143x66   15   141x15   35 True
+ 142 False   47    142x47                 53 True
+ 142 False   49    142x49                 54 True
+ 142 False   51    142x51   42   142x42   55 True
+ 142 False   56    143x64   30   142x30   57 True
+ 143 False   62    143x62                 67 True
+ 143 False   63    143x63                 68 True
+ 143 False   64    143x64                 69 True
+ 143 False   70    139x52   23   143x23   71 True
+ 144 False   51    144x51                 60 True
+ 144 False   53    144x53                 61 True
+ 144 False   54    144x54                 62 True
+ 144 False   55    144x55                 63 True
+ 144 False   64     97x35   55   144x55   65 True
+ 144 False   58    144x58                 66 True
+ 145 False   42    144x53   15   145x15   43 True
+ 145 False   38    145x38   41   145x41   44 True
+ 145 False   45    114x36   18   145x18   46 True
+ 147 False   32    148x56   15   147x15   33 True
+ 148 False   53    148x53                 58 True
+ 148 False   59    122x65   23   148x23   60 True
+ 148 False   54    148x54                 61 True
+ 149 False   63    148x52   45   149x45   64 True
+ 149 False   54    149x54                 65 True
+ 149 False   56    149x56                 66 True
+ 149 False   57    149x57                 67 True
+ 149 False   68     99x48   57   149x57   69 True
+ 149 False   59    149x59                 70 True
+ 149 False   61    149x61                 71 True
+ 158 False    2    175x66    0     /158    3 True
+ 160 False    2    175x66    0     /160    3 True
+ 171 False    2    175x66    0     /171    3 True
+ 174 False    2    175x66    0     /174    3 True
+ 175 False   67    176x45    0     /175   68 True
+ 175 False   69    176x46    0     /175   70 True
+ 175 False   71    176x47    0     /175   72 True
+ 175 False   73    176x48    0     /175   74 True
+ 175 False   75    176x49    0     /175   76 True
+ 175 False   77    176x52    0     /175   78 True
+ 175 False   79    176x53    0     /175   80 True
+ 175 False   81    176x54    0     /175   82 True
+ 175 False   83    176x55    0     /175   84 True
+ 175 False   85    176x56    0     /175   86 True
+ 175 False   87    176x57    0     /175   88 True
+ 175 False   89    176x58    0     /175   90 True
+ 175 False   91    176x59    0     /175   92 True
+ 175 False   93    176x60    0     /175   94 True
+ 176 False   51    176x51                 63 True
+ 176 False   62    176x62                 64 True
+# Level: 12 _____________________________________
+   1 False   17      1x17                 18 True
+  20 False   18     20x18                 19 True
+  91 False   57     91x57                 62 True
+  91 False   59     91x59                 63 True
+  91 False   64    104x48   43    91x43   65 True
+  99 False   49     99x49   38    99x38   50 True
+  99 False   49     99x49   42    99x42   51 True
+  99 False   52    144x66   38    99x38   53 True
+ 112 False   22    114x38   12   112x12   23 True
+ 112 False   21    112x21                 24 True
+ 114 False   42    144x60    6    114x6   43 True
+ 114 False   37    114x37   14   114x14   44 True
+ 114 False   38    114x38                 45 True
+ 114 False   46    144x62    6    114x6   47 True
+ 114 False   39    114x39                 48 True
+ 116 False   24    125x31   20   116x20   25 True
+ 122 False   70    122x70                 75 True
+ 122 False   76    148x41   72   122x72   77 True
+ 122 False   78    149x70   44   122x44   79 True
+ 122 False   73    122x73                 80 True
+ 122 False   74    122x74                 81 True
+ 134 False   47    134x47                 51 True
+ 134 False   52    137x39   49   134x49   53 True
+ 136 False   51    136x51                 53 True
+ 136 False   54    134x31   52   136x52   55 True
+ 136 False   56    134x34   52   136x52   57 True
+ 137 False   58    137x58   29   137x29   62 True
+ 137 False   61    137x61    9    137x9   63 True
+ 137 False   60    137x60   57   137x57   64 True
+ 138 False   75    137x57   52   138x52   76 True
+ 138 False   69    138x69                 77 True
+ 138 False   78    136x49   70   138x70   79 True
+ 138 False   72    138x72                 80 True
+ 138 False   73    138x73   29   138x29   81 True
+ 138 False   82    134x50   40   138x40   83 True
+ 138 False   74    138x74                 84 True
+ 139 False   59    143x68   26   139x26   60 True
+ 139 False   55    139x55                 61 True
+ 139 False   62    141x33   51   139x51   63 True
+ 139 False   64    141x32   56   139x56   65 True
+ 139 False   66    140x46   35   139x35   67 True
+ 139 False   58    139x58                 68 True
+ 141 False   31    141x31   35   141x35   36 True
+ 142 False   58    143x67    9    142x9   59 True
+ 142 False   53    142x53   27   142x27   60 True
+ 142 False   54    142x54   27   142x27   61 True
+ 142 False   62    143x69   23   142x23   63 True
+ 142 False   55    142x55                 64 True
+ 143 False   71    143x71                 72 True
+ 144 False   67     97x33   63   144x63   68 True
+ 145 False   47    144x61   19   145x19   48 True
+ 145 False   44    145x44                 49 True
+ 145 False   46    145x46                 50 True
+ 147 False   33    147x33                 34 True
+ 148 False   58    148x58   27   148x27   62 True
+ 148 False   60    148x60   52   148x52   63 True
+ 148 False   61    148x61    9    148x9   64 True
+ 148 False   65    149x66   23   148x23   66 True
+ 148 False   67    149x71   34   148x34   68 True
+ 149 False   64    149x64                 72 True
+ 149 False   73     99x48   67   149x67   74 True
+ 149 False   69    149x69                 75 True
+ 158 False    3     158x3                  4 True
+ 160 False    3     160x3                  4 True
+ 171 False    3     171x3                  4 True
+ 174 False    3     174x3                  4 True
+ 175 False   68    175x68    7    175x7   95 True
+ 175 False   70    175x70    9    175x9   96 True
+ 175 False   72    175x72   13   175x13   97 True
+ 175 False   74    175x74   19   175x19   98 True
+ 175 False   76    175x76   21   175x21   99 True
+ 175 False  100    176x63    1    175x1  101 True
+ 175 False   78    175x78   23   175x23  102 True
+ 175 False   80    175x80   25   175x25  103 True
+ 175 False   82    175x82   27   175x27  104 True
+ 175 False   84    175x84   29   175x29  105 True
+ 175 False   86    175x86   31   175x31  106 True
+ 175 False   88    175x88   33   175x33  107 True
+ 175 False   90    175x90   35   175x35  108 True
+ 175 False   92    175x92   37   175x37  109 True
+ 175 False   94    175x94   39   175x39  110 True
+ 175 False  111    176x64    1    175x1  112 True
+ 176 False   65    138x74    0     /176   66 True
+# Level: 13 _____________________________________
+  91 False   63     91x63   62    91x62   66 True
+  91 False   61     91x61   65    91x65   67 True
+  99 False   50     99x50                 54 True
+  99 False   51     99x51                 55 True
+  99 False   56    149x75   38    99x38   57 True
+  99 False   53     99x53                 58 True
+ 112 False   25    114x45   10   112x10   26 True
+ 112 False   24    112x24   12   112x12   27 True
+ 114 False   43    114x43                 49 True
+ 114 False   44    114x44                 50 True
+ 114 False   51    145x44   44   114x44   52 True
+ 114 False   41    114x41   47   114x47   53 True
+ 116 False   23    116x23   25   116x25   26 True
+ 122 False   82    148x62   20   122x20   83 True
+ 122 False   84    147x34   25   122x25   85 True
+ 122 False   86     20x19   25   122x25   87 True
+ 122 False   77    122x77                 88 True
+ 122 False   79    122x79                 89 True
+ 122 False   81    122x81   80   122x80   90 True
+ 134 False   54    137x62   18   134x18   55 True
+ 134 False   56    136x53   25   134x25   57 True
+ 134 False   58      1x18   25   134x25   59 True
+ 134 False   60    138x80   31   134x31   61 True
+ 134 False   53    134x53                 62 True
+ 136 False   55    136x55                 58 True
+ 136 False   57    136x57                 59 True
+ 137 False   63    137x63                 65 True
+ 137 False   62    137x62                 66 True
+ 137 False   64    137x64                 67 True
+ 137 False   68    138x77   23   137x23   69 True
+ 137 False   70    138x81   32   137x32   71 True
+ 138 False   76    138x76                 85 True
+ 138 False   86    134x51   23   138x23   87 True
+ 138 False   79    138x79                 88 True
+ 138 False   81    138x81                 89 True
+ 138 False   83    138x83                 90 True
+ 139 False   60    139x60   54   139x54   69 True
+ 139 False   65    139x65   63   139x63   70 True
+ 139 False   67    139x67                 71 True
+ 141 False   37    142x61   15   141x15   38 True
+ 141 False   36    141x36                 39 True
+ 142 False   59    142x59                 65 True
+ 142 False   60    142x60                 66 True
+ 142 False   67    139x55   60   142x60   68 True
+ 142 False   61    142x61                 69 True
+ 142 False   57    142x57   63   142x63   70 True
+ 144 False   68    144x68   65   144x65   69 True
+ 145 False   48    145x48   43   145x43   51 True
+ 147 False   35    149x72    9    147x9   36 True
+ 148 False   62    148x62                 69 True
+ 148 False   63    148x63                 70 True
+ 148 False   64    148x64                 71 True
+ 148 False   72    146x43   66   148x66   73 True
+ 148 False   74    122x79   30   148x30   75 True
+ 148 False   68    148x68                 76 True
+ 149 False   76    122x75   23   149x23   77 True
+ 149 False   74    149x74                 78 True
+ 157 False   62     158x4    0     /157   63 True
+ 159 False   62     160x4    0     /159   63 True
+ 172 False   62     171x4    0     /172   63 True
+ 173 False   62     174x4    0     /173   63 True
+ 175 False   95    175x95                113 True
+ 175 False   96    175x96                114 True
+ 175 False   97    175x97                115 True
+ 175 False   98    175x98                116 True
+ 175 False   99    175x99                117 True
+ 175 False  102   175x102                118 True
+ 175 False  103   175x103                119 True
+ 175 False  104   175x104                120 True
+ 175 False  105   175x105                121 True
+ 175 False  106   175x106                122 True
+ 175 False  107   175x107                123 True
+ 175 False  108   175x108                124 True
+ 175 False  109   175x109                125 True
+ 175 False  110   175x110                126 True
+ 176 False   66    176x66                 67 True
+# Level: 14 _____________________________________
+  91 False   66     91x66                 68 True
+  91 False   67     91x67                 69 True
+  99 False   59    149x78   42    99x42   60 True
+ 106 False   31     91x66   30   106x30   32 True
+ 112 False   26    112x26   23   112x23   28 True
+ 112 False   27    112x27                 29 True
+ 114 False   49    114x49   14   114x14   54 True
+ 114 False   55    145x49   50   114x50   56 True
+ 116 False   26    116x26                 27 True
+ 118 False   22    122x90   21   118x21   23 True
+ 122 False   91    148x69   25   122x25   92 True
+ 122 False   85    122x85                 93 True
+ 122 False   94    148x52   87   122x87   95 True
+ 122 False   90    122x90                 96 True
+ 134 False   63    137x66    9    134x9   64 True
+ 134 False   57    134x57                 65 True
+ 134 False   66    137x57   59   134x59   67 True
+ 134 False   68    138x88   34   134x34   69 True
+ 136 False   60    138x85    9    136x9   61 True
+ 137 False   65    137x65   29   137x29   72 True
+ 137 False   73    140x45   69   137x69   74 True
+ 137 False   75    134x62    9    137x9   76 True
+ 137 False   77    138x89   23   137x23   78 True
+ 138 False   91    137x67   52   138x52   92 True
+ 138 False   93    136x58   70   138x70   94 True
+ 138 False   95    136x59   62   138x62   96 True
+ 138 False   87    138x87                 97 True
+ 139 False   69    139x69                 72 True
+ 139 False   70    139x70                 73 True
+ 141 False   40    142x69   17   141x17   41 True
+ 141 False   39    141x39   10   141x10   42 True
+ 141 False   43    139x71   19   141x19   44 True
+ 142 False   65    142x65   27   142x27   71 True
+ 142 False   72    139x61   66   142x66   73 True
+ 144 False   69    144x69                 70 True
+ 145 False   51    145x51                 52 True
+ 147 False   36    147x36                 37 True
+ 148 False   71    148x71   27   148x27   77 True
+ 148 False   73    148x73                 78 True
+ 148 False   79    122x88    9    148x9   80 True
+ 148 False   81    122x89   23   148x23   82 True
+ 148 False   83     99x58   76   148x76   84 True
+ 149 False   79    148x70   45   149x45   80 True
+ 149 False   81     99x54   67   149x67   82 True
+ 149 False   83     99x55   57   149x57   84 True
+ 149 False   77    149x77                 85 True
+ 157 False   53    157x53   63   157x63   64 True
+ 159 False   53    159x53   63   159x63   64 True
+ 172 False   52    172x52   63   172x63   64 True
+ 173 False   52    173x52   63   173x63   64 True
+ 175 False  113   175x113  101  175x101  127 True
+ 175 False  128    176x67    1    175x1  129 True
+ 175 False  118   175x118  112  175x112  130 True
+# Level: 15 _____________________________________
+   1 False   19    134x65    1      1x1   20 True
+  20 False   20    122x93    1     20x1   21 True
+ 106 False   33     91x68   29   106x29   34 True
+ 112 False   30    114x54   10   112x10   31 True
+ 112 False   28    112x28                 32 True
+ 114 False   54    114x54                 57 True
+ 114 False   58    145x52   54   114x54   59 True
+ 114 False   52    114x52   56   114x56   60 True
+ 114 False   61    112x29    8    114x8   62 True
+ 116 False   28     91x69   27   116x27   29 True
+ 118 False   24    122x96   20   118x20   25 True
+ 122 False   83    122x83   92   122x92   97 True
+ 122 False   95    122x95                 98 True
+ 134 False   55    134x55   64   134x64   70 True
+ 134 False   67    134x67                 71 True
+ 136 False   61    136x61                 62 True
+ 137 False   72    137x72                 79 True
+ 137 False   80    134x20   72   137x72   81 True
+ 137 False   74    137x74                 82 True
+ 137 False   76    137x76                 83 True
+ 137 False   71    137x71   78   137x78   84 True
+ 138 False   92    138x92                 98 True
+ 138 False   99    134x69   94   138x94  100 True
+ 138 False  101    134x61   96   138x96  102 True
+ 139 False   74    134x65   68   139x68   75 True
+ 141 False   41    141x41   38   141x38   45 True
+ 141 False   46    142x71   17   141x17   47 True
+ 141 False   42    141x42                 48 True
+ 141 False   44    141x44                 49 True
+ 142 False   71    142x71                 74 True
+ 142 False   75    139x72   71   142x71   76 True
+ 142 False   68    142x68   73   142x73   77 True
+ 143 False   73    138x97   72   143x72   74 True
+ 144 False   71    149x85   59   144x59   72 True
+ 145 False   53    122x93   50   145x50   54 True
+ 146 False   44    148x78   35   146x35   45 True
+ 147 False   37    147x37   17   147x17   38 True
+ 148 False   77    148x77                 85 True
+ 148 False   80    148x80                 86 True
+ 148 False   75    148x75   82   148x82   87 True
+ 149 False   80    149x80                 86 True
+ 149 False   87    148x77   65   149x65   88 True
+ 149 False   89     99x60   82   149x82   90 True
+ 149 False   91     99x57   84   149x84   92 True
+ 157 False   64    157x64                 65 True
+ 158 False    5   175x127    0     /158    6 True
+ 158 False    7   175x130    0     /158    8 True
+ 159 False   64    159x64                 65 True
+ 160 False    5   175x127    0     /160    6 True
+ 160 False    7   175x130    0     /160    8 True
+ 171 False    5   175x127    0     /171    6 True
+ 171 False    7   175x130    0     /171    8 True
+ 172 False   64    172x64                 65 True
+ 173 False   64    173x64                 65 True
+ 174 False    5   175x127    0     /174    6 True
+ 174 False    7   175x130    0     /174    8 True
+ 175 False  122   175x122  129  175x129  131 True
+# Level: 16 _____________________________________
+ 106 False   32    106x32   34   106x34   35 True
+ 112 False   33    114x57   12   112x12   34 True
+ 114 False   63    145x51   57   114x57   64 True
+ 114 False   60    114x60                 65 True
+ 114 False   62    114x62                 66 True
+ 116 False   29    116x29                 30 True
+ 118 False   23    118x23   25   118x25   26 True
+ 122 False   97    122x97                 99 True
+ 134 False   70    134x70                 72 True
+ 136 False   63    138x98    9    136x9   64 True
+ 136 False   62    136x62   29   136x29   65 True
+ 137 False   85    134x26   79   137x79   86 True
+ 137 False   83    137x83   29   137x29   87 True
+ 137 False   84    137x84                 88 True
+ 138 False  103    134x70   44   138x44  104 True
+ 138 False  105    134x71   52   138x52  106 True
+ 138 False  100   138x100                107 True
+ 138 False  102   138x102                108 True
+ 138 False  109    141x49   90   138x90  110 True
+ 139 False   76    142x77   31   139x31   77 True
+ 140 False   47    137x82   40   140x40   48 True
+ 141 False   50    142x74   15   141x15   51 True
+ 141 False   45    141x45                 52 True
+ 141 False   48    141x48   23   141x23   53 True
+ 142 False   78    139x69   74   142x74   79 True
+ 142 False   77    142x77                 80 True
+ 145 False   55    114x60   25   145x25   56 True
+ 146 False   45    146x45                 46 True
+ 147 False   39    149x86    9    147x9   40 True
+ 147 False   38    147x38                 41 True
+ 148 False   86    148x86   27   148x27   88 True
+ 148 False   87    148x87                 89 True
+ 149 False   93    122x97   38   149x38   94 True
+ 149 False   95    148x85   54   149x54   96 True
+ 149 False   97    122x98   45   149x45   98 True
+ 149 False   90    149x90                 99 True
+ 149 False   92    149x92                100 True
+ 158 False    6     158x6                  9 True
+ 158 False   10   175x131    0     /158   11 True
+ 158 False    8     158x8                 12 True
+ 160 False    6     160x6                  9 True
+ 160 False   10   175x131    0     /160   11 True
+ 160 False    8     160x8                 12 True
+ 171 False    6     171x6                  9 True
+ 171 False   10   175x131    0     /171   11 True
+ 171 False    8     171x8                 12 True
+ 174 False    6     174x6                  9 True
+ 174 False   10   175x131    0     /174   11 True
+ 174 False    8     174x8                 12 True
+ 176 False   68    148x87    0     /176   69 True
+ 176 False   70    137x84    0     /176   71 True
+# Level: 17 _____________________________________
+ 106 False   35    106x35                 36 True
+ 112 False   31    112x31   34   112x34   35 True
+ 114 False   64    114x64   59   114x59   67 True
+ 118 False   26    118x26                 27 True
+ 136 False   64    136x64                 66 True
+ 136 False   65    136x65                 67 True
+ 136 False   68    137x87   34   136x34   69 True
+ 137 False   86    137x86   81   137x81   89 True
+ 137 False   87    137x87                 90 True
+ 138 False  111    134x72   53   138x53  112 True
+ 138 False  106   138x106                113 True
+ 138 False  108   138x108  107  138x107  114 True
+ 139 False   78    142x80   25   139x25   79 True
+ 140 False   48    140x48                 49 True
+ 141 False   47    141x47   51   141x51   54 True
+ 141 False   53    141x53                 55 True
+ 142 False   79    142x79   76   142x76   81 True
+ 145 False   57    114x65   18   145x18   58 True
+ 146 False   46    146x46    9    146x9   47 True
+ 147 False   40    147x40                 42 True
+ 147 False   43    148x88   20   147x20   44 True
+ 148 False   88    148x88                 90 True
+ 149 False  101    122x99   47   149x47  102 True
+ 149 False   88    149x88   96   149x96  103 True
+ 149 False   98    149x98                104 True
+ 149 False  100   149x100   99   149x99  105 True
+ 157 False   66     158x9    0     /157   67 True
+ 157 False   68    158x12    1    157x1   69 True
+ 158 False   11    158x11                 13 True
+ 159 False   66     160x9    0     /159   67 True
+ 159 False   68    160x12    1    159x1   69 True
+ 160 False   11    160x11                 13 True
+ 171 False   11    171x11                 13 True
+ 172 False   66     171x9    0     /172   67 True
+ 172 False   68    171x12    1    172x1   69 True
+ 173 False   66     174x9    0     /173   67 True
+ 173 False   68    174x12    1    173x1   69 True
+ 174 False   11    174x11                 13 True
+ 176 False   69    176x69                 72 True
+ 176 False   71    176x71                 73 True
+# Level: 18 _____________________________________
+ 106 False   37    116x30   36   106x36   38 True
+ 114 False   67    114x67                 68 True
+ 136 False   66    136x66   29   136x29   70 True
+ 136 False   71   138x113    9    136x9   72 True
+ 136 False   73    137x90   23   136x23   74 True
+ 137 False   89    137x89                 91 True
+ 138 False  104   138x104  112  138x112  115 True
+ 138 False  116    137x89   67   138x67  117 True
+ 138 False  114   138x114                118 True
+ 139 False   80    142x81   31   139x31   81 True
+ 139 False   77    139x77   79   139x79   82 True
+ 139 False   83   138x114   73   139x73   84 True
+ 140 False   49    140x49    9    140x9   50 True
+ 142 False   81    142x81                 82 True
+ 144 False   73   149x105   70   144x70   74 True
+ 145 False   59    114x67   25   145x25   60 True
+ 145 False   56    145x56   58   145x58   61 True
+ 146 False   47    146x47                 48 True
+ 147 False   42    147x42   17   147x17   45 True
+ 147 False   46   149x104    9    147x9   47 True
+ 147 False   48    148x90   15   147x15   49 True
+ 149 False   94    149x94  102  149x102  106 True
+ 149 False  103   149x103                107 True
+ 149 False  105   149x105                108 True
+ 157 False   55    157x55   67   157x67   70 True
+ 157 False   71    158x13    1    157x1   72 True
+ 157 False   65    157x65   69   157x69   73 True
+ 159 False   55    159x55   67   159x67   70 True
+ 159 False   71    160x13    1    159x1   72 True
+ 159 False   65    159x65   69   159x69   73 True
+ 172 False   56    172x56   67   172x67   70 True
+ 172 False   71    171x13    1    172x1   72 True
+ 172 False   65    172x65   69   172x69   73 True
+ 173 False   56    173x56   67   173x67   70 True
+ 173 False   71    174x13    1    173x1   72 True
+ 173 False   65    173x65   69   173x69   73 True
+ 175 False  132    176x72    1    175x1  133 True
+ 175 False  134    176x73    1    175x1  135 True
+# Level: 19 _____________________________________
+  63 False    3    157x73    1     63x1    4 True
+  63 False    5    159x73    1     63x1    6 True
+ 106 False   38    106x38                 39 True
+ 136 False   75   138x115   65   136x65   76 True
+ 136 False   70    136x70                 77 True
+ 136 False   72    136x72                 78 True
+ 136 False   69    136x69   74   136x74   79 True
+ 138 False  119    137x91   61   138x61  120 True
+ 138 False  115   138x115                121 True
+ 139 False   85    142x82   25   139x25   86 True
+ 139 False   82    139x82                 87 True
+ 139 False   88   138x118   70   139x70   89 True
+ 140 False   50    140x50                 51 True
+ 143 False   75    139x82   32   143x32   76 True
+ 144 False   75    145x61   20   144x20   76 True
+ 144 False   77   149x108   69   144x69   78 True
+ 145 False   62    114x68   18   145x18   63 True
+ 145 False   61    145x61                 64 True
+ 146 False   48    146x48   27   146x27   49 True
+ 147 False   50   149x106   38   147x38   51 True
+ 147 False   45    147x45                 52 True
+ 147 False   53   149x107   45   147x45   54 True
+ 147 False   47    147x47                 55 True
+ 147 False   44    147x44   49   147x49   56 True
+ 149 False  106   149x106                109 True
+ 157 False   70    157x70                 74 True
+ 159 False   70    159x70                 74 True
+ 172 False   70    172x70                 74 True
+ 172 False   73    172x73                 75 True
+ 173 False   70    173x70                 74 True
+ 173 False   73    173x73                 75 True
+ 175 False  115   175x115  133  175x133  136 True
+ 175 False  121   175x121  135  175x135  137 True
+# Level: 20 _____________________________________
+ 136 False   80   138x121   67   136x67   81 True
+ 136 False   78    136x78   29   136x29   82 True
+ 136 False   79    136x79                 83 True
+ 138 False  117   138x117  120  138x120  122 True
+ 139 False   81    139x81   86   139x86   90 True
+ 139 False   84    139x84   89   139x89   91 True
+ 140 False   51    140x51   29   140x29   52 True
+ 143 False   77    139x87   23   143x23   78 True
+ 144 False   79    145x64   16   144x16   80 True
+ 144 False   74    144x74   78   144x78   81 True
+ 144 False   82    146x49   59   144x59   83 True
+ 145 False   60    145x60   63   145x63   65 True
+ 145 False   66    146x49   50   145x50   67 True
+ 146 False   49    146x49                 50 True
+ 147 False   57   149x109   41   147x41   58 True
+ 147 False   59   149x103   52   147x52   60 True
+ 147 False   55    147x55   17   147x17   61 True
+ 147 False   56    147x56                 62 True
+ 155 False    2    106x39    1    155x1    3 True
+ 157 False   74    157x74   72   157x72   75 True
+ 158 False   14   175x136    0     /158   15 True
+ 158 False   16   175x137    0     /158   17 True
+ 159 False   74    159x74   72   159x72   75 True
+ 160 False   14   175x136    0     /160   15 True
+ 160 False   16   175x137    0     /160   17 True
+ 171 False   14   175x136    0     /171   15 True
+ 171 False   16   175x137    0     /171   17 True
+ 172 False   74    172x74   72   172x72   76 True
+ 173 False   74    173x74   72   173x72   76 True
+ 174 False   14   175x136    0     /174   15 True
+ 174 False   16   175x137    0     /174   17 True
+ 176 False   74    147x56    0     /176   75 True
+ 176 False   76    136x79    0     /176   77 True
+# Level: 21 _____________________________________
+  63 False    7    157x75    1     63x1    8 True
+  63 False    9    159x75    1     63x1   10 True
+ 114 False   69    145x67   66   114x66   70 True
+ 114 False   71    144x83   66   114x66   72 True
+ 136 False   76    136x76   81   136x81   84 True
+ 136 False   85   138x122   77   136x77   86 True
+ 136 False   82    136x82                 87 True
+ 138 False  122   138x122                123 True
+ 139 False   90    139x90                 92 True
+ 139 False   91    139x91                 93 True
+ 139 False   94    140x52   68   139x68   95 True
+ 140 False   52    140x52                 53 True
+ 140 False   54    136x82   27   140x27   55 True
+ 143 False   79    139x90   32   143x32   80 True
+ 143 False   76    143x76   78   143x78   81 True
+ 143 False   82    140x52   72   143x72   83 True
+ 144 False   84    145x65   20   144x20   85 True
+ 144 False   76    144x76   80   144x80   86 True
+ 144 False   81    144x81                 87 True
+ 145 False   65    145x65                 68 True
+ 146 False   51     20x21   50   146x50   52 True
+ 146 False   53    147x61   25   146x25   54 True
+ 147 False   51    147x51   58   147x58   63 True
+ 147 False   60    147x60   54   147x54   64 True
+ 147 False   61    147x61                 65 True
+ 149 False  110    146x50   77   149x77  111 True
+ 155 False    3     155x3                  4 True
+ 158 False   15    158x15                 18 True
+ 158 False   17    158x17                 19 True
+ 160 False   15    160x15                 18 True
+ 160 False   17    160x17                 19 True
+ 171 False   15    171x15                 18 True
+ 171 False   17    171x17                 19 True
+ 172 False   76    172x76                 77 True
+ 173 False   76    173x76                 77 True
+ 174 False   15    174x15                 18 True
+ 174 False   17    174x17                 19 True
+ 175 False  138    144x81    0     /175  139 True
+ 175 False  140    139x91    0     /175  141 True
+ 176 False   75    176x75                 78 True
+ 176 False   77    176x77                 79 True
+# Level: 22 _____________________________________
+ 112 False   36    144x86   10   112x10   37 True
+ 114 False   70    114x70                 73 True
+ 114 False   72    114x72                 74 True
+ 118 False   28     155x4   27   118x27   29 True
+ 122 False  100    147x63   20   122x20  101 True
+ 122 False  102    147x64   20   122x20  103 True
+ 134 False   73    136x84   29   134x29   74 True
+ 136 False   88   138x123   70   136x70   89 True
+ 136 False   84    136x84                 90 True
+ 138 False  124    140x53   87   138x87  125 True
+ 140 False   56      1x20   53   140x53   57 True
+ 140 False   58    136x87   22   140x22   59 True
+ 141 False   56    143x81   17   141x17   57 True
+ 141 False   58    143x83   55   141x55   59 True
+ 141 False   60    139x95   55   141x55   61 True
+ 143 False   84    139x92   23   143x23   85 True
+ 143 False   81    143x81                 86 True
+ 144 False   88    145x68   16   144x16   89 True
+ 144 False   86    144x86                 90 True
+ 145 False   69    146x52   25   145x25   70 True
+ 146 False   52    146x52                 55 True
+ 146 False   56    112x35   52   146x52   57 True
+ 146 False   58    114x53   52   146x52   59 True
+ 146 False   60    144x56   52   146x52   61 True
+ 146 False   62    147x65   22   146x22   63 True
+ 147 False   63    147x63                 66 True
+ 147 False   64    147x64                 67 True
+ 149 False  111   149x111                112 True
+ 157 False   76    158x18    0     /157   77 True
+ 157 False   78    158x19    1    157x1   79 True
+ 159 False   76    160x18    0     /159   77 True
+ 159 False   78    160x19    1    159x1   79 True
+ 172 False   78    171x18    0     /172   79 True
+ 172 False   80    171x19    1    172x1   81 True
+ 173 False   78    174x18    0     /173   79 True
+ 173 False   80    174x19    1    173x1   81 True
+ 175 False  142    176x78    1    175x1  143 True
+ 175 False  144    176x79    1    175x1  145 True
+ 176 False   80    144x87    0     /176   81 True
+ 176 False   82    139x93    0     /176   83 True
+# Level: 23 _____________________________________
+ 112 False   38    144x90   12   112x12   39 True
+ 112 False   40    146x55   32   112x32   41 True
+ 118 False   29    118x29                 30 True
+ 122 False  104    147x66   25   122x25  105 True
+ 122 False  106    147x67   25   122x25  107 True
+ 134 False   75    136x90   25   134x25   76 True
+ 136 False   86    136x86   89   136x89   91 True
+ 138 False  125   138x125                126 True
+ 139 False   96    140x57   31   139x31   97 True
+ 140 False   57    140x57                 60 True
+ 140 False   61    141x54   57   140x57   62 True
+ 140 False   63    142x70   57   140x57   64 True
+ 140 False   65    143x65   57   140x57   66 True
+ 140 False   55    140x55   59   140x59   67 True
+ 141 False   62    143x86   15   141x15   63 True
+ 141 False   59    141x59                 64 True
+ 141 False   61    141x61                 65 True
+ 143 False   80    143x80   85   143x85   87 True
+ 144 False   85    144x85   89   144x89   91 True
+ 145 False   71    146x55   18   145x18   72 True
+ 146 False   64    114x48   55   146x55   65 True
+ 146 False   66    144x46   55   146x55   67 True
+ 146 False   54    146x54   63   146x63   68 True
+ 157 False   56    157x56   77   157x77   80 True
+ 159 False   56    159x56   77   159x77   80 True
+ 172 False   55    172x55   79   172x79   82 True
+ 173 False   55    173x55   79   173x79   82 True
+ 175 False   64    175x64  143  175x143  146 True
+ 175 False  120   175x120  145  175x145  147 True
+ 176 False   81    176x81                 84 True
+ 176 False   83    176x83                 85 True
+# Level: 24 _____________________________________
+ 112 False   42    144x91   10   112x10   43 True
+ 112 False   37    112x37   39   112x39   44 True
+ 112 False   45    146x57   41   112x41   46 True
+ 118 False   31      98x4   30   118x30   32 True
+ 122 False  101   122x101  105  122x105  108 True
+ 122 False  103   122x103  107  122x107  109 True
+ 134 False   74    134x74   76   134x76   77 True
+ 134 False   78    136x91   29   134x29   79 True
+ 136 False   91    136x91                 92 True
+ 139 False   98    140x60   25   139x25   99 True
+ 140 False   68    141x52   60   140x60   69 True
+ 140 False   70    142x64   60   140x60   71 True
+ 140 False   72    143x60   60   140x60   73 True
+ 140 False   67    140x67                 74 True
+ 141 False   66    143x87   17   141x17   67 True
+ 141 False   57    141x57   63   141x63   68 True
+ 143 False   87    143x87                 88 True
+ 144 False   91    144x91                 92 True
+ 145 False   70    145x70   72   145x72   73 True
+ 146 False   59    146x59   65   146x65   69 True
+ 146 False   61    146x61   67   146x67   70 True
+ 146 False   68    146x68                 71 True
+ 157 False   80    157x80                 81 True
+ 158 False   20   175x146    0     /158   21 True
+ 158 False   22   175x147    0     /158   23 True
+ 159 False   80    159x80                 81 True
+ 160 False   20   175x146    0     /160   21 True
+ 160 False   22   175x147    0     /160   23 True
+ 171 False   20   175x146    0     /171   21 True
+ 171 False   22   175x147    0     /171   23 True
+ 172 False   82    172x82                 83 True
+ 173 False   82    173x82                 83 True
+ 174 False   20   175x146    0     /174   21 True
+ 174 False   22   175x147    0     /174   23 True
+ 175 False  148    176x84    0     /175  149 True
+ 175 False  150    176x85    0     /175  151 True
+ 176 False   86    146x68    0     /176   87 True
+ 176 False   88    140x67    0     /176   89 True
+# Level: 25 _____________________________________
+ 112 False   47    144x92   12   112x12   48 True
+ 112 False   44    112x44                 49 True
+ 112 False   46    112x46                 50 True
+ 112 False   51      60x7   46   112x46   52 True
+ 114 False   75    112x44    5    114x5   76 True
+ 122 False  108   122x108                110 True
+ 122 False  109   122x109                111 True
+ 134 False   80    136x92   25   134x25   81 True
+ 134 False   77    134x77                 82 True
+ 138 False  127    134x77   34   138x34  128 True
+ 139 False   97    139x97   99   139x99  100 True
+ 140 False   62    140x62   69   140x69   75 True
+ 140 False   64    140x64   71   140x71   76 True
+ 140 False   66    140x66   73   140x73   77 True
+ 141 False   69    143x88   15   141x15   70 True
+ 141 False   68    141x68                 71 True
+ 142 False   83    141x68   30   142x30   84 True
+ 145 False   73    145x73                 74 True
+ 146 False   69    146x69                 72 True
+ 146 False   70    146x70                 73 True
+ 149 False  113   122x108   26   149x26  114 True
+ 149 False  115   122x109   26   149x26  116 True
+ 157 False   81    157x81   79   157x79   82 True
+ 158 False   21    158x21                 24 True
+ 158 False   23    158x23                 25 True
+ 159 False   81    159x81   79   159x79   82 True
+ 160 False   21    160x21                 24 True
+ 160 False   23    160x23                 25 True
+ 169 False    8    112x46    1    169x1    9 True
+ 171 False   21    171x21                 24 True
+ 171 False   23    171x23                 25 True
+ 172 False   83    172x83   81   172x81   84 True
+ 173 False   83    173x83   81   173x81   84 True
+ 174 False   21    174x21                 24 True
+ 174 False   23    174x23                 25 True
+ 175 False   48    175x48  149  175x149  152 True
+ 175 False   49    175x49  151  175x151  153 True
+ 176 False   90    112x46    0     /176   91 True
+ 176 False   92    146x69    0     /176   93 True
+ 176 False   94    146x70    0     /176   95 True
+ 176 False   96    145x73    0     /176   97 True
+ 176 False   87    176x87                 98 True
+ 176 False   89    176x89                 99 True
+# Level: 26 _____________________________________
+  63 False   11    157x82    1     63x1   12 True
+  63 False   13    159x82    1     63x1   14 True
+ 112 False   43    112x43   48   112x48   53 True
+ 112 False   54    146x72   50   112x50   55 True
+ 112 False   56      60x6   50   112x50   57 True
+ 114 False   77    112x49    6    114x6   78 True
+ 134 False   79    134x79   81   134x81   83 True
+ 138 False  129    134x82   23   138x23  130 True
+ 139 False  100   139x100                101 True
+ 140 False   75    140x75                 78 True
+ 140 False   76    140x76                 79 True
+ 140 False   77    140x77                 80 True
+ 141 False   67    141x67   70   141x70   72 True
+ 142 False   85    141x71   23   142x23   86 True
+ 149 False  117   122x110   23   149x23  118 True
+ 149 False  119   122x111   23   149x23  120 True
+ 157 False   83    158x24    0     /157   84 True
+ 157 False   85    158x25    1    157x1   86 True
+ 159 False   83    160x24    0     /159   84 True
+ 159 False   85    160x25    1    159x1   86 True
+ 169 False    9     169x9                 10 True
+ 172 False   85    171x24    0     /172   86 True
+ 172 False   87    171x25    1    172x1   88 True
+ 172 False   84    172x84                 89 True
+ 173 False   85    174x24    0     /173   86 True
+ 173 False   87    174x25    1    173x1   88 True
+ 173 False   84    173x84                 89 True
+ 175 False  154    176x98    1    175x1  155 True
+ 175 False  156    176x99    1    175x1  157 True
+ 175 False  152   175x152                158 True
+ 175 False  153   175x153                159 True
+ 176 False   91    176x91                100 True
+ 176 False   93    176x93                101 True
+ 176 False   95    176x95                102 True
+ 176 False   97    176x97                103 True
+ 176 False  104    140x75    0     /176  105 True
+ 176 False  106    140x76    0     /176  107 True
+ 176 False  108    140x77    0     /176  109 True
+ 176 False  110   139x100    0     /176  111 True
+# Level: 27 _____________________________________
+ 112 False   53    112x53                 58 True
+ 112 False   55    112x55                 59 True
+ 112 False   52    112x52   57   112x57   60 True
+ 114 False   79    112x53    5    114x5   80 True
+ 114 False   76    114x76   78   114x78   81 True
+ 134 False   83    134x83                 84 True
+ 138 False  128   138x128  130  138x130  131 True
+ 138 False  132    134x83   34   138x34  133 True
+ 140 False   79    140x79   78   140x78   81 True
+ 141 False   72    141x72                 73 True
+ 142 False   87    141x72   30   142x30   88 True
+ 142 False   84    142x84   86   142x86   89 True
+ 149 False  114   149x114  118  149x118  121 True
+ 149 False  116   149x116  120  149x120  122 True
+ 157 False   57    157x57   84   157x84   87 True
+ 159 False   57    159x57   84   159x84   87 True
+ 170 False    8    169x10    1    170x1    9 True
+ 172 False   54    172x54   86   172x86   90 True
+ 173 False   54    173x54   86   173x86   90 True
+ 175 False  160   176x100    1    175x1  161 True
+ 175 False  162   176x101    1    175x1  163 True
+ 175 False  164   176x102    1    175x1  165 True
+ 175 False  166   176x103    1    175x1  167 True
+ 175 False  114   175x114  155  175x155  168 True
+ 175 False  119   175x119  157  175x157  169 True
+ 176 False  105   176x105                112 True
+ 176 False  107   176x107                113 True
+ 176 False  109   176x109                114 True
+ 176 False  111   176x111                115 True
+# Level: 28 _____________________________________
+ 112 False   60    112x60                 61 True
+ 114 False   82    112x58    6    114x6   83 True
+ 138 False  134    134x84   23   138x23  135 True
+ 138 False  131   138x131                136 True
+ 140 False   82   138x131   27   140x27   83 True
+ 140 False   81    140x81                 84 True
+ 142 False   90    141x73   23   142x23   91 True
+ 146 False   74   149x121   25   146x25   75 True
+ 146 False   76   149x122   25   146x25   77 True
+ 146 False   78    112x59   73   146x73   79 True
+ 149 False  121   149x121                123 True
+ 149 False  122   149x122                124 True
+ 156 False    2    142x89    1    156x1    3 True
+ 156 False    4    142x89    0     /156    5 True
+ 157 False   87    157x87                 88 True
+ 158 False   26   175x168    0     /158   27 True
+ 158 False   28   175x169    0     /158   29 True
+ 159 False   87    159x87                 88 True
+ 160 False   26   175x168    0     /160   27 True
+ 160 False   28   175x169    0     /160   29 True
+ 161 False    2    114x81    1    161x1    3 True
+ 161 False    4    114x81    0     /161    5 True
+ 170 False    3     170x3    9    170x9   10 True
+ 171 False   26   175x168    0     /171   27 True
+ 171 False   28   175x169    0     /171   29 True
+ 172 False   90    172x90                 91 True
+ 173 False   90    173x90                 91 True
+ 174 False   26   175x168    0     /174   27 True
+ 174 False   28   175x169    0     /174   29 True
+ 175 False   60    175x60  161  175x161  170 True
+ 175 False   65    175x65  163  175x163  171 True
+ 175 False  116   175x116  165  175x165  172 True
+ 175 False  117   175x117  167  175x167  173 True
+ 175 False  174   176x112    1    175x1  175 True
+ 175 False  176   176x113    1    175x1  177 True
+ 175 False  178   176x114    1    175x1  179 True
+ 175 False  180   176x115    1    175x1  181 True
+# Level: 29 _____________________________________
+ 114 False   80    114x80   83   114x83   84 True
+ 138 False  133   138x133  135  138x135  137 True
+ 140 False   85   138x136   22   140x22   86 True
+ 140 False   84    140x84   80   140x80   87 True
+ 142 False   88    142x88   91   142x91   92 True
+ 146 False   80   149x123   22   146x22   81 True
+ 146 False   82   149x124   22   146x22   83 True
+ 146 False   79    146x79                 84 True
+ 156 False    3     156x3                  6 True
+ 156 False    5     156x5                  7 True
+ 157 False   88    157x88   86   157x86   89 True
+ 158 False   30   175x173    0     /158   31 True
+ 158 False   32   175x172    0     /158   33 True
+ 158 False   34   175x171    0     /158   35 True
+ 158 False   36   175x170    0     /158   37 True
+ 158 False   27    158x27                 38 True
+ 158 False   29    158x29                 39 True
+ 159 False   88    159x88   86   159x86   89 True
+ 160 False   30   175x173    0     /160   31 True
+ 160 False   32   175x172    0     /160   33 True
+ 160 False   34   175x171    0     /160   35 True
+ 160 False   36   175x170    0     /160   37 True
+ 160 False   27    160x27                 38 True
+ 160 False   29    160x29                 39 True
+ 161 False    3     161x3                  6 True
+ 161 False    5     161x5                  7 True
+ 170 False   10    170x10                 11 True
+ 171 False   30   175x170    0     /171   31 True
+ 171 False   32   175x171    0     /171   33 True
+ 171 False   34   175x172    0     /171   35 True
+ 171 False   36   175x173    0     /171   37 True
+ 171 False   27    171x27                 38 True
+ 171 False   29    171x29                 39 True
+ 172 False   91    172x91   88   172x88   92 True
+ 173 False   91    173x91   88   173x88   92 True
+ 174 False   30   175x170    0     /174   31 True
+ 174 False   32   175x171    0     /174   33 True
+ 174 False   34   175x172    0     /174   35 True
+ 174 False   36   175x173    0     /174   37 True
+ 174 False   27    174x27                 38 True
+ 174 False   29    174x29                 39 True
+ 175 False  123   175x123  175  175x175  182 True
+ 175 False  124   175x124  177  175x177  183 True
+ 175 False  125   175x125  179  175x179  184 True
+ 175 False  126   175x126  181  175x181  185 True
+# Level: 30 _____________________________________
+  63 False   15    157x89    1     63x1   16 True
+  63 False   17    159x89    1     63x1   18 True
+ 138 False  137   138x137                138 True
+ 138 False  139     156x6  126  138x126  140 True
+ 140 False   83    140x83   86   140x86   88 True
+ 140 False   89   138x137   27   140x27   90 True
+ 140 False   91     156x7   53   140x53   92 True
+ 140 False   87    140x87                 93 True
+ 145 False   75    146x84   74   145x74   76 True
+ 146 False   75    146x75   81   146x81   85 True
+ 146 False   77    146x77   83   146x83   86 True
+ 146 False   87     161x7   50   146x50   88 True
+ 149 False  125     161x6  112  149x112  126 True
+ 156 False    8    142x92    1    156x1    9 True
+ 156 False   10    142x92    0     /156   11 True
+ 157 False   90    158x38    0     /157   91 True
+ 157 False   92    158x39    1    157x1   93 True
+ 158 False   31    158x31                 40 True
+ 158 False   33    158x33                 41 True
+ 158 False   35    158x35                 42 True
+ 158 False   37    158x37                 43 True
+ 158 False   44   175x185    0     /158   45 True
+ 158 False   46   175x184    0     /158   47 True
+ 158 False   48   175x183    0     /158   49 True
+ 158 False   50   175x182    0     /158   51 True
+ 159 False   90    160x38    0     /159   91 True
+ 159 False   92    160x39    1    159x1   93 True
+ 160 False   31    160x31                 40 True
+ 160 False   33    160x33                 41 True
+ 160 False   35    160x35                 42 True
+ 160 False   37    160x37                 43 True
+ 160 False   44   175x185    0     /160   45 True
+ 160 False   46   175x184    0     /160   47 True
+ 160 False   48   175x183    0     /160   49 True
+ 160 False   50   175x182    0     /160   51 True
+ 161 False    8    114x84    1    161x1    9 True
+ 161 False   10    114x84    0     /161   11 True
+ 170 False   11    170x11    5    170x5   12 True
+ 171 False   31    171x31                 40 True
+ 171 False   33    171x33                 41 True
+ 171 False   35    171x35                 42 True
+ 171 False   37    171x37                 43 True
+ 171 False   44   175x182    0     /171   45 True
+ 171 False   46   175x183    0     /171   47 True
+ 171 False   48   175x184    0     /171   49 True
+ 171 False   50   175x185    0     /171   51 True
+ 172 False   93    171x38    0     /172   94 True
+ 172 False   95    171x39    1    172x1   96 True
+ 172 False   92    172x92                 97 True
+ 173 False   93    174x38    0     /173   94 True
+ 173 False   95    174x39    1    173x1   96 True
+ 173 False   92    173x92                 97 True
+ 174 False   31    174x31                 40 True
+ 174 False   33    174x33                 41 True
+ 174 False   35    174x35                 42 True
+ 174 False   37    174x37                 43 True
+ 174 False   44   175x182    0     /174   45 True
+ 174 False   46   175x183    0     /174   47 True
+ 174 False   48   175x184    0     /174   49 True
+ 174 False   50   175x185    0     /174   51 True
+# Level: 31 _____________________________________
+ 137 False   92    140x88   32   137x32   93 True
+ 139 False  102    140x93  101  139x101  103 True
+ 140 False   94   138x138   22   140x22   95 True
+ 140 False   88    140x88                 96 True
+ 145 False   76    145x76                 77 True
+ 146 False   85    146x85                 89 True
+ 146 False   86    146x86                 90 True
+ 148 False   91    146x85   30   148x30   92 True
+ 148 False   93    146x86   30   148x30   94 True
+ 156 False    9     156x9                 12 True
+ 156 False   11    156x11                 13 True
+ 157 False   94    158x40    0     /157   95 True
+ 157 False   96    158x41    0     /157   97 True
+ 157 False   98    158x42    0     /157   99 True
+ 157 False  100    158x43    0     /157  101 True
+ 157 False   54    157x54   91   157x91  102 True
+ 158 False   45    158x45                 52 True
+ 158 False   47    158x47                 53 True
+ 158 False   49    158x49                 54 True
+ 158 False   51    158x51                 55 True
+ 159 False   94    160x40    0     /159   95 True
+ 159 False   96    160x41    0     /159   97 True
+ 159 False   98    160x42    0     /159   99 True
+ 159 False  100    160x43    0     /159  101 True
+ 159 False   54    159x54   91   159x91  102 True
+ 160 False   45    160x45                 52 True
+ 160 False   47    160x47                 53 True
+ 160 False   49    160x49                 54 True
+ 160 False   51    160x51                 55 True
+ 161 False    9     161x9                 12 True
+ 161 False   11    161x11                 13 True
+ 170 False   12    170x12                 13 True
+ 171 False   45    171x45                 52 True
+ 171 False   47    171x47                 53 True
+ 171 False   49    171x49                 54 True
+ 171 False   51    171x51                 55 True
+ 172 False   98    171x40    0     /172   99 True
+ 172 False  100    171x41    0     /172  101 True
+ 172 False  102    171x42    0     /172  103 True
+ 172 False  104    171x43    0     /172  105 True
+ 172 False   53    172x53   94   172x94  106 True
+ 173 False   98    174x40    0     /173   99 True
+ 173 False  100    174x41    0     /173  101 True
+ 173 False  102    174x42    0     /173  103 True
+ 173 False  104    174x43    0     /173  105 True
+ 173 False   53    173x53   94   173x94  106 True
+ 174 False   45    174x45                 52 True
+ 174 False   47    174x47                 53 True
+ 174 False   49    174x49                 54 True
+ 174 False   51    174x51                 55 True
+# Level: 32 _____________________________________
+ 137 False   94    140x96   23   137x23   95 True
+ 138 False  141    156x12  125  138x125  142 True
+ 139 False  103   139x103                104 True
+ 140 False   90    140x90   95   140x95   97 True
+ 140 False   98    156x13   52   140x52   99 True
+ 146 False   91    161x13   49   146x49   92 True
+ 146 False   93    145x77   71   146x71   94 True
+ 148 False   95    146x89   23   148x23   96 True
+ 148 False   97    146x90   23   148x23   98 True
+ 149 False  127    161x12  111  149x111  128 True
+ 157 False   58    157x58   95   157x95  103 True
+ 157 False   59    157x59   97   157x97  104 True
+ 157 False   60    157x60   99   157x99  105 True
+ 157 False   61    157x61  101  157x101  106 True
+ 157 False  102   157x102                107 True
+ 157 False  108    158x52    1    157x1  109 True
+ 157 False  110    158x53    1    157x1  111 True
+ 157 False  112    158x54    1    157x1  113 True
+ 157 False  114    158x55    1    157x1  115 True
+ 159 False   58    159x58   95   159x95  103 True
+ 159 False   59    159x59   97   159x97  104 True
+ 159 False   60    159x60   99   159x99  105 True
+ 159 False   61    159x61  101  159x101  106 True
+ 159 False  102   159x102                107 True
+ 159 False  108    160x52    1    159x1  109 True
+ 159 False  110    160x53    1    159x1  111 True
+ 159 False  112    160x54    1    159x1  113 True
+ 159 False  114    160x55    1    159x1  115 True
+ 170 False   13    170x13    7    170x7   14 True
+ 172 False   57    172x57   99   172x99  107 True
+ 172 False   58    172x58  101  172x101  108 True
+ 172 False   59    172x59  103  172x103  109 True
+ 172 False   60    172x60  105  172x105  110 True
+ 172 False  106   172x106                111 True
+ 172 False  112    171x52    1    172x1  113 True
+ 172 False  114    171x53    1    172x1  115 True
+ 172 False  116    171x54    1    172x1  117 True
+ 172 False  118    171x55    1    172x1  119 True
+ 173 False   57    173x57   99   173x99  107 True
+ 173 False   58    173x58  101  173x101  108 True
+ 173 False   59    173x59  103  173x103  109 True
+ 173 False   60    173x60  105  173x105  110 True
+ 173 False  106   173x106                111 True
+ 173 False  112    174x52    1    173x1  113 True
+ 173 False  114    174x53    1    173x1  115 True
+ 173 False  116    174x54    1    173x1  117 True
+ 173 False  118    174x55    1    173x1  119 True
+# Level: 33 _____________________________________
+  61 False    4    170x14    3     61x3    5 True
+ 137 False   93    137x93   95   137x95   96 True
+ 137 False   97    140x97   32   137x32   98 True
+ 138 False  140   138x140  142  138x142  143 True
+ 140 False   97    140x97                100 True
+ 140 False  101   139x104   74   140x74  102 True
+ 146 False   94    146x94                 95 True
+ 148 False   92    148x92   96   148x96   99 True
+ 148 False   94    148x94   98   148x98  100 True
+ 149 False  126   149x126  128  149x128  129 True
+ 157 False  103   157x103                116 True
+ 157 False  104   157x104                117 True
+ 157 False  105   157x105                118 True
+ 157 False  106   157x106                119 True
+ 157 False  107   157x107   93   157x93  120 True
+ 159 False  103   159x103                116 True
+ 159 False  104   159x104                117 True
+ 159 False  105   159x105                118 True
+ 159 False  106   159x106                119 True
+ 159 False  107   159x107   93   159x93  120 True
+ 172 False  107   172x107                120 True
+ 172 False  108   172x108                121 True
+ 172 False  109   172x109                122 True
+ 172 False  110   172x110                123 True
+ 172 False  111   172x111   96   172x96  124 True
+ 173 False  107   173x107                120 True
+ 173 False  108   173x108                121 True
+ 173 False  109   173x109                122 True
+ 173 False  110   173x110                123 True
+ 173 False  111   173x111   96   173x96  124 True
+# Level: 34 _____________________________________
+  63 False   19   157x120    1     63x1   20 True
+  63 False   21   159x120    1     63x1   22 True
+ 136 False   93    137x96   34   136x34   94 True
+ 137 False   99   140x100   23   137x23  100 True
+ 137 False   96    137x96                101 True
+ 138 False  143   138x143                144 True
+ 140 False  102   140x102                103 True
+ 147 False   68    148x99   20   147x20   69 True
+ 147 False   70   148x100   20   147x20   71 True
+ 147 False   72    146x95   62   147x62   73 True
+ 148 False   99    148x99                101 True
+ 148 False  100   148x100                102 True
+ 149 False  129   149x129                130 True
+ 157 False  116   157x116  109  157x109  121 True
+ 157 False  117   157x117  111  157x111  122 True
+ 157 False  118   157x118  113  157x113  123 True
+ 157 False  119   157x119  115  157x115  124 True
+ 159 False  116   159x116  109  159x109  121 True
+ 159 False  117   159x117  111  159x111  122 True
+ 159 False  118   159x118  113  159x113  123 True
+ 159 False  119   159x119  115  159x115  124 True
+ 172 False  120   172x120  113  172x113  125 True
+ 172 False  121   172x121  115  172x115  126 True
+ 172 False  122   172x122  117  172x117  127 True
+ 172 False  123   172x123  119  172x119  128 True
+ 172 False  124   172x124                129 True
+ 173 False  120   173x120  113  173x113  125 True
+ 173 False  121   173x121  115  173x115  126 True
+ 173 False  122   173x122  117  173x117  127 True
+ 173 False  123   173x123  119  173x119  128 True
+ 173 False  124   173x124                129 True
+# Level: 35 _____________________________________
+  63 False   23   157x121    1     63x1   24 True
+  63 False   25   157x122    1     63x1   26 True
+  63 False   27   157x123    1     63x1   28 True
+  63 False   29   157x124    1     63x1   30 True
+  63 False   31   159x121    1     63x1   32 True
+  63 False   33   159x122    1     63x1   34 True
+  63 False   35   159x123    1     63x1   36 True
+  63 False   37   159x124    1     63x1   38 True
+ 136 False   95   137x101   23   136x23   96 True
+ 136 False   97   140x103   83   136x83   98 True
+ 137 False   98    137x98  100  137x100  102 True
+ 140 False  104   138x144   92   140x92  105 True
+ 146 False   96   149x130   88   146x88   97 True
+ 147 False   74   148x101   15   147x15   75 True
+ 147 False   76   148x102   15   147x15   77 True
+ 147 False   73    147x73                 78 True
+ 172 False  125   172x125                130 True
+ 172 False  126   172x126                131 True
+ 172 False  127   172x127                132 True
+ 172 False  128   172x128                133 True
+ 173 False  125   173x125                130 True
+ 173 False  126   173x126                131 True
+ 173 False  127   173x127                132 True
+ 173 False  128   173x128                133 True
+# Level: 36 _____________________________________
+ 136 False   94    136x94   96   136x96   99 True
+ 136 False  100   137x102   34   136x34  101 True
+ 136 False   98    136x98                102 True
+ 137 False  102   137x102                103 True
+ 140 False  105   140x105                106 True
+ 146 False   97    146x97                 98 True
+ 147 False   69    147x69   75   147x75   79 True
+ 147 False   71    147x71   77   147x77   80 True
+ 148 False  103    147x78   89   148x89  104 True
+# Level: 37 _____________________________________
+ 136 False  103   137x103   23   136x23  104 True
+ 136 False   99    136x99                105 True
+ 137 False  104   136x102   88   137x88  105 True
+ 140 False  106   140x106   99   140x99  107 True
+ 146 False   98    146x98   92   146x92   99 True
+ 147 False   79    147x79                 81 True
+ 148 False  104   148x104                105 True
+ 161 False   14    147x80    1    161x1   15 True
+# Level: 38 _____________________________________
+  20 False   22   148x105   12    20x12   23 True
+ 136 False  101   136x101  104  136x104  106 True
+ 137 False  105   137x105                106 True
+ 140 False  107   140x107                108 True
+ 146 False   99    146x99                100 True
+ 156 False   14   136x105    0     /156   15 True
+ 161 False   16    147x81    0     /161   17 True
+# Level: 39 _____________________________________
+   1 False   21   137x106   15     1x15   22 True
+  20 False   23     20x23                 24 True
+ 156 False   16   136x106    1    156x1   17 True
+ 161 False   15    161x15   17   161x17   18 True
+# Level: 40 _____________________________________
+   1 False   22      1x22                 23 True
+ 149 False  131     20x24   62   149x62  132 True
+ 156 False   17    156x17   15   156x15   18 True
+ 161 False   18    161x18                 19 True
+ 161 False   20   146x100   18   161x18   21 True
+# Level: 41 _____________________________________
+ 138 False  145      1x23   84   138x84  146 True
+ 156 False   18    156x18                 19 True
+ 156 False   20   140x108   18   156x18   21 True
+ 161 False   22    146x99   19   161x19   23 True
+# Level: 42 _____________________________________
+ 156 False   22   140x107   19   156x19   23 True
+ 161 False   23    161x23   21   161x21   24 True
+# Level: 43 _____________________________________
+ 156 False   23    156x23   21   156x21   24 True
+ 161 False   24    161x24                 25 True
+ 176 False  116    161x24    0     /176  117 True
+# Level: 44 _____________________________________
+ 156 False   24    156x24                 25 True
+ 175 False  186    161x25    1    175x1  187 True
+ 176 False  118    156x24    0     /176  119 True
+ 176 False  117   176x117                120 True
+# Level: 45 _____________________________________
+ 175 False  187   175x187  139  175x139  188 True
+ 175 False  189    156x25    1    175x1  190 True
+ 175 False  191   176x120    1    175x1  192 True
+ 176 False  119   176x119                121 True
+# Level: 46 _____________________________________
+ 175 False  190   175x190  141  175x141  193 True
+ 175 False  194   176x121    1    175x1  195 True
+ 175 False  158   175x158  192  175x192  196 True
+ 176 False  122   175x188    0     /176  123 True
+# Level: 47 _____________________________________
+ 175 False  159   175x159  195  175x195  197 True
+ 175 False  196   175x196                198 True
+ 176 False  124      36x3  123  176x123  125 True
+ 176 False  126   175x193    0     /176  127 True
+# Level: 48 _____________________________________
+ 158 False   56   176x125    0     /158   57 True
+ 160 False   56   176x125    0     /160   57 True
+ 171 False   56   176x125    0     /171   57 True
+ 174 False   56   176x125    0     /174   57 True
+ 175 False  197   175x197                199 True
+ 176 False  128      37x3  127  176x127  129 True
+# Level: 49 _____________________________________
+ 158 False   57    158x57                 58 True
+ 158 False   59   176x129    0     /158   60 True
+ 160 False   57    160x57                 58 True
+ 160 False   59   176x129    0     /160   60 True
+ 171 False   57    171x57                 58 True
+ 171 False   59   176x129    0     /171   60 True
+ 174 False   57    174x57                 58 True
+ 174 False   59   176x129    0     /174   60 True
+# Level: 50 _____________________________________
+ 157 False  125    158x58    0     /157  126 True
+ 158 False   60    158x60                 61 True
+ 159 False  125    160x58    0     /159  126 True
+ 160 False   60    160x60                 61 True
+ 171 False   60    171x60                 61 True
+ 172 False  134    171x58    0     /172  135 True
+ 173 False  134    174x58    0     /173  135 True
+ 174 False   60    174x60                 61 True
+# Level: 51 _____________________________________
+ 157 False   52    157x52  126  157x126  127 True
+ 157 False  128    158x61    1    157x1  129 True
+ 159 False   52    159x52  126  159x126  127 True
+ 159 False  128    160x61    1    159x1  129 True
+ 172 False   61    172x61  135  172x135  136 True
+ 172 False  137    171x61    1    172x1  138 True
+ 173 False   61    173x61  135  173x135  136 True
+ 173 False  137    174x61    1    173x1  138 True
+# Level: 52 _____________________________________
+ 157 False  127   157x127                130 True
+ 159 False  127   159x127                130 True
+ 172 False  136   172x136                139 True
+ 173 False  136   173x136                139 True
+# Level: 53 _____________________________________
+ 157 False  130   157x130  129  157x129  131 True
+ 159 False  130   159x130  129  159x129  131 True
+ 172 False  139   172x139  138  172x138  140 True
+ 173 False  139   173x139  138  173x138  140 True
+# Level: 54 _____________________________________
+  63 False   39   157x131    1     63x1   40 True
+  63 False   41   159x131    1     63x1   42 True
+ 172 False  140   172x140                141 True
+ 173 False  140   173x140                141 True
+
+Metrics
+-------
+Primary Inputs    : 178
+Levels            : 54
+Read Operations   : 55
+Write Operations  : 111
+Evaluation Cycles : 55
+Total Cycles      : 221
+Crossbar Size     : 178x200
+---------------------------
+
+

@@ -157,12 +157,13 @@ int main(int argc, char *argv[])
   // for (int level = 1; level <= max_asap; level++)
   // 	map_level_to_crossbar(level);
 
-  // print_gates();
   print_stat();
-
+  
   gen_nor_module();
   naive_map();
   compact_map();
+
+  print_gates();
 }
 
 /*******************************************************
@@ -429,7 +430,7 @@ void show_crossbar(int flag)
   file = fopen(result_file_path, "w");
 
   int curr_level = 0;
-  for (int l = 0; l < max_asap; l++)
+  for (int l = 0; l <= max_asap; l++)
   {
     for (int i = 0; i <= max_idx; i++)
     {

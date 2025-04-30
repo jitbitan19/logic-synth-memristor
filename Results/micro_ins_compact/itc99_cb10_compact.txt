@@ -1,0 +1,316 @@
+# Level:  1 _____________________________________
+   0 False    0        /0                  1 True
+   1 False    0        /1                  1 True
+   2 False    0        /2                  1 True
+   4 False    0        /4                  1 True
+   5 False    1       /13    0       /5    2 True
+   5 False    0        /5                  3 True
+   6 False    1       /22    0       /6    2 True
+   6 False    0        /6                  3 True
+   7 False    0        /7                  1 True
+   8 False    0        /8                  1 True
+   9 False    0        /9                  1 True
+  10 False    0       /10                  1 True
+  11 False    1       /12    0      /11    2 True
+  11 False    0       /11                  3 True
+  11 False    4       /14    0      /11    5 True
+  12 False    0       /12                  1 True
+  13 False    0       /13                  1 True
+  14 False    0       /14                  1 True
+  15 False    0       /15                  1 True
+  15 False    0       /15                  2 True
+  16 False    0       /16                  1 True
+  16 False    0       /16                  2 True
+  17 False    0       /17                  1 True
+  17 False    0       /17                  2 True
+  18 False    0       /18                  1 True
+  18 False    0       /18                  2 True
+  19 False    0       /19                  1 True
+  20 False    0       /20                  1 True
+  21 False    0       /21                  1 True
+  21 False    0       /21                  2 True
+  22 False    0       /22                  1 True
+  23 False    0       /23                  1 True
+  24 False    0       /24                  1 True
+  24 False    0       /24                  2 True
+  25 False    0       /25                  1 True
+  26 False    0       /26                  1 True
+# Level:  2 _____________________________________
+   1 False    2       2x1    0       /1    3 True
+   1 False    4      13x1    1      1x1    5 True
+   4 False    2      12x1    0       /4    3 True
+   4 False    4      13x1    0       /4    5 True
+   5 False    4      11x5    3      5x3    5 True
+   6 False    2       6x2                  4 True
+   6 False    5       /25    3      6x3    6 True
+   6 False    7      25x1    0       /6    8 True
+   7 False    2       8x1    1      7x1    3 True
+  11 False    2      11x2                  6 True
+  11 False    7      13x1    0      /11    8 True
+  11 False    9       /12    3     11x3   10 True
+  11 False   11      14x1    0      /11   12 True
+  11 False   13       /14    3     11x3   14 True
+  11 False   15       /13    3     11x3   16 True
+  11 False   17       /19    3     11x3   18 True
+  11 False   19      14x1    3     11x3   20 True
+  12 False    2       /14    1     12x1    3 True
+  12 False    4      13x1    0      /12    5 True
+  12 False    6       /13    1     12x1    7 True
+  13 False    2      14x1    1     13x1    3 True
+  13 False    4      14x1    0      /13    5 True
+  13 False    6       /14    1     13x1    7 True
+  14 False    2       5x2    0      /14    3 True
+# Level:  3 _____________________________________
+   1 False    5       1x5                  6 True
+   2 False    2      11x6    1      2x1    3 True
+   4 False    3       4x3                  6 True
+   4 False    7     11x16    5      4x5    8 True
+   6 False    8       6x8    6      6x6    9 True
+   7 False    3       7x3                  4 True
+  11 False    8      11x8                 21 True
+  11 False   10     11x10                 22 True
+  11 False   14     11x14   12    11x12   23 True
+  11 False   16     11x16                 24 True
+  12 False    3      12x3                  8 True
+  12 False    7      12x7    5     12x5    9 True
+  12 False    5      12x5                 10 True
+  13 False    3      13x3                  8 True
+  13 False    5      13x5                  9 True
+  13 False   10       1x3    3     13x3   11 True
+  14 False    3      14x3                  4 True
+  14 False    5      11x6    0      /14    6 True
+  20 False    2       6x4    1     20x1    3 True
+# Level:  4 _____________________________________
+   1 False    7     12x10    1      1x1    8 True
+   2 False    3       2x3                  4 True
+   2 False    5      13x9    1      2x1    6 True
+   4 False    8       4x8                  9 True
+   5 False    6      12x8    3      5x3    7 True
+   5 False    8      13x9    3      5x3    9 True
+   6 False    9       6x9                 10 True
+  10 False    2       7x4    1     10x1    3 True
+  11 False   25      13x9    3     11x3   26 True
+  11 False   27     13x11    6     11x6   28 True
+  12 False   11      14x4    5     12x5   12 True
+  12 False   13      13x8    1     12x1   14 True
+  12 False   15     11x21    0      /12   16 True
+  12 False    9      12x9                 17 True
+  12 False   18     11x23   10    12x10   19 True
+  12 False   20     11x24    8     12x8   21 True
+  13 False   12      12x8    1     13x1   13 True
+  13 False   14       4x6    9     13x9   15 True
+  13 False   16     11x22    9     13x9   17 True
+  13 False   18     11x23    1     13x1   19 True
+  14 False    6      14x6                  7 True
+  14 False    8     11x21    0      /14    9 True
+  20 False    3      20x3                  4 True
+  20 False    5       6x9    0      /20    6 True
+# Level:  5 _____________________________________
+   1 False    9      14x7    1      1x1   10 True
+   1 False    8       1x8                 11 True
+   2 False    7      14x7    1      2x1    8 True
+   2 False    6       2x6                  9 True
+   3 False    1      14x7    0       /3    2 True
+   5 False    7       5x7                 10 True
+   5 False    9       5x9                 11 True
+  10 False    3      10x3                  4 True
+  11 False   29     12x12    3     11x3   30 True
+  12 False   14     12x14                 22 True
+  12 False   16     12x16                 23 True
+  12 False   24      13x7   17    12x17   25 True
+  13 False   13     13x13                 20 True
+  13 False   21      14x7    0      /13   22 True
+  14 False   10       2x4    1     14x1   11 True
+  14 False   12       4x9    0      /14   13 True
+  20 False    7      6x10    1     20x1    8 True
+  25 False    2      20x4    1     25x1    3 True
+# Level:  6 _____________________________________
+   2 False   10     12x23    0       /2   11 True
+   2 False    8       2x8                 12 True
+   3 False    2       3x2                  3 True
+   4 False   10     13x20    1      4x1   11 True
+   5 False   12     12x22    0       /5   13 True
+   9 False    2      10x4    1      9x1    3 True
+  11 False   30     11x30                 31 True
+  11 False   32     13x20    0      /11   33 True
+  11 False   34      1x10   18    11x18   35 True
+  11 False   36      5x11    6     11x6   37 True
+  12 False   26       2x9    0      /12   27 True
+  12 False   25     12x25                 28 True
+  13 False   23      5x10    0      /13   24 True
+  14 False   14      25x3    0      /14   15 True
+  14 False   13     14x13                 16 True
+  20 False    8      20x8    6     20x6    9 True
+  20 False   10      1x11    0      /20   11 True
+  25 False    3      25x3                  4 True
+  25 False    5      1x11    0      /25    6 True
+# Level:  7 _____________________________________
+   0 False    2      2x12    1      0x1    3 True
+   1 False   12      2x12    0       /1   13 True
+   2 False   13       1x6   12     2x12   14 True
+  11 False   38      25x4    0      /11   39 True
+  11 False   40     12x28   26    11x26   41 True
+  12 False   29      25x4    8     12x8   30 True
+  12 False   31     14x16   17    12x17   32 True
+  13 False   25      4x11   22    13x22   26 True
+  13 False   27     11x33   17    13x17   28 True
+  13 False   29     12x21   24    13x24   30 True
+  13 False   31      20x9    8     13x8   32 True
+  13 False   33     11x35    1     13x1   34 True
+  13 False   24     13x24                 35 True
+  13 False   36       3x3    0      /13   37 True
+  14 False   17       9x3    1     14x1   18 True
+  14 False   19      5x13   11    14x11   20 True
+  15 False    3     13x24    1     15x1    4 True
+  16 False    3     13x24    1     16x1    4 True
+  17 False    3     13x24    1     17x1    4 True
+  18 False    3     13x24    1     18x1    4 True
+# Level:  8 _____________________________________
+   0 False    3       0x3                  4 True
+   2 False   14      2x14                 15 True
+   3 False    4     12x30    2      3x2    5 True
+   6 False   11     13x35    3      6x3   12 True
+   7 False    5     13x28    1      7x1    6 True
+   8 False    2     13x28    1      8x1    3 True
+   9 False    4     13x28    1      9x1    5 True
+  10 False    5     13x28    1     10x1    6 True
+  11 False   41     11x41                 42 True
+  13 False   26     13x26                 38 True
+  13 False   30     13x30                 39 True
+  14 False   21     11x31   18    14x18   22 True
+  14 False   20     14x20                 23 True
+  14 False   24     11x39    0      /14   25 True
+  19 False    2     13x37    1     19x1    3 True
+  20 False   12     13x35    1     20x1   13 True
+  21 False    3     12x32    1     21x1    4 True
+  22 False    2     13x35    1     22x1    3 True
+  23 False    2      2x14    1     23x1    3 True
+  25 False    7     13x35    1     25x1    8 True
+  26 False    2      2x14    1     26x1    3 True
+# Level:  9 _____________________________________
+   0 False    5      2x15    1      0x1    6 True
+   2 False   16     14x23   11     2x11   17 True
+   5 False   14     11x42    5      5x5   15 True
+   6 False   13      18x4   12     6x12   14 True
+   7 False    7     13x32    6      7x6    8 True
+   8 False    4      25x6    3      8x3    5 True
+   9 False    6     20x11    5      9x5    7 True
+  10 False    7     13x34    6     10x6    8 True
+  11 False   43     13x39   37    11x37   44 True
+  11 False   45      19x3   20    11x20   46 True
+  13 False   17     13x17   38    13x38   40 True
+  13 False   41      21x4   15    13x15   42 True
+  14 False   26     13x24   22    14x22   27 True
+  14 False   25     14x25                 28 True
+  20 False   14      17x4   13    20x13   15 True
+  22 False    4      15x4    3     22x3    5 True
+  25 False    9      16x4    8     25x8   10 True
+  26 False    4       0x4    0      /26    5 True
+# Level: 10 _____________________________________
+   0 False    7      26x3    6      0x6    8 True
+   2 False   17      2x17                 18 True
+   6 False   14      6x14                 15 True
+  11 False   44     11x44                 47 True
+  11 False   46     11x46                 48 True
+  13 False   40     13x40                 43 True
+  13 False   44     14x28    0      /13   45 True
+  13 False   42     13x42                 46 True
+  14 False   27     14x27                 29 True
+  20 False   15     20x15                 16 True
+  22 False    5      22x5                  6 True
+  24 False    3      5x15    1     24x1    4 True
+  25 False   10     25x10                 11 True
+# Level: 11 _____________________________________
+   0 False    8       0x8                  9 True
+  13 False   47     14x29   15    13x15   48 True
+  13 False   49     12x27   43    13x43   50 True
+  13 False   51     12x19   43    13x43   52 True
+  13 False   45     13x45   13    13x13   53 True
+  24 False    5     11x47    4     24x4    6 True
+# Level: 12 _____________________________________
+  13 False   48     13x48                 54 True
+  13 False   50     13x50                 55 True
+  13 False   52     13x52                 56 True
+  13 False   53     13x53                 57 True
+  24 False    6      24x6                  7 True
+# Level: 13 _____________________________________
+   1 False   14     13x55   13     1x13   15 True
+   2 False   19     13x54   18     2x18   20 True
+   2 False   21     13x56    3      2x3   22 True
+  13 False   58      26x5   55    13x55   59 True
+  13 False   60     11x28   55    13x55   61 True
+  14 False   30     13x57    6     14x6   31 True
+# Level: 14 _____________________________________
+   1 False   15      1x15                 16 True
+   2 False   20      2x20                 23 True
+   2 False   22      2x22                 24 True
+   7 False    9     13x61    8      7x8   10 True
+   8 False    6      1x15    5      8x5    7 True
+  10 False    9      2x22    8     10x8   10 True
+  13 False   59     13x59                 62 True
+  13 False   61     13x61                 63 True
+# Level: 15 _____________________________________
+   1 False   17     13x62   13     1x13   18 True
+   6 False   16      2x24    3      6x3   17 True
+  13 False   64      2x23   38    13x38   65 True
+  22 False    7     13x63    1     22x1    8 True
+  25 False   12      1x16    1     25x1   13 True
+# Level: 16 _____________________________________
+   1 False   18      1x18                 19 True
+   7 False   11      22x8   10     7x10   12 True
+   8 False    8     25x13    7      8x7    9 True
+   9 False    8      1x18    7      9x7    9 True
+  10 False   11      6x17   10    10x10   12 True
+  13 False   66     14x15   65    13x65   67 True
+  13 False   65     13x65                 68 True
+  13 False   69       3x5   65    13x65   70 True
+  13 False   71     14x31   65    13x65   72 True
+  14 False   32     13x65    1     14x1   33 True
+  14 False   34     13x65    0      /14   35 True
+# Level: 17 _____________________________________
+   7 False   12      7x12                 13 True
+   8 False    9       8x9                 10 True
+  10 False   12     10x12                 13 True
+  11 False   49     14x35    3     11x3   50 True
+  13 False   67     13x67                 73 True
+  13 False   68     13x68    1     13x1   74 True
+  13 False   70     13x70                 75 True
+  14 False   33     14x33                 36 True
+  14 False   37     13x68    1     14x1   38 True
+  20 False   17      1x19    1     20x1   18 True
+# Level: 18 _____________________________________
+   9 False   10     20x18    9      9x9   11 True
+  11 False   51     14x36    8     11x8   52 True
+  13 False   73     13x73    5     13x5   76 True
+  13 False   74     13x74   13    13x13   77 True
+  13 False   75     13x75    0      /13   78 True
+  13 False   79     14x38   72    13x72   80 True
+# Level: 19 _____________________________________
+   9 False   11      9x11                 12 True
+  11 False   53     13x78   50    11x50   54 True
+  12 False   33     13x76    1     12x1   34 True
+  13 False   77     13x77                 81 True
+  13 False   80     13x80                 82 True
+# Level: 20 _____________________________________
+  11 False   54     11x54                 55 True
+  12 False   35     13x19   34    12x34   36 True
+  14 False   39     13x81    9     14x9   40 True
+# Level: 21 _____________________________________
+  12 False   36     12x36                 37 True
+  14 False   40     14x40                 41 True
+# Level: 22 _____________________________________
+  11 False   56     14x41   52    11x52   57 True
+  13 False   83     12x37   13    13x13   84 True
+
+Metrics
+-------
+Primary Inputs    : 27
+Levels            : 22
+Read Operations   : 23
+Write Operations  : 47
+Evaluation Cycles : 23
+Total Cycles      : 93
+Crossbar Size     : 27x86
+---------------------------
+
+

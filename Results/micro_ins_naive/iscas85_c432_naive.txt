@@ -1,0 +1,437 @@
+# Level:  1 _____________________________________
+   0 False    5        /5                 36 True
+   0 False    1        /1                 37 True
+   0 False    9        /9                 38 True
+   0 False   13       /13                 39 True
+   0 False   17       /17                 40 True
+   0 False   21       /21                 41 True
+   0 False   25       /25                 42 True
+   0 False   33       /33                 43 True
+   0 False   29       /29                 44 True
+   0 False   35       /35                 45 True
+   0 False   32       /32                 46 True
+   0 False   24       /24                 47 True
+   0 False   28       /28                 48 True
+   0 False   31       /31                 49 True
+   0 False   27       /27                 50 True
+   0 False   20       /20                 51 True
+   0 False   19       /19                 52 True
+   0 False   23       /23                 53 True
+   0 False   34       /34                 54 True
+   0 False   30       /30                 55 True
+   0 False   12       /12                 56 True
+   0 False   15       /15                 57 True
+   0 False   16       /16                 58 True
+   0 False   22       /22                 59 True
+   0 False   26       /26                 60 True
+   0 False    7        /7                 61 True
+   0 False   18       /18                 62 True
+   0 False   11       /11                 63 True
+   0 False   10       /10                 64 True
+   0 False    8        /8                 65 True
+   0 False   14       /14                 66 True
+   0 False    3        /3                 67 True
+   0 False    4        /4                 68 True
+   0 False    2        /2                 69 True
+   0 False    6        /6                 70 True
+   0 False    0        /0                 71 True
+# Level:  2 _____________________________________
+   0 False   36      0x36    3       /3   72 True
+   0 False   37      0x37    0       /0   73 True
+   0 False   38      0x38    7       /7   74 True
+   0 False   39      0x39   11      /11   75 True
+   0 False   40      0x40   15      /15   76 True
+   0 False   41      0x41   19      /19   77 True
+   0 False   42      0x42   23      /23   78 True
+   0 False   43      0x43   31      /31   79 True
+   0 False   44      0x44   27      /27   80 True
+   0 False    6        /6   36     0x36   81 True
+   0 False   37      0x37    0       /0   82 True
+   0 False    2        /2   37     0x37   83 True
+   0 False   38      0x38    7       /7   84 True
+   0 False   10       /10   38     0x38   85 True
+   0 False   14       /14   39     0x39   86 True
+   0 False   18       /18   40     0x40   87 True
+   0 False   22       /22   41     0x41   88 True
+   0 False   26       /26   42     0x42   89 True
+   0 False   34       /34   43     0x43   90 True
+   0 False   30       /30   44     0x44   91 True
+   0 False   20       /20   40     0x40   92 True
+   0 False   24       /24   41     0x41   93 True
+   0 False   28       /28   42     0x42   94 True
+   0 False   12       /12   38     0x38   95 True
+   0 False   16       /16   39     0x39   96 True
+   0 False   35       /35   43     0x43   97 True
+   0 False   32       /32   44     0x44   98 True
+   0 False    4        /4   37     0x37   99 True
+   0 False    8        /8   36     0x36  100 True
+# Level:  3 _____________________________________
+   0 False   80      0x80   79     0x79  101 True
+   0 False   81      0x81                102 True
+   0 False   83      0x83                103 True
+   0 False   85      0x85                104 True
+   0 False   75      0x75                105 True
+   0 False   86      0x86                106 True
+   0 False   76      0x76                107 True
+   0 False   87      0x87                108 True
+   0 False   77      0x77                109 True
+   0 False   88      0x88                110 True
+   0 False   78      0x78                111 True
+   0 False   89      0x89                112 True
+   0 False   79      0x79                113 True
+   0 False   90      0x90                114 True
+   0 False   80      0x80                115 True
+   0 False   91      0x91                116 True
+   0 False   96      0x96                117 True
+   0 False   92      0x92                118 True
+   0 False   93      0x93                119 True
+   0 False   94      0x94                120 True
+   0 False   97      0x97                121 True
+   0 False   98      0x98                122 True
+   0 False   95      0x95                123 True
+   0 False   99      0x99                124 True
+   0 False  100     0x100                125 True
+# Level:  4 _____________________________________
+   0 False  101     0x101                126 True
+# Level:  5 _____________________________________
+   0 False  126     0x126   78     0x78  127 True
+# Level:  6 _____________________________________
+   0 False  127     0x127                128 True
+# Level:  7 _____________________________________
+   0 False  128     0x128   77     0x77  129 True
+# Level:  8 _____________________________________
+   0 False  129     0x129                130 True
+# Level:  9 _____________________________________
+   0 False  130     0x130   76     0x76  131 True
+# Level: 10 _____________________________________
+   0 False  131     0x131                132 True
+# Level: 11 _____________________________________
+   0 False  132     0x132   75     0x75  133 True
+# Level: 12 _____________________________________
+   0 False  133     0x133                134 True
+# Level: 13 _____________________________________
+   0 False  134     0x134   74     0x74  135 True
+# Level: 14 _____________________________________
+   0 False  135     0x135                136 True
+# Level: 15 _____________________________________
+   0 False  136     0x136   73     0x73  137 True
+# Level: 16 _____________________________________
+   0 False  137     0x137                138 True
+   0 False  137     0x137   72     0x72  139 True
+# Level: 17 _____________________________________
+   0 False  138     0x138   72     0x72  140 True
+   0 False  102     0x102  139    0x139  141 True
+   0 False  125     0x125  139    0x139  142 True
+# Level: 18 _____________________________________
+   0 False  140     0x140                143 True
+   0 False  140     0x140  105    0x105  144 True
+   0 False  140     0x140  107    0x107  145 True
+   0 False  140     0x140  109    0x109  146 True
+   0 False  140     0x140  111    0x111  147 True
+   0 False  140     0x140  113    0x113  148 True
+   0 False  140     0x140  115    0x115  149 True
+   0 False  142     0x142                150 True
+   0 False  140     0x140   49     0x49  151 True
+   0 False  140     0x140   50     0x50  152 True
+   0 False  140     0x140   52     0x52  153 True
+   0 False  140     0x140   53     0x53  154 True
+   0 False  140     0x140   57     0x57  155 True
+   0 False  140     0x140   61     0x61  156 True
+   0 False  140     0x140   63     0x63  157 True
+   0 False  140     0x140   67     0x67  158 True
+   0 False  140     0x140   71     0x71  159 True
+# Level: 19 _____________________________________
+   0 False  143     0x143   73     0x73  160 True
+   0 False  143     0x143   74     0x74  161 True
+   0 False  143     0x143   75     0x75  162 True
+   0 False  143     0x143   76     0x76  163 True
+   0 False  143     0x143   77     0x77  164 True
+   0 False  143     0x143   78     0x78  165 True
+   0 False  143     0x143   79     0x79  166 True
+   0 False  143     0x143   80     0x80  167 True
+# Level: 20 _____________________________________
+   0 False   82      0x82  160    0x160  168 True
+   0 False   84      0x84  161    0x161  169 True
+   0 False  144     0x144  162    0x162  170 True
+   0 False  145     0x145  163    0x163  171 True
+   0 False  146     0x146  164    0x164  172 True
+   0 False  147     0x147  165    0x165  173 True
+   0 False  148     0x148  166    0x166  174 True
+   0 False  149     0x149  167    0x167  175 True
+# Level: 21 _____________________________________
+   0 False  103     0x103  168    0x168  176 True
+   0 False  104     0x104  169    0x169  177 True
+   0 False  106     0x106  170    0x170  178 True
+   0 False  108     0x108  171    0x171  179 True
+   0 False  110     0x110  172    0x172  180 True
+   0 False  112     0x112  173    0x173  181 True
+   0 False  114     0x114  174    0x174  182 True
+   0 False  116     0x116  175    0x175  183 True
+   0 False  119     0x119  172    0x172  184 True
+   0 False  120     0x120  173    0x173  185 True
+   0 False  121     0x121  174    0x174  186 True
+   0 False  122     0x122  175    0x175  187 True
+   0 False  117     0x117  170    0x170  188 True
+   0 False  118     0x118  171    0x171  189 True
+   0 False  123     0x123  169    0x169  190 True
+   0 False  124     0x124  168    0x168  191 True
+# Level: 22 _____________________________________
+   0 False  183     0x183  182    0x182  192 True
+   0 False  178     0x178                193 True
+   0 False  179     0x179                194 True
+   0 False  189     0x189                195 True
+   0 False  180     0x180                196 True
+   0 False  184     0x184                197 True
+   0 False  181     0x181                198 True
+   0 False  185     0x185                199 True
+   0 False  182     0x182                200 True
+   0 False  186     0x186                201 True
+   0 False  183     0x183                202 True
+   0 False  187     0x187                203 True
+   0 False  177     0x177                204 True
+   0 False  188     0x188                205 True
+   0 False  176     0x176                206 True
+   0 False  190     0x190                207 True
+   0 False  191     0x191                208 True
+# Level: 23 _____________________________________
+   0 False  192     0x192                209 True
+# Level: 24 _____________________________________
+   0 False  209     0x209  181    0x181  210 True
+# Level: 25 _____________________________________
+   0 False  210     0x210                211 True
+# Level: 26 _____________________________________
+   0 False  211     0x211  180    0x180  212 True
+# Level: 27 _____________________________________
+   0 False  212     0x212                213 True
+# Level: 28 _____________________________________
+   0 False  213     0x213  179    0x179  214 True
+# Level: 29 _____________________________________
+   0 False  214     0x214                215 True
+# Level: 30 _____________________________________
+   0 False  215     0x215  178    0x178  216 True
+# Level: 31 _____________________________________
+   0 False  216     0x216                217 True
+# Level: 32 _____________________________________
+   0 False  217     0x217  177    0x177  218 True
+# Level: 33 _____________________________________
+   0 False  218     0x218                219 True
+# Level: 34 _____________________________________
+   0 False  219     0x219  176    0x176  220 True
+# Level: 35 _____________________________________
+   0 False  220     0x220                221 True
+   0 False  220     0x220  141    0x141  222 True
+# Level: 36 _____________________________________
+   0 False  221     0x221  141    0x141  223 True
+   0 False  150     0x150  222    0x222  224 True
+# Level: 37 _____________________________________
+   0 False  223     0x223                225 True
+   0 False  223     0x223  196    0x196  226 True
+   0 False  223     0x223  198    0x198  227 True
+   0 False  223     0x223  200    0x200  228 True
+   0 False  223     0x223  202    0x202  229 True
+   0 False  223     0x223  193    0x193  230 True
+   0 False  223     0x223  194    0x194  231 True
+   0 False  223     0x223  204    0x204  232 True
+   0 False  223     0x223  206    0x206  233 True
+   0 False  223     0x223   54     0x54  234 True
+   0 False  223     0x223   55     0x55  235 True
+   0 False  223     0x223   59     0x59  236 True
+   0 False  223     0x223   60     0x60  237 True
+   0 False  223     0x223   62     0x62  238 True
+   0 False  223     0x223   64     0x64  239 True
+   0 False  223     0x223   66     0x66  240 True
+   0 False  223     0x223   69     0x69  241 True
+   0 False  223     0x223   70     0x70  242 True
+# Level: 38 _____________________________________
+   0 False  225     0x225  180    0x180  243 True
+   0 False  225     0x225  181    0x181  244 True
+   0 False  225     0x225  182    0x182  245 True
+   0 False  225     0x225  183    0x183  246 True
+   0 False  225     0x225  178    0x178  247 True
+   0 False  225     0x225  179    0x179  248 True
+   0 False  225     0x225  177    0x177  249 True
+   0 False  225     0x225  176    0x176  250 True
+# Level: 39 _____________________________________
+   0 False  231     0x231  248    0x248  251 True
+   0 False  226     0x226  243    0x243  252 True
+   0 False  227     0x227  244    0x244  253 True
+   0 False  228     0x228  245    0x245  254 True
+   0 False  229     0x229  246    0x246  255 True
+   0 False  230     0x230  247    0x247  256 True
+   0 False  232     0x232  249    0x249  257 True
+   0 False  233     0x233  250    0x250  258 True
+# Level: 40 _____________________________________
+   0 False  199     0x199  253    0x253  259 True
+   0 False  201     0x201  254    0x254  260 True
+   0 False  203     0x203  255    0x255  261 True
+   0 False  195     0x195  251    0x251  262 True
+   0 False  197     0x197  252    0x252  263 True
+   0 False  205     0x205  256    0x256  264 True
+   0 False  207     0x207  257    0x257  265 True
+   0 False  208     0x208  258    0x258  266 True
+# Level: 41 _____________________________________
+   0 False  261     0x261  260    0x260  267 True
+# Level: 42 _____________________________________
+   0 False  267     0x267                268 True
+# Level: 43 _____________________________________
+   0 False  268     0x268  259    0x259  269 True
+# Level: 44 _____________________________________
+   0 False  269     0x269                270 True
+# Level: 45 _____________________________________
+   0 False  270     0x270  263    0x263  271 True
+# Level: 46 _____________________________________
+   0 False  271     0x271                272 True
+# Level: 47 _____________________________________
+   0 False  272     0x272  262    0x262  273 True
+# Level: 48 _____________________________________
+   0 False  273     0x273                274 True
+# Level: 49 _____________________________________
+   0 False  274     0x274  264    0x264  275 True
+# Level: 50 _____________________________________
+   0 False  275     0x275                276 True
+# Level: 51 _____________________________________
+   0 False  276     0x276  265    0x265  277 True
+# Level: 52 _____________________________________
+   0 False  277     0x277                278 True
+# Level: 53 _____________________________________
+   0 False  278     0x278  266    0x266  279 True
+# Level: 54 _____________________________________
+   0 False  279     0x279                280 True
+# Level: 55 _____________________________________
+   0 False  280     0x280  224    0x224  281 True
+# Level: 56 _____________________________________
+   0 False  281     0x281   45     0x45  282 True
+   0 False  281     0x281   46     0x46  283 True
+   0 False  281     0x281   47     0x47  284 True
+   0 False  281     0x281   48     0x48  285 True
+   0 False  281     0x281   51     0x51  286 True
+   0 False  281     0x281   56     0x56  287 True
+   0 False  281     0x281   58     0x58  288 True
+   0 False  281     0x281   65     0x65  289 True
+   0 False  281     0x281   68     0x68  290 True
+   0 False  281     0x281                291 True
+# Level: 57 _____________________________________
+   0 False  282     0x282   43     0x43  292 True
+   0 False  283     0x283   44     0x44  293 True
+   0 False  284     0x284   41     0x41  294 True
+   0 False  285     0x285   42     0x42  295 True
+   0 False  286     0x286   40     0x40  296 True
+   0 False  287     0x287   38     0x38  297 True
+   0 False  288     0x288   39     0x39  298 True
+   0 False  289     0x289   36     0x36  299 True
+   0 False  241     0x241  290    0x290  300 True
+# Level: 58 _____________________________________
+   0 False  292     0x292                301 True
+   0 False  293     0x293                302 True
+   0 False  294     0x294                303 True
+   0 False  295     0x295                304 True
+   0 False  296     0x296                305 True
+   0 False  297     0x297                306 True
+   0 False  298     0x298                307 True
+   0 False  299     0x299                308 True
+   0 False  300     0x300                309 True
+# Level: 59 _____________________________________
+   0 False  301     0x301  151    0x151  310 True
+   0 False  302     0x302  152    0x152  311 True
+   0 False  303     0x303  153    0x153  312 True
+   0 False  304     0x304  154    0x154  313 True
+   0 False  305     0x305  155    0x155  314 True
+   0 False  306     0x306  156    0x156  315 True
+   0 False  307     0x307  157    0x157  316 True
+   0 False  308     0x308  158    0x158  317 True
+   0 False  309     0x309   37     0x37  318 True
+# Level: 60 _____________________________________
+   0 False  310     0x310                319 True
+   0 False  311     0x311                320 True
+   0 False  312     0x312                321 True
+   0 False  313     0x313                322 True
+   0 False  314     0x314                323 True
+   0 False  315     0x315                324 True
+   0 False  316     0x316                325 True
+   0 False  317     0x317                326 True
+   0 False  318     0x318                327 True
+# Level: 61 _____________________________________
+   0 False  319     0x319  234    0x234  328 True
+   0 False  320     0x320  235    0x235  329 True
+   0 False  321     0x321  236    0x236  330 True
+   0 False  322     0x322  237    0x237  331 True
+   0 False  323     0x323  238    0x238  332 True
+   0 False  324     0x324  239    0x239  333 True
+   0 False  325     0x325  240    0x240  334 True
+   0 False  326     0x326  242    0x242  335 True
+   0 False  327     0x327  159    0x159  336 True
+# Level: 62 _____________________________________
+   0 False  329     0x329  328    0x328  337 True
+   0 False  330     0x330                338 True
+   0 False  329     0x329                339 True
+   0 False  331     0x331                340 True
+   0 False  334     0x334                341 True
+# Level: 63 _____________________________________
+   0 False  337     0x337                342 True
+   0 False  338     0x338  332    0x332  343 True
+   0 False  339     0x339  331    0x331  344 True
+   0 False  340     0x340  332    0x332  345 True
+   0 False  341     0x341  333    0x333  346 True
+# Level: 64 _____________________________________
+   0 False  342     0x342  331    0x331  347 True
+   0 False  343     0x343                348 True
+   0 False  344     0x344                349 True
+   0 False  345     0x345                350 True
+   0 False  346     0x346  332    0x332  351 True
+# Level: 65 _____________________________________
+   0 False  347     0x347                352 True
+   0 False  348     0x348  333    0x333  353 True
+   0 False  349     0x349  333    0x333  354 True
+   0 False  350     0x350  334    0x334  355 True
+   0 False  351     0x351                356 True
+# Level: 66 _____________________________________
+   0 False  352     0x352  330    0x330  357 True
+   0 False  353     0x353                358 True
+   0 False  354     0x354                359 True
+   0 False  356     0x356  335    0x335  360 True
+# Level: 67 _____________________________________
+   0 False  357     0x357                361 True
+   0 False  358     0x358  334    0x334  362 True
+   0 False  359     0x359  334    0x334  363 True
+   0 False  360     0x360                364 True
+# Level: 68 _____________________________________
+   0 False  361     0x361  332    0x332  365 True
+   0 False  362     0x362  355    0x355  366 True
+   0 False  363     0x363  362    0x362  367 True
+   0 False  364     0x364  333    0x333  368 True
+# Level: 69 _____________________________________
+   0 False  365     0x365                369 True
+   0 False  366     0x366                370 True
+   0 False  367     0x367                371 True
+   0 False  368     0x368                372 True
+# Level: 70 _____________________________________
+   0 False  369     0x369  334    0x334  373 True
+   0 False  370     0x370  335    0x335  374 True
+   0 False  371     0x371  335    0x335  375 True
+# Level: 71 _____________________________________
+   0 False  373     0x373                376 True
+   0 False  374     0x374                377 True
+   0 False  375     0x375                378 True
+# Level: 72 _____________________________________
+   0 False  376     0x376  335    0x335  379 True
+   0 False  377     0x377  333    0x333  380 True
+   0 False  378     0x378  346    0x346  381 True
+# Level: 73 _____________________________________
+   0 False  379     0x379                382 True
+   0 False  380     0x380                383 True
+   0 False  381     0x381                384 True
+# Level: 74 _____________________________________
+   0 False  382     0x382  333    0x333  385 True
+
+Metrics
+-------
+Primary Inputs    : 36
+Levels            : 74
+Read Operations   : 75
+Write Operations  : 151
+Evaluation Cycles : 75
+Total Cycles      : 301
+Crossbar Size     : 1x387
+---------------------------
+
+

@@ -1,0 +1,61 @@
+# Level:  1 _____________________________________
+   0 False    0        /0                  1 True
+   0 False    2        /4    0       /0    3 True
+   1 False    0        /1                  1 True
+   2 False    0        /2                  1 True
+   3 False    0        /3                  1 True
+   3 False    2        /4    0       /3    3 True
+   4 False    0        /4                  1 True
+   5 False    0        /5                  1 True
+# Level:  2 _____________________________________
+   0 False    4        /4    1      0x1    5 True
+   0 False    6       3x1    0       /0    7 True
+   2 False    2       4x1    0       /2    3 True
+   2 False    4       0x3    1      2x1    5 True
+   3 False    4        /4    1      3x1    5 True
+   3 False    3       3x3                  6 True
+   3 False    7       4x1    0       /3    8 True
+# Level:  3 _____________________________________
+   2 False    6       0x5    1      2x1    7 True
+   2 False    8       3x5    1      2x1    9 True
+   2 False    3       2x3                 10 True
+   2 False    5       2x5                 11 True
+   2 False   12       3x6    0       /2   13 True
+   3 False    5       3x5                  9 True
+# Level:  4 _____________________________________
+   0 False    8       2x9    1      0x1    9 True
+   2 False    7       2x7                 14 True
+   2 False    9       2x9                 15 True
+   2 False   16       3x9    0       /2   17 True
+   3 False   10      2x10    1      3x1   11 True
+   3 False   12      2x11    0       /3   13 True
+# Level:  5 _____________________________________
+   0 False   10      2x14    7      0x7   11 True
+   0 False   12      2x15    1      0x1   13 True
+   0 False   14      2x15    0       /0   15 True
+   3 False   14      2x17   13     3x13   15 True
+# Level:  6 _____________________________________
+   0 False   15      0x15    9      0x9   16 True
+   2 False   18      0x11   17     2x17   19 True
+   3 False   16      0x13   11     3x11   17 True
+   3 False   15      3x15                 18 True
+# Level:  7 _____________________________________
+   0 False   16      0x16                 17 True
+   2 False   19      2x19                 20 True
+   3 False   17      3x17                 19 True
+# Level:  8 _____________________________________
+   2 False   21      3x19   13     2x13   22 True
+   3 False   20      2x20    8      3x8   21 True
+
+Metrics
+-------
+Primary Inputs    : 6
+Levels            : 8
+Read Operations   : 9
+Write Operations  : 19
+Evaluation Cycles : 9
+Total Cycles      : 37
+Crossbar Size     : 6x24
+---------------------------
+
+

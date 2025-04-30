@@ -1,0 +1,29 @@
+ASAP SCHEDULE:
+=============
+Gate distribution across levels:
+  201 264 209 261 177 130 122 105 110 91 89 83 76 53 57 51 40 38 33 33 41 40 31 38 43 39 29 37 45 60 50 47 30 31 24 9 8 7 4 5 4 2 3 4 4 4 4 6 8 8 8 4 4 4 2 
+Number of levels: 55, MaxGates: 264
+Number of memristors: 755
+Time steps (serial): 2965, Time steps (parallel): 110
+Crossbar size (serial): 264 x 3
+Crossbar size (parallel): 264 x 755
+
+ALAP SCHEDULE:
+=============
+Gate distribution across levels:
+  237 25 26 28 22 21 19 17 17 21 20 26 29 39 41 46 46 53 58 56 58 52 61 61 79 73 80 66 64 63 68 74 111 154 144 168 128 158 119 115 76 91 
+Number of levels: 42, MaxGates: 237
+Number of memristors: 711
+Time steps (serial): 2952, Time steps (parallel): 84
+Crossbar size (serial): 237 x 3
+Crossbar size (parallel): 237 x 711
+
+LIST SCHEDULE:
+=============
+Gate distribution across levels:
+  19 9 
+Number of levels: 2, MaxGates: 19
+Number of memristors: 57
+Time steps (serial): 2912, Time steps (parallel): 4
+Crossbar size (serial): 19 x 3
+Crossbar size (parallel): 19 x 57
